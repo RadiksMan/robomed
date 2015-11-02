@@ -21,7 +21,7 @@
 
 	<!--<link rel="stylesheet" href="css/tuesdayAnimate.css" media='all' />-->
 
-	<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+	<!--<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>-->
 
 	<!-- bootstrap -->
 
@@ -78,30 +78,25 @@
 
 <!-- remove Files -->
 
-	<script src="js/radion.js" type="text/javascript"></script>
+	<script src="js/develop_4.js" type="text/javascript"></script>
 
-	<script src="js/artem.js" type="text/javascript"></script>
+	<script src="js/develop_2.js" type="text/javascript"></script>
 
-	<script src="js/roma.js" type="text/javascript"></script>
+	<script src="js/develop_3.js" type="text/javascript"></script>
 
-	<script src="js/nikolay.js" type="text/javascript"></script>
+	<script src="js/develop_5.js" type="text/javascript"></script>
 
 	<!--<script src="js/myalert.js" type="text/javascript"></script>
 	<script src="develop/autocssrenew.js" type="text/javascript"></script>-->
 
 <!-- remove Files -->
 
-	<link rel="stylesheet" type="text/css" href="css/artem.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="css/nikolay.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="css/roma.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="css/radion.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/develop_1.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/develop_2.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/develop_3.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/develop_4.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/develop_5.css" media="all" />
 	<link rel="stylesheet" type="text/css" href="css/style_main.css" media="all" />
-
-	<link rel="stylesheet" type="text/css" href="css/adaptation_artem.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="css/adaptation_nikolay.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="css/adaptation_roma.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="css/adaptation_radion.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="css/adaptation.css" media="all" />
 
 	<script src="js/scr.js" type="text/javascript"></script>
 
