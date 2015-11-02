@@ -24,7 +24,7 @@
   overflow: hidden;
 }
 
-.jfix-after:after {
+.jfix:after {
   content: '';
   display: inline-block;
   width: 100%;
@@ -39,7 +39,7 @@
   vertical-align: middle;
 }
 
-.vfix-before:before {
+.vfixe:before {
   content: '';
   height: 100%;
   width: 0;
@@ -120,10 +120,12 @@ p {
 /* /base typo*/
 /* wraps styling*/
 .mbox {
-  width: 1024px;
+
+  width: 100%;
   margin: 0 auto;
   position: relative;
   z-index: 1;
+  max-width: 1170px;
 }
 
 .mbox:after {
@@ -138,24 +140,6 @@ p {
 
 /* /wraps styling*/
 /*Layout*/
-.main .sidebar_w {
-  width: 180px;
-  float: left;
-}
-
-.main .sidebar {
-  margin: 0;
-}
-
-.main .content_w {
-  float: left;
-  width: 820px;
-}
-
-.main .content {
-  margin: 0;
-}
-
 .footer_placeholder {
   height: 200px;
 }

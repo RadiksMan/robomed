@@ -2,9 +2,9 @@
 .clear{clear:both;font-size:1px;line-height:1px;height:0;overflow:hidden;}
 .cfix:after{content: '';display: block;height: 0;font-size: 1px;line-height: 1px;overflow: hidden;clear: both;}
 .juster{display:inline-block;width:100%;height:0;overflow:hidden;}
-.jfix-after:after{content: '';display: inline-block;width: 100%;height: 0;overflow: hidden;}
+.jfix:after{content: '';display: inline-block;width: 100%;height: 0;overflow: hidden;}
 .vfix{height:100%;width:0px;display:inline-block;vertical-align:middle;}
-.vfix-before:before{content: '';height: 100%;width: 0;display: inline-block;vertical-align: middle;}
+.vfixe:before{content: '';height: 100%;width: 0;display: inline-block;vertical-align: middle;}
 
 .zHiddenBlock{position:absolute;left:-99999em;top:-99999em;}
 /* /helping adds*/
@@ -40,7 +40,7 @@ p{margin:0;}
 
 /* wraps styling*/
 
-.mbox{width:1024px;margin:0 auto;position:relative;z-index:1;}
+.mbox{width:100%;margin:0 auto;position:relative;z-index:1;max-width: 1170px;}
 .mbox:after{content:"";clear:both;font-size:1px;line-height:1px;height:0;overflow:hidden;display:block;}
 
 /* /wraps styling*/
@@ -48,11 +48,6 @@ p{margin:0;}
 
 /*Layout*/
 .main{}
-.main .sidebar_w{width:180px;float:left;}
-.main .sidebar{margin:0;}
-
-.main .content_w{float:left;width:820px;}
-.main .content{margin:0;}
 
 .footer_placeholder{height: 200px;}
 .footer{position:absolute;bottom:0;left:0;width:100%;z-index:2;overflow:hidden;color:#646464;}
