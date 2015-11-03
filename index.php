@@ -1,4 +1,4 @@
-	<div class="main mbox">
+	<div class="main">
 		<?partial('slider')?>
 		<?partial('text-top')?>
 		<?partial('big-sircle')?>

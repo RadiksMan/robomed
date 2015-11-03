@@ -22,7 +22,7 @@
 
 	<!--<link rel="stylesheet" href="css/tuesdayAnimate.css" media='all' />-->
 
-	<!--<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>-->
+	<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
 
 	<!-- bootstrap -->
 
