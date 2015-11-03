@@ -19,4 +19,100 @@
     url('../fonts/glyphicons-halflings-regular.svg') format('svg');
     font-weight: normal;
     font-style: normal;}
+//1
+@font-face {
+    font-family: 'Anglecia';
+    src: url('../fonts/AngleciaProDisplay-Bold.eot');
+    src: local('O'),
+    url('../fonts/AngleciaProDisplay-Bold.woff') format('woff'),
+    url('../fonts/AngleciaProDisplay-Bold.woff2') format('woff2'),
+    url('../fonts/AngleciaProDisplay-Bold.ttf') format('truetype'),
+    url('../fonts/AngleciaProDisplay-Bold.svg') format('svg');
+    font-weight: 700;
+    font-style: normal;}
+//2
+@font-face {
+    font-family: 'Anglecia';
+    src: url('../fonts/AngleciaProDisplay-BoldItalic.eot');
+    src: local('O'),
+    url('../fonts/AngleciaProDisplay-BoldItalic.woff') format('woff'),
+    url('../fonts/AngleciaProDisplay-BoldItalic.woff2') format('woff2'),
+    url('../fonts/AngleciaProDisplay-BoldItalic.ttf') format('truetype'),
+    url('../fonts/AngleciaProDisplay-BoldItalic.svg') format('svg');
+    font-weight: 700;
+    font-style: italic;}
+
+//3
+@font-face {
+    font-family: 'Anglecia';
+    src: url('../fonts/AngleciaProDisplay-MediumItalic.eot');
+    src: local('O'),
+    url('../fonts/AngleciaProDisplay-MediumItalic.woff') format('woff'),
+    url('../fonts/AngleciaProDisplay-MediumItalic.woff2') format('woff2'),
+    url('../fonts/AngleciaProDisplay-MediumItalic.ttf') format('truetype'),
+    url('../fonts/AngleciaProDisplay-MediumItalic.svg') format('svg');
+    font-weight: 500;
+    font-style: italic;}
+
+//4
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/HelveticaNeueCyr-Roman.eot');
+    src: local('O'),
+    url('../fonts/HelveticaNeueCyr-Roman.woff') format('woff'),
+    url('../fonts/HelveticaNeueCyr-Roman.woff2') format('woff2'),
+    url('../fonts/HelveticaNeueCyr-Roman.ttf') format('truetype'),
+    url('../fonts/HelveticaNeueCyr-Roman.svg') format('svg');
+    font-weight: 500;
+    font-style: italic;}
+
+//5
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('../fonts/ProximaNovaA-Bold.eot');
+    src: local('O'),
+    url('../fonts/ProximaNovaA-Bold.woff') format('woff'),
+    url('../fonts/ProximaNovaA-Bold.woff2') format('woff2'),
+    url('../fonts/ProximaNovaA-Bold.ttf') format('truetype'),
+    url('../fonts/ProximaNovaA-Bold.svg') format('svg');
+    font-weight: 700;
+    font-style: normal;}
+
+
+//6
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('../fonts/ProximaNovaA-Extrabld.eot');
+    src: local('O'),
+    url('../fonts/ProximaNovaA-Extrabld.woff') format('woff'),
+    url('../fonts/ProximaNovaA-Extrabld.woff2') format('woff2'),
+    url('../fonts/ProximaNovaA-Extrabld.ttf') format('truetype'),
+    url('../fonts/ProximaNovaA-Extrabld.svg') format('svg');
+    font-weight: 800;
+    font-style: normal;}
+
+//7
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('../fonts/ProximaNova-Light.eot');
+    src: local('O'),
+    url('../fonts/ProximaNova-Light.woff') format('woff'),
+    url('../fonts/ProximaNova-Light.woff2') format('woff2'),
+    url('../fonts/ProximaNova-Light.ttf') format('truetype'),
+    url('../fonts/ProximaNova-Light.svg') format('svg');
+    font-weight: 300;
+    font-style: normal;}
+
+//8
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('../fonts/ProximaNova-Regular.eot');
+    src: local('O'),
+    url('../fonts/ProximaNova-Regular.woff') format('woff'),
+    url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+    url('../fonts/ProximaNova-Regular.ttf') format('truetype'),
+    url('../fonts/ProximaNova-Regular.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;}
+
 /* /fonts*/
