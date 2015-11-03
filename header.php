@@ -13,6 +13,7 @@
 	<!--<link rel="stylesheet" href="css/bootstrap.css" media="all" />
 	<link rel="stylesheet" href="css/bootstrap-theme.css" media="all" />-->
 
+	<link rel="stylesheet" type="text/css" href="css/reset.css" media="all" />
 	<link rel="stylesheet" type="text/css" href="css/style_basic.css" media="all" />
 
 	<link rel="stylesheet" type="text/css" href="css/fonts.css" media="all" />
@@ -127,7 +128,7 @@
 						</svg>
 					</a>
 				</div>
-				<div class="header-navigation">
+				<div class="header-navigation cfix">
 					<nav>
 						<ul>
 							<li><a href="#"><span>О продукте</span></a></li>
