@@ -1,0 +1,42 @@
+/* big circle */
+.big-sircle {
+  padding: 40px 0 40px 0;
+  text-align: center;
+}
+
+.big-circle-wrap {
+  display: inline-block;
+  width: 684px;
+  height: 684px;
+  position: relative;
+}
+
+.big-sircle-wrap-outside {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid #e5e4e5;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.big-sircle-wrap-inside {
+  position: absolute;
+  background-color: #fff;
+  position: absolute;
+  top: 61px;
+  right: 61px;
+  bottom: 61px;
+  left: 61px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.12);
+}
+
+/* /big cirlce */
