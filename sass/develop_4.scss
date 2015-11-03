@@ -1,14 +1,15 @@
+.header-navigation{font-size: 14rem;font-weight: bold;float: right;padding-top: 41px;
+    ul{list-style-type: none;}
+    li{float: left;margin-left: 27px;
+        &:hover{
+            a{opacity: .7}
+        }
+    }
+    a{text-decoration: none;color: #000;text-transform: uppercase;}
+}
+
 .header-wrap{background: linear-gradient(to right, #ffffff 0%,#fcfcfc 25%,#f6f6f6 50%,#f0f0f0 75%,#f0f0f0 100%);padding-bottom: 23px;
     .header-logo{float: left;padding-top: 7px;}
-    .header-navigation{font-size: 14rem;font-weight: bold;float: right;padding-top: 41px;
-        ul{list-style-type: none;}
-        li{float: left;margin-left: 27px;
-            &:hover{
-                a{opacity: .7}
-            }
-        }
-        a{text-decoration: none;color: #000;text-transform: uppercase;}
-    }
 }
 .main_slider_wrap{
     .slick-slide{outline: none;}
@@ -36,6 +37,41 @@
     }
 }
 
-.footer{background-color: url(../images/footer_bg.jpg) center center no-repeat;background-size: cover;
-    .footer_aside{float: left;width: 50%;}
+.footer{background: url(../images/footer_bg.jpg) center center no-repeat;background-size: cover;padding-top: 47px;padding-bottom: 55px;
+    .footer_aside{float: left;
+        &.side_1{width: 40%;}
+        &.side_2{width: 60%;}
+    }
+    .footer-logo{text-align-last: auto;
+        a{display: block;}
+        div{float: left;}
+        p{font-size: 10rem;color:#797f87;text-transform: uppercase;}
+        .logo-text{padding-top: 17px;padding-left: 24px;}
+    }
+    .footer_navigation{
+        .header-navigation{padding-top: 11px;
+            a{color: #797f87;}
+        }
+    }
+    .footer_addres{font-size: 15rem;padding-top: 32px;
+        .footer_tel{
+            .icon_tel{display: inline-block;vertical-align: middle;height: 16px;width: 10px;background: url(../images/footer_tel.png) center center no-repeat;}
+            a{font-weight: 800;text-decoration: none;color: #c9cfd8;padding-left: 14px;}
+        }
+        .footer_mail{padding-top: 14px;
+            .icon_mail{display: inline-block;vertical-align: middle;height: 10px;width: 14px;background: url(../images/footer_mail.png) center center no-repeat;}
+            a{color: #eb253c;text-decoration: none;padding-left: 9px;}
+        }
+        .copyr{padding-top: 31px;}
+    }
+    .footer_social{float: right;padding-top: 105px;width: 100%;
+        li{float: right;margin-left: 8px;
+            a{opacity: .4;transition:opacity ease .3s;}
+            &:hover{a{opacity: 1;}}
+        }
+    }
+    .created_by{padding-top: 32px;float: right;
+        a{color: #797f87;font-size: 12rem;text-decoration: none;}
+        span{text-transform: uppercase;}
+    }
 }
