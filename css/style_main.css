@@ -1,13 +1,13 @@
 /* big circle */
 .big-sircle {
-  padding: 40px 0 40px 0;
+  padding: 40rem 0 40rem 0;
   text-align: center;
 }
 
 .big-circle-wrap {
   display: inline-block;
-  width: 684px;
-  height: 684px;
+  width: 594rem;
+  height: 594rem;
   position: relative;
 }
 
@@ -15,7 +15,7 @@
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  border: 1px solid #e5e4e5;
+  border: 1rem solid #e5e4e5;
   position: absolute;
   left: 0;
   top: 0;
@@ -27,16 +27,155 @@
   position: absolute;
   background-color: #fff;
   position: absolute;
-  top: 61px;
-  right: 61px;
-  bottom: 61px;
-  left: 61px;
+  top: 61rem;
+  right: 61rem;
+  bottom: 61rem;
+  left: 61rem;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  -webkit-box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.12);
-  -moz-box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.12);
-  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 0 12rem 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 0 12rem 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 12rem 0 rgba(0, 0, 0, 0.12);
+}
+
+.big-sircle-list {
+  position: absolute;
+  width: 260rem;
+  font-size: 18rem;
+  color: #797f87;
+}
+
+.big-sircle-list .list-text {
+  display: inline-block;
+  vertical-align: top;
+  width: 230rem;
+}
+
+.big-sircle-list .list-num {
+  display: inline-block;
+  vertical-align: top;
+  font-weight: 300;
+  color: #c81526;
+  width: 22rem;
+}
+
+.big-sircle-part {
+  position: absolute;
+}
+
+.big-sircle-part.part-left, .big-sircle-part.part-right {
+  width: 239rem;
+  height: 422rem;
+  top: -webkit-calc(50% - 211rem);
+  top: -moz-calc(50% - 211rem);
+  top: calc(50% - 211rem);
+}
+
+.big-sircle-part.part-left .big-sircle-list li, .big-sircle-part.part-right .big-sircle-list li {
+  margin-bottom: 20rem;
+}
+
+.big-sircle-part.part-left .big-sircle-list li:last-child, .big-sircle-part.part-right .big-sircle-list li:last-child {
+  margin-bottom: 0;
+}
+
+.big-sircle-part.part-top, .big-sircle-part.part-bottom {
+  width: 422rem;
+  height: 239rem;
+  left: -webkit-calc(50% - 211rem);
+  left: -moz-calc(50% - 211rem);
+  left: calc(50% - 211rem);
+}
+
+.big-sircle-part.part-left {
+  left: 0;
+  background-image: url(../images/circle-part-left.png);
+}
+
+.big-sircle-part.part-left .big-sircle-list {
+  right: 100%;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  margin-right: 50rem;
+}
+
+.big-sircle-part.part-left .big-sircle-list li {
+  text-align: right;
+}
+
+.big-sircle-part.part-right {
+  right: 0;
+  background-image: url(../images/circle-part-right.png);
+}
+
+.big-sircle-part.part-right .big-sircle-list {
+  left: 100%;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+.big-sircle-part.part-top {
+  top: 0;
+  background-image: url(../images/circle-part-top.png);
+}
+
+.big-sircle-part.part-top .big-sircle-list {
+  bottom: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+
+.big-sircle-part.part-bottom {
+  bottom: 0;
+  background-image: url(../images/circle-part-bottom.png);
+}
+
+.big-sircle-part.part-bottom .big-sircle-list {
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+
+.big-sircle-part .big-sircle-part-item, .big-sircle-part .big-sicrcle-part-item-active {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.big-circle-wrap-center {
+  position: absolute;
+  width: 158rem;
+  height: 158rem;
+  top: -webkit-calc(50% - 79rem);
+  top: -moz-calc(50% - 79rem);
+  top: calc(50% - 79rem);
+  left: -webkit-calc(50% - 79rem);
+  left: -moz-calc(50% - 79rem);
+  left: calc(50% - 79rem);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 27rem 0 rgba(169, 23, 38, 0.55);
+  -moz-box-shadow: 0 0 27rem 0 rgba(169, 23, 38, 0.55);
+  box-shadow: 0 0 27rem 0 rgba(169, 23, 38, 0.55);
 }
 
 /* /big cirlce */

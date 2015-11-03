@@ -2,7 +2,7 @@
     <div class="big-circle-wrap">
         <div class="big-sircle-wrap-outside">
             <div class="big-circle-wrap-inside">
-                <div class="big-sircle-part">
+                <div class="big-sircle-part part-left">
                     <div class="big-sircle-list">
                         <ul>
                             <li>
@@ -43,7 +43,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="big-sircle-part">
+                <div class="big-sircle-part part-top">
                     <div class="big-sircle-list">
                         <ul>
                             <li>
@@ -75,7 +75,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="big-sircle-part">
+                <div class="big-sircle-part part-right">
                     <div class="big-sircle-list">
                         <ul>
                             <li>
@@ -120,7 +120,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="big-circle-part">
+                <div class="big-sircle-part part-bottom">
                     <div class="big-sircle-list">
                         <ul>
                             <li>

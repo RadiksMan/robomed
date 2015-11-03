@@ -1,8 +1,39 @@
 /* big circle */
 
-.big-sircle{padding:  40px 0 40px 0;text-align: center;}
-.big-circle-wrap{display: inline-block;width: 684px;height: 684px;position: relative;}
-.big-sircle-wrap-outside{border-radius: 50%;border:1px solid #e5e4e5;position: absolute;left: 0;top: 0;right:0;bottom:0;}
-.big-sircle-wrap-inside{position: absolute;background-color: #fff;position: absolute;top:61px;right: 61px;bottom: 61px;left:61px;border-radius: 50%;box-shadow:0 0 12px 0 rgba(0,0,0,.12);}
+.big-sircle{padding:  40rem 0 40rem 0;text-align: center;}
+.big-circle-wrap{display: inline-block;width: 594rem;height: 594rem;position: relative;}
+.big-sircle-wrap-outside{border-radius: 50%;border:1rem solid #e5e4e5;position: absolute;left: 0;top: 0;right:0;bottom:0;}
+.big-sircle-wrap-inside{position: absolute;background-color: #fff;position: absolute;top:61rem;right: 61rem;bottom: 61rem;left:61rem;border-radius: 50%;box-shadow:0 0 12rem 0 rgba(0,0,0,.12);}
+.big-sircle-list{position: absolute;width: 260rem;font-size: 18rem;color:#797f87;
+    .list-text{display: inline-block;vertical-align: top;width: 230rem;}
+    .list-num{display: inline-block;vertical-align: top;font-weight: 300;color:#c81526;width: 22rem;}
+}
+.big-sircle-part{position: absolute;
+    &.part-left, &.part-right{width: 239rem;height: 422rem;top:calc(50% - 211rem);
+        .big-sircle-list{
+            li{margin-bottom: 20rem;
+                &:last-child{margin-bottom: 0;}
+            }
+        }
+    }
+    &.part-top, &.part-bottom{width: 422rem;height: 239rem;left:calc(50% - 211rem);}
+    &.part-left{left: 0;background-image:url(../images/circle-part-left.png);
+        .big-sircle-list{right: 100%;top:50%;transform:translate(0, -50%);margin-right: 50rem;
+            li{text-align: right;}
+        }
+    }
+    &.part-right{right:0;background-image:url(../images/circle-part-right.png);
+        .big-sircle-list{left:100%;top:50%;transform:translate(0, -50%);}
+    }
+    &.part-top{top:0;background-image:url(../images/circle-part-top.png);
+        .big-sircle-list{bottom:100%;left:50%;transform:translate(-50%, 0);}
+    }
+    &.part-bottom{bottom:0;background-image:url(../images/circle-part-bottom.png);
+        .big-sircle-list{top: 100%;left: 50%;transform:translate(-50%, 0);}
+    }
+    .big-sircle-part-item, .big-sicrcle-part-item-active{position: absolute;left: 0;top: 0;opacity: 0;}
+}
+.big-circle-wrap-center{position: absolute;width: 158rem;height: 158rem;top: calc(50% - 79rem);left: calc(50% - 79rem);border-radius: 50%;box-shadow:0 0 27rem 0 rgba(169, 23, 38, .55);}
+
 
 /* /big cirlce */
