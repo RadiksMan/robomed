@@ -1,6 +1,6 @@
 /* big circle */
 
-.big-sircle{padding:  80rem 0 160rem 0;text-align: center;}
+.big-sircle{padding:  80rem 0 160rem 0;text-align: center;overflow: hidden;}
 .big-circle-wrap{display: inline-block;width: 684rem;height: 684rem;position: relative;}
 .big-sircle-wrap-outside{border-radius: 50%;border:1rem solid transparent;position: absolute;left: 0;top: 0;right:0;bottom:0;transition:border-color 300ms ease 1600ms;}
 

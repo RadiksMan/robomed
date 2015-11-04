@@ -253,25 +253,25 @@ function scrollCircle(){
     var targetElem = $('.big-sircle').offset().top;
     var timer = 0;
     var pause = 0;
-    var basicPause = 0;
 
     $(window).on('mousewheel DOMMouseScroll', function(event){
 
+
         event.preventDefault();
 
-        if(event.originalEvent.wheelDelta<0){
-            if(timer == 0 && basicPause == 0){
-                basicPause = 1;
+        //console.log(event.originalEvent.deltaY);
+
+        if(event.originalEvent.wheelDelta<0 || event.originalEvent.deltaY > 0){
+            if(timer == 0 /*&& basicPause == 0*/){
                 var top = $(window).scrollTop()+300;
-                $(scroller).animate({scrollTop:top}, 500);
+                $(scroller).stop().animate({scrollTop:top}, 500);
                 setTimeout(function(){basicPause = 0;}, 500);
             }
         }
-        else if(event.originalEvent.wheelDelta>0){
-            if(timer == 0 && basicPause == 0){
-                basicPause = 1;
+        else if(event.originalEvent.wheelDelta>0 || event.originalEvent.deltaY < 0){
+            if(timer == 0 /*&& basicPause == 0*/){
                 var top = $(window).scrollTop()-300;
-                $(scroller).animate({scrollTop:top}, 500);
+                $(scroller).stop().animate({scrollTop:top}, 500);
                 setTimeout(function(){basicPause = 0;}, 500);
             }
         }
@@ -284,7 +284,6 @@ function scrollCircle(){
 
                 $(scroller).animate({scrollTop:targetElem},300);
 
-
                 timer = 1;
                 pause = 1;
                 setTimeout(function(){
@@ -292,14 +291,11 @@ function scrollCircle(){
                 },1500);
             }
 
-
         }
 
         if(timer == 1){
 
-
-
-            if(event.originalEvent.wheelDelta<0 && pause==0){
+            if((event.originalEvent.wheelDelta<0 || event.originalEvent.deltaY>0) && pause==0){
                 pause = 1;
                 if($('.go-go').length==($('.big-sircle-part').length-1)){
                     $('.big-sircle-part').addClass('active go-go');
@@ -314,7 +310,7 @@ function scrollCircle(){
                 setTimeout(function(){pause=0;}, 1500);
 
             }
-            else if(event.originalEvent.wheelDelta>0 && pause==0){
+            else if((event.originalEvent.wheelDelta>0 || event.originalEvent.deltaY<0) && pause==0){
                 pause = 1;
                 if($('.go-go').length==1){
                     $('.big-sircle-part').removeClass('active go-go');

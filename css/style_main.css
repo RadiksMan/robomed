@@ -2,6 +2,7 @@
 .big-sircle {
   padding: 80rem 0 160rem 0;
   text-align: center;
+  overflow: hidden;
 }
 
 .big-circle-wrap {
