@@ -1,8 +1,66 @@
+/* basic for scroll sections */
+.scroll-section {
+  position: relative;
+}
+
+.dots-parts {
+  position: fixed;
+  z-index: 10;
+  right: 10rem;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+.dots-parts li {
+  display: block;
+  width: 6rem;
+  height: 6rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid #c6c6c6;
+  background-color: #fff;
+  position: relative;
+  margin-bottom: 10rem;
+}
+
+.dots-parts li:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  left: -25%;
+  top: -25%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #cf1628;
+  display: none;
+}
+
+.dots-parts li:last-child {
+  margin-bottom: 0;
+}
+
+.dots-parts li.active:before {
+  display: block;
+}
+
+/* /basic for scroll sections */
 /* big circle */
 .big-sircle {
-  padding: 80rem 0 160rem 0;
+  padding: 80rem 0 120rem 0;
   text-align: center;
   overflow: hidden;
+  min-height: 100vh;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .big-circle-wrap {

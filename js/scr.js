@@ -250,45 +250,72 @@ function scrollCircle(){
 
     // /add delays to list items
 
-    var targetElem = $('.big-sircle').offset().top;
     var timer = 0;
     var pause = 0;
+
+    var scrollValue = true;
 
     $(window).on('mousewheel DOMMouseScroll', function(event){
 
 
         event.preventDefault();
 
-        //console.log(event.originalEvent.deltaY);
 
         if(event.originalEvent.wheelDelta<0 || event.originalEvent.deltaY > 0){
-            if(timer == 0 /*&& basicPause == 0*/){
+            if(timer == 0){
                 var top = $(window).scrollTop()+300;
-                $(scroller).stop().animate({scrollTop:top}, 500);
-                setTimeout(function(){basicPause = 0;}, 500);
+                if(scrollValue){
+                    if($(window).scrollTop() == 0 && !$('.main_slider').is('.show')){
+                        $('.header').slideUp(300);
+                        var variable = $(window).height() - $('.top_text').height()-89;
+                        $('.main_slider').addClass('show').css({'height':variable+'rem'});
+                        $('.dots-parts li').removeClass('active');
+                        $('.dots-parts li').eq(1).addClass('active');
+                    }
+                    else{
+                        $(scroller).stop().animate({scrollTop:top}, 300);
+                    }
+                }
+                else{
+                    $(scroller).stop().animate({scrollTop:top}, 300);
+                }
             }
         }
         else if(event.originalEvent.wheelDelta>0 || event.originalEvent.deltaY < 0){
-            if(timer == 0 /*&& basicPause == 0*/){
+            if(timer == 0){
                 var top = $(window).scrollTop()-300;
-                $(scroller).stop().animate({scrollTop:top}, 500);
-                setTimeout(function(){basicPause = 0;}, 500);
+                if(scrollValue){
+                    if($(window).scrollTop() == 0 && $('.main_slider').is('.show')){
+                        $('.header').slideDown(300);
+                        $('.main_slider').removeClass('show').removeAttr('style');
+                        $('.dots-parts li').removeClass('active');
+                        $('.dots-parts li').eq(0).addClass('active');
+                    }
+                    else{
+                        $(scroller).stop().animate({scrollTop:top}, 300);
+                    }
+                }else{
+                    $(scroller).stop().animate({scrollTop:top}, 300);
+                }
             }
         }
 
-        if($(window).scrollTop()>($('.big-sircle').offset().top - $('.big-sircle').height()/2) && !$('.big-sircle').is('.done')){
+        if(($(window).scrollTop()+$(window).height())>$('.circle-section').offset().top && !$('.big-sircle').is('.done')){
 
             if(timer == 0){
 
                 $('.big-circle-wrap').addClass('began-animate').find('[data-part=0]').addClass('go-go active');
 
-                $(scroller).animate({scrollTop:targetElem},300);
+                $(scroller).animate({scrollTop:$('.circle-section').offset().top},300);
 
                 timer = 1;
                 pause = 1;
                 setTimeout(function(){
                     pause = 0;
                 },1500);
+
+                $('.dots-parts li').removeClass('active');
+                $('.dots-parts li').eq(2).addClass('active');
             }
 
         }
@@ -315,10 +342,12 @@ function scrollCircle(){
                 if($('.go-go').length==1){
                     $('.big-sircle-part').removeClass('active go-go');
                     $('.big-circle-wrap').removeClass('began-animate');
-                    var topIt = $('.big-sircle').offset().top - $('.big-sircle').height();
+                    var topIt = $('.circle-section').offset().top - $('.circle-section').height();
                     $(scroller).animate({scrollTop:topIt},300,function(){
                         timer = 0;
                     });
+                    $('.dots-parts li').removeClass('active');
+                    $('.dots-parts li').eq(1).addClass('active');
                 }else if($('.go-go').length!=1){
                     $('.big-sircle-part.active').removeClass('go-go active');
                     $('.go-go').eq($('.go-go').length - 1).addClass('active');
