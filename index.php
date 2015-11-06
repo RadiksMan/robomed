@@ -1,6 +1,8 @@
 	<div class="main">
-        <section class="scroll-section">
+        <section class="scroll-section scrolled">
 		  <?partial('slider')?>
+        </section>
+        <section class="scroll-section">
 		  <?partial('text-top')?>
         </section>
         <section class="scroll-section circle-section">

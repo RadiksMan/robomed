@@ -1,6 +1,7 @@
 /* basic for scroll sections */
 .scroll-section {
   position: relative;
+  min-height: 2rem;
 }
 
 .dots-parts {
@@ -24,8 +25,14 @@
   border-radius: 50%;
   border: 1px solid #c6c6c6;
   background-color: #fff;
+  cursor: pointer;
   position: relative;
   margin-bottom: 10rem;
+}
+
+.dots-parts li:hover {
+  background-color: #ccc;
+  border-color: #ccc;
 }
 
 .dots-parts li:before {
