@@ -55,10 +55,12 @@
   -moz-transition: height 300ms ease;
   -o-transition: height 300ms ease;
   transition: height 300ms ease;
+  overflow: hidden;
 }
 
 .main_slider_wrap .slick-slide {
   outline: none;
+  max-height: 100vh;
 }
 
 .main_slider_wrap .slick-slide img {

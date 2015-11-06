@@ -114,6 +114,12 @@
     span{font-weight: 700;font-size: 24rem;}
 }
 
+@media screen and (max-width: 1366px){
+
+    .big-circle-wrap{transform:scale(.7) translate(0, -120px);}
+
+}
+
     /* main circle animate */
 
     .big-circle-wrap.began-animate{
