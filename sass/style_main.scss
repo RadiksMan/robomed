@@ -1,7 +1,6 @@
 /* basic for scroll sections */
 
-.scroll-section{position: relative;min-height: 2rem;position: relative;
-        &:after{position: absolute;left: 50%;bottom: 10px;transform: translateX(-50%);height: 48px;width: 48px;content: '';background: url('../images/scroll_mause.png') center center no-repeat;}
+.scroll-section{position: relative;min-height: 2rem;
 }
 
 .dots-parts{position: fixed;z-index: 10;right: 10rem;top: 50%;transform:translate(0, -50%);

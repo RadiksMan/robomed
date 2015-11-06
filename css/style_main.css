@@ -2,22 +2,6 @@
 .scroll-section {
   position: relative;
   min-height: 2rem;
-  position: relative;
-}
-
-.scroll-section:after {
-  position: absolute;
-  left: 50%;
-  bottom: 10px;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-  height: 48px;
-  width: 48px;
-  content: '';
-  background: url("../images/scroll_mause.png") center center no-repeat;
 }
 
 .dots-parts {

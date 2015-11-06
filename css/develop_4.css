@@ -62,6 +62,21 @@
   position: relative;
 }
 
+.main_slider_wrap:after {
+  position: absolute;
+  left: 50%;
+  bottom: 102px;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  height: 48px;
+  width: 48px;
+  content: '';
+  background: url("../images/scroll_mause.png") center center no-repeat;
+}
+
 .main_slider_wrap .slick-slide {
   outline: none;
   max-height: 100vh;
