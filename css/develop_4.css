@@ -62,7 +62,7 @@
   position: relative;
 }
 
-.main_slider_wrap:after {
+.main_slider_wrap .mouse-scroll {
   position: absolute;
   left: 50%;
   bottom: 102px;
@@ -73,8 +73,8 @@
   transform: translateX(-50%);
   height: 48px;
   width: 48px;
-  content: '';
   background: url("../images/scroll_mause.png") center center no-repeat;
+  cursor: pointer;
 }
 
 .main_slider_wrap .slick-slide {

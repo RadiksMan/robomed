@@ -402,6 +402,14 @@ function scrollCircle(){
     var ifer = null;
     var theTime = 300;
 
+    $('.mouse-scroll').click(function(){
+        $('.header').slideUp(300);
+        var variable = $(window).height() - $('.top_text').height()-89;
+        $('.main_slider').addClass('show').css({'height':variable+'rem'});
+        $('.dots-parts li').removeClass('active');
+        $('.dots-parts li').eq(1).addClass('active');
+    });
+
     $(window).on('mousewheel DOMMouseScroll', function(event){
 
 
