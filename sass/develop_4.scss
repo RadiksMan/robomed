@@ -21,7 +21,7 @@
 
 .main_slider{height: calc(100vh - 89rem);transition:height 300ms ease;overflow: hidden;}
 .main_slider_wrap{position: relative;
-    &:after{position: absolute;left: 50%;bottom: 102px;transform: translateX(-50%);height: 48px;width: 48px;content: '';background: url('../images/scroll_mause.png') center center no-repeat;}
+    .mouse-scroll{position: absolute;left: 50%;bottom: 102px;transform: translateX(-50%);height: 48px;width: 48px;background: url('../images/scroll_mause.png') center center no-repeat;cursor: pointer;}
     .slick-slide{outline: none;max-height: 100vh;}
     .slick-slide img{min-height: 100vh;}
 }

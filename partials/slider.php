@@ -8,5 +8,6 @@
                 <img src="images/slider_img_1.jpg" alt="">
             </div>
         </div>
+        <div class="mouse-scroll"></div>
     </div>
 </div>
