@@ -393,6 +393,11 @@ $(window).bind('specScroll', function(){
 });
 
 
+$('.mouse-scroll').click(function(){
+    way=1;
+    $(window).trigger('first');
+});
+
 $(window).on('mousewheel DOMMouseScroll', function(event){
 
     event.preventDefault();
