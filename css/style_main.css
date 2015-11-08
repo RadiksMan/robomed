@@ -4,6 +4,10 @@
   min-height: 2rem;
 }
 
+.scroll-section.footer {
+  position: absolute;
+}
+
 .dots-parts {
   position: fixed;
   z-index: 10;
@@ -61,10 +65,10 @@
 /* /basic for scroll sections */
 /* big circle */
 .big-sircle {
-  padding: 80rem 0 120rem 0;
+  padding: 10vh 0 10vh 0;
   text-align: center;
   overflow: hidden;
-  min-height: 100vh;
+  height: 100vh;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;

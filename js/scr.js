@@ -250,108 +250,171 @@ function scrollCircle(){
 
     // /add delays to list items
 
-/* //trycode
+//trycode
 
-    var point = 0;
+    var way = 1;
+    var eventName;
+
+$(window).bind('first', function(){
+
+    if(way == 0){
+        $('.header').slideDown(300);
+        $('.main_slider').removeClass('show').removeAttr('style');
+        $(scroller).stop().animate({scrollTop:0},500);
+    }
+    else if(way == 1){
+        $('.header').slideUp(300);
+        var variable = $(window).height() - $('.top_text').height()-89;
+        if(variable < 0){
+            variable = 0;
+        }
+        $('.main_slider').addClass('show').css({'height':variable+'rem'});
+        var index = $('.scrolled').data('id')+1;
+        $('.scroll-section').removeClass('scrolled').eq(index).addClass('scrolled');
+    }
+
+});
+
+$(window).bind('second', function(){
+
+    var top = $(window).scrollTop();
+
+    var topPosition = $('.scrolled').height()+$('.scrolled').offset().top;
+
+    if(way == 1){
+        top = top + 300;
+        if((top + $(window).height()) > topPosition){
+
+            $(scroller).stop().animate({scrollTop:topPosition},500);
+            var index = $('.scrolled').data('id')+1;
+            $('.scroll-section').removeClass('scrolled');
+            $('.scroll-section[data-id='+index+']').addClass('scrolled');
+            if($('.scrolled').is('[data-event=circle]') && !$('.scrolled').find('.big-sircle').is('.done')){
+                $('.scrolled .big-circle-wrap').addClass('began-animate');
+                $(window).trigger('circle');
+            }
+        }else{
+            $(scroller).stop().animate({scrollTop:top},300);
+        }
+
+    }
+    else if(way == 0){
+        top = top - 300;
+        if((top + $(window).height())< topPosition){
+            $(window).trigger('first');
+            var index = $('.scrolled').data('id')-1;
+            $('.scroll-section').removeClass('scrolled');
+            $('.scroll-section[data-id='+index+']').addClass('scrolled');
+        }else{
+           $(scroller).stop().animate({scrollTop:top},300);
+        }
+    }
+
+});
+
+$(window).bind('circle', function(){
+
+    var top = $(window).scrollTop();
+
+    var parent = $('.scrolled');
+    var circle = parent.find('.big-sircle');
     var pause = 0;
 
-    function inWhatPart(){
+    if(!circle.is('.done')){
+        if(way == 1 /*&& pause == 0*/){
+            //pause = 1;
+            if(parent.find('.go-go').length==(parent.find('.big-sircle-part').length-1)){
+                parent.find('.big-sircle-part').addClass('active go-go');
 
-        $('.scroll-section').each(function() {
-            if($(window).scrollTop()>=$(this).offset().top){
-                $('.scroll-section').removeClass('scrolled');
+                parent.find('.big-sircle').addClass('done');
 
-                var index = $(this).index();
-
-                $(this).addClass('scrolled');
-
-                $('.dots-parts li').removeClass('active');
-                $('.dots-parts li').eq(index).addClass('active');
-                if($(this).is('.circle-section') && !$(this).find('.big-sircle').is('.done')){
-                    point = 1;
-                    $(scroller).stop().animate({scrollTop:$('.scrolled').offset().top},300)
-                    $('.scrolled .big-circle-wrap').addClass('began-animate').find('[data-part=0]').addClass('go-go active');
-                    setTimeout(function(){
-                        pause = 0;
-                    },1500);
-                    $(window).bind('mousewheel DOMMouseScroll scrollSircle', function(event){
-                        if(!$('.scrolled .done').length){
-                            if((event.originalEvent.wheelDelta<0 || event.originalEvent.deltaY>0) && pause==0){
-                                pause=1;
-                                if($('.scrolled .go-go').length==($('.scrolled .big-sircle-part').length-1)){
-                                    $('.big-sircle-part').addClass('active go-go');
-                                    $('.scrolled .big-sircle').addClass('done');
-                                    setTimeout(function(){point = 0;pause=0;}, 1500);
-                                }
-                                else{
-                                    $('.scrolled .go-go').removeClass('active');
-                                    $('.scrolled .big-sircle-part').eq($('.scrolled .go-go').length).addClass('go-go active');
-                                }
-                                setTimeout(function(){pause=0;}, 1500);
-                            }
-
-                            else if((event.originalEvent.wheelDelta>0 || event.originalEvent.deltaY<0) && pause==0){
-                                pause = 1;
-                                if($('.scrolled .go-go').length==1){
-                                    $('.scrolled .big-sircle-part').removeClass('active go-go');
-                                    $('.scrolled .big-circle-wrap').removeClass('began-animate');
-                                    var topIt = $(' .scrolled.circle-section').offset().top - $('.scrolled.circle-section').height();
-                                    $(scroller).animate({scrollTop:topIt},300,function(){
-                                        point = 0;
-                                        var index = $('.scrolled').index()-1;
-                                        $('.dots-parts li').removeClass('active');
-                                        $('.dots-parts li').eq(index).addClass('active');
-                                        $('.scroll-section').removeClass('scrolled');
-                                        $('.scroll-section').eq(index).addClass('scrolled');
-                                    });
-                                }else if($('.scrolled .go-go').length!=1){
-                                    $('.scrolled .big-sircle-part.active').removeClass('go-go active');
-                                    $('.scrolled .go-go').eq($('.scrolled .go-go').length - 1).addClass('active');
-                                }
-                                setTimeout(function(){pause=0;}, 1500);
-                            }
-                        }
-
-                    });
-                }
-                else{
-                    point = 0;
-                    $(window).unbind('scrollSircle');
-                }
+                //setTimeout(function(){pause=0;}, 1500);
             }
-        });
+            else{
+                parent.find('.go-go').removeClass('active');
+                parent.find('.big-sircle-part').eq(parent.find('.go-go').length).addClass('go-go active');
+            }
+            //setTimeout(function(){pause=0;}, 1500);
+        }
+        else if(way == 0 /*&& pause == 0*/){
+            //pause = 1;
+            if(parent.find('.go-go').length==1){
+                parent.find('.big-sircle-part').removeClass('active go-go');
+                parent.find('.big-circle-wrap').removeClass('began-animate');
+                var topIt = parent.offset().top - parent.height();
+                $(scroller).stop().animate({scrollTop:topIt},300);
+                var index = parent.data('id')-2;
+                $('.scroll-section').removeClass('scrolled');
+                $('.scroll-section[data-id='+index+']').addClass('scrolled');
+                $(window).trigger('first');
+            }else if(parent.find('.go-go').length!=1){
+                parent.find('.big-sircle-part.active').removeClass('go-go active');
+                parent.find('.go-go').eq(parent.find('.go-go').length - 1).addClass('active');
+            }
+            //setTimeout(function(){pause=0;}, 1500);
+        }
+    }else{
+        $(window).trigger('specScroll');
+    }
+
+});
+
+$(window).bind('specScroll', function(){
+
+    var newTop = $(window).scrollTop();
+    var scrolledPosition = $('.scrolled').offset().top + $('.scrolled').height();
+    var scrollIndex = $('.scrolled').data('id');
+    var maxScrollIndex = $('.scroll-section').length - 1;
+    var toTop = $('.scrolled').offset().top - $('.scrolled').height();
+
+
+
+    if(way == 1){
+        newTop=newTop+300;
+        if((newTop + $(window).height()) > scrolledPosition && maxScrollIndex != scrollIndex){
+            scrollIndex++;
+            $('.scroll-section').removeClass('scrolled');
+            $('.scroll-section[data-id='+scrollIndex+']').addClass('scrolled');
+            $(scroller).stop().animate({scrollTop:scrolledPosition},500);
+        }else{
+            $(scroller).stop().animate({scrollTop:newTop},300);
+        }
+    }else if(way == 0){
+        newTop=newTop-300;
+        if((newTop + $(window).height()) < scrolledPosition){
+            scrollIndex--;
+            $('.scroll-section').removeClass('scrolled');
+            $('.scroll-section[data-id='+scrollIndex+']').addClass('scrolled');
+            $(scroller).stop().animate({scrollTop:toTop},500);
+        }else{
+            $(scroller).stop().animate({scrollTop:newTop},300);
+        }
+    }
+});
+
+
+$(window).on('mousewheel DOMMouseScroll', function(event){
+
+    event.preventDefault();
+
+    if(event.originalEvent.wheelDelta<0 || event.originalEvent.deltaY > 0){
+
+        way = 1;
+
+    }
+    else if(event.originalEvent.wheelDelta>0 || event.originalEvent.deltaY < 0){
+
+        way = 0;
 
     }
 
-    var smothScrollParam = 0;
+    eventName = $('.scrolled').data('event');
+    $(window).trigger(eventName);
 
-    $(window).on('mousewheel DOMMouseScroll', function(event){
-
-        event.preventDefault();
-
-        if(event.originalEvent.wheelDelta<0 || event.originalEvent.deltaY > 0){
-            if(point == 0){
-                smothScrollParam = $(window).scrollTop()+300;
-            }
-        }
-        else if(event.originalEvent.wheelDelta>0 || event.originalEvent.deltaY < 0){
-            if(point == 0){
-                smothScrollParam = $(window).scrollTop()-300;
-            }
-        }
-
-        if(point == 0){
-            $(scroller).stop().animate({scrollTop:smothScrollParam}, 300, function(){
-                inWhatPart();
-            });
-        }
+});
 
 
-    });
-
-*/
-
-    // dots-parts
+ /*   // dots-parts
 
 
     $('.dots-parts li').click(function(){
@@ -521,7 +584,7 @@ function scrollCircle(){
         },theTime);
 
     });
-
+*/
 };
 
 /* DOCUMENT READY  */
@@ -536,6 +599,8 @@ $(document).ready(function() {
 $(window).load(function(){
 
     scrollCircle();
+
+    $(scroller).animate({scrollTop:0},0);
 
 });
 

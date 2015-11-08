@@ -1,6 +1,7 @@
 /* basic for scroll sections */
 
 .scroll-section{position: relative;min-height: 2rem;
+    &.footer{position: absolute;}
 }
 
 .dots-parts{position: fixed;z-index: 10;right: 10rem;top: 50%;transform:translate(0, -50%);
@@ -16,7 +17,7 @@
 
 /* big circle */
 
-.big-sircle{padding:  80rem 0 120rem 0;text-align: center;overflow: hidden;min-height: 100vh;box-sizing:border-box;}
+.big-sircle{padding:  10vh 0 10vh 0;text-align: center;overflow: hidden;height: 100vh;box-sizing:border-box;}
 .big-circle-wrap{display: inline-block;width: 684rem;height: 684rem;position: relative;}
 .big-sircle-wrap-outside{border-radius: 50%;border:1rem solid transparent;position: absolute;left: 0;top: 0;right:0;bottom:0;transition:border-color 300ms ease 1600ms;}
 

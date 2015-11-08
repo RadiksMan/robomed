@@ -1,5 +1,5 @@
 	<div class="footer_placeholder"></div>
-	<footer class="footer">
+	<footer class="footer scroll-section" data-event="specScroll" data-id=3>
 		<div class="mbox cfix">
             <div class="footer_aside side_1">
                 <div class="footer-logo cfix">
