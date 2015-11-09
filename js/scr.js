@@ -254,6 +254,7 @@ function scrollCircle(){
 
     var way = 1;
     var eventName;
+    var blockScrolling = true;
 
 $(window).bind('first', function(){
 
@@ -285,7 +286,12 @@ $(window).bind('second', function(){
         top = top + 300;
         if((top + $(window).height()) > topPosition){
 
-            $(scroller).stop().animate({scrollTop:topPosition},500);
+            if(blockScrolling == true){
+                $(scroller).stop().animate({scrollTop:topPosition},500);
+            }
+            else if(blockScrolling == false){
+                $(scroller).stop().animate({scrollTop:top},200);
+            }
             var index = $('.scrolled').data('id')+1;
             $('.scroll-section').removeClass('scrolled');
             $('.scroll-section[data-id='+index+']').addClass('scrolled');
@@ -294,7 +300,7 @@ $(window).bind('second', function(){
                 $(window).trigger('circle');
             }
         }else{
-            $(scroller).stop().animate({scrollTop:top},300);
+            $(scroller).stop().animate({scrollTop:top},200);
         }
 
     }
@@ -306,7 +312,7 @@ $(window).bind('second', function(){
             $('.scroll-section').removeClass('scrolled');
             $('.scroll-section[data-id='+index+']').addClass('scrolled');
         }else{
-           $(scroller).stop().animate({scrollTop:top},300);
+           $(scroller).stop().animate({scrollTop:top},200);
         }
     }
 
@@ -318,31 +324,29 @@ $(window).bind('circle', function(){
 
     var parent = $('.scrolled');
     var circle = parent.find('.big-sircle');
-    var pause = 0;
 
     if(!circle.is('.done')){
-        if(way == 1 /*&& pause == 0*/){
-            //pause = 1;
+        if(way == 1){
             if(parent.find('.go-go').length==(parent.find('.big-sircle-part').length-1)){
                 parent.find('.big-sircle-part').addClass('active go-go');
 
                 parent.find('.big-sircle').addClass('done');
 
-                //setTimeout(function(){pause=0;}, 1500);
             }
             else{
                 parent.find('.go-go').removeClass('active');
+
+                parent.find('.dots-parts li').removeClass('active').eq(parent.find('.go-go').length).addClass('active');
+
                 parent.find('.big-sircle-part').eq(parent.find('.go-go').length).addClass('go-go active');
             }
-            //setTimeout(function(){pause=0;}, 1500);
         }
-        else if(way == 0 /*&& pause == 0*/){
-            //pause = 1;
+        else if(way == 0){
             if(parent.find('.go-go').length==1){
                 parent.find('.big-sircle-part').removeClass('active go-go');
                 parent.find('.big-circle-wrap').removeClass('began-animate');
                 var topIt = parent.offset().top - parent.height();
-                $(scroller).stop().animate({scrollTop:topIt},300);
+                $(scroller).stop().animate({scrollTop:topIt},500);
                 var index = parent.data('id')-2;
                 $('.scroll-section').removeClass('scrolled');
                 $('.scroll-section[data-id='+index+']').addClass('scrolled');
@@ -350,8 +354,9 @@ $(window).bind('circle', function(){
             }else if(parent.find('.go-go').length!=1){
                 parent.find('.big-sircle-part.active').removeClass('go-go active');
                 parent.find('.go-go').eq(parent.find('.go-go').length - 1).addClass('active');
+
+                parent.find('.dots-parts li').removeClass('active').eq(parent.find('.go-go').length - 1).addClass('active');
             }
-            //setTimeout(function(){pause=0;}, 1500);
         }
     }else{
         $(window).trigger('specScroll');
@@ -370,33 +375,80 @@ $(window).bind('specScroll', function(){
 
 
     if(way == 1){
+
         newTop=newTop+300;
         if((newTop + $(window).height()) > scrolledPosition && maxScrollIndex != scrollIndex){
             scrollIndex++;
             $('.scroll-section').removeClass('scrolled');
             $('.scroll-section[data-id='+scrollIndex+']').addClass('scrolled');
-            $(scroller).stop().animate({scrollTop:scrolledPosition},500);
+            if(blockScrolling == true){
+                $(scroller).stop().animate({scrollTop:scrolledPosition},500);
+            }else if(blockScrolling == false){
+                $(scroller).stop().animate({scrollTop:newTop},200);
+            }
+
+            if(maxScrollIndex == scrollIndex){
+                blockScrolling = false;
+            }
         }else{
-            $(scroller).stop().animate({scrollTop:newTop},300);
+            $(scroller).stop().animate({scrollTop:newTop},200);
         }
     }else if(way == 0){
+        console.log(blockScrolling);
         newTop=newTop-300;
         if((newTop + $(window).height()) < scrolledPosition){
             scrollIndex--;
             $('.scroll-section').removeClass('scrolled');
             $('.scroll-section[data-id='+scrollIndex+']').addClass('scrolled');
-            $(scroller).stop().animate({scrollTop:toTop},500);
+            if(blockScrolling == true){
+                $(scroller).stop().animate({scrollTop:toTop},500);
+            }else if(blockScrolling == false){
+                $(scroller).stop().animate({scrollTop:newTop},200);
+            }
         }else{
-            $(scroller).stop().animate({scrollTop:newTop},300);
+            $(scroller).stop().animate({scrollTop:newTop},200);
         }
     }
 });
 
+//
 
 $('.mouse-scroll').click(function(){
     way=1;
     $(window).trigger('first');
 });
+
+$('.dots-parts li').click(function(){
+
+    var parent = $(this).parents('.circle-section');
+    var dots = parent.find('.dots-parts');
+    var index = $(this).index();
+    var activeLength = parent.find('.go-go').length-1;
+    var circleParts = parent.find('.big-sircle-part').length-1;
+
+    if(!parent.find('.done').length && parent.is('.scrolled')){
+
+        parent.find('.big-sircle-part').removeClass('go-go active');
+
+        dots.find('li').removeClass('active');
+        $(this).addClass('active');
+
+        for(var i=0;i<=index;i++){
+            parent.find('.big-sircle-part').eq(i).addClass('go-go');
+            if(i == index){
+                parent.find('.big-sircle-part').eq(i).addClass('active');
+            }
+            if(i == circleParts){
+                parent.find('.big-sircle-part').addClass('active');
+                parent.find('.big-sircle').addClass('done');
+
+            }
+        }
+    }
+
+});
+
+//
 
 $(window).on('mousewheel DOMMouseScroll', function(event){
 

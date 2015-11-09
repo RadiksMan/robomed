@@ -75,6 +75,10 @@
   width: 48px;
   background: url("../images/scroll_mause.png") center center no-repeat;
   cursor: pointer;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .main_slider_wrap .mouse-scroll:before {

@@ -1,4 +1,5 @@
 <div class="big-sircle">
+
     <div class="mbox">
         <div class="big-circle-wrap">
             <div class="big-sircle-wrap-outside">
@@ -170,4 +171,14 @@
             </div>
         </div>
     </div>
+
+    <div class="dots-parts">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
 </div>

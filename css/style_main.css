@@ -2,6 +2,7 @@
 .scroll-section {
   position: relative;
   min-height: 2rem;
+  overflow: hidden;
 }
 
 .scroll-section.footer {
@@ -13,11 +14,16 @@
   z-index: 10;
   right: 10rem;
   top: 50%;
-  -webkit-transform: translate(0, -50%);
-  -moz-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  -o-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+  -webkit-transform: translate(50%, -50%);
+  -moz-transform: translate(50%, -50%);
+  -ms-transform: translate(50%, -50%);
+  -o-transform: translate(50%, -50%);
+  transform: translate(50%, -50%);
+  opacity: 0;
+  -webkit-transition: opacity 500ms ease, -webkit-transform 300ms ease;
+  -moz-transition: opacity 500ms ease, -moz-transform 300ms ease;
+  -o-transition: opacity 500ms ease, -o-transform 300ms ease;
+  transition: opacity 500ms ease, transform 300ms ease;
 }
 
 .dots-parts li {
@@ -29,7 +35,6 @@
   border-radius: 50%;
   border: 1px solid #c6c6c6;
   background-color: #fff;
-  cursor: pointer;
   position: relative;
   margin-bottom: 10rem;
 }
@@ -60,6 +65,30 @@
 
 .dots-parts li.active:before {
   display: block;
+}
+
+.scrolled .dots-parts {
+  opacity: 1;
+  -webkit-transition: translate(0, -50%);
+  -moz-transition: translate(0, -50%);
+  -o-transition: translate(0, -50%);
+  transition: translate(0, -50%);
+}
+
+.scrolled .dots-parts li {
+  cursor: pointer;
+}
+
+.scrolled .done .dots-parts {
+  opacity: 0;
+  -webkit-transition: translate(50%, -50%);
+  -moz-transition: translate(50%, -50%);
+  -o-transition: translate(50%, -50%);
+  transition: translate(50%, -50%);
+}
+
+.scrolled .done .dots-parts li {
+  cursor: pointer;
 }
 
 /* /basic for scroll sections */

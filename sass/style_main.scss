@@ -1,15 +1,23 @@
 /* basic for scroll sections */
 
-.scroll-section{position: relative;min-height: 2rem;
+.scroll-section{position: relative;min-height: 2rem;overflow: hidden;
     &.footer{position: absolute;}
 }
 
-.dots-parts{position: fixed;z-index: 10;right: 10rem;top: 50%;transform:translate(0, -50%);
-    li{display: block;width: 6rem;height:6rem;border-radius: 50%;border:1px solid #c6c6c6;background-color: #fff;cursor:pointer;position: relative;margin-bottom: 10rem;
+.dots-parts{position: fixed;z-index: 10;right: 10rem;top: 50%;transform:translate(50%, -50%);opacity: 0;transition:opacity 500ms ease, transform 300ms ease;
+    li{display: block;width: 6rem;height:6rem;border-radius: 50%;border:1px solid #c6c6c6;background-color: #fff;position: relative;margin-bottom: 10rem;
         &:hover{background-color: #ccc;border-color:#ccc;}
         &:before{content:'';display: block;position: absolute;width: 150%;height: 150%;left: -25%;top: -25%;border-radius: 50%;background-color: #cf1628;display: none;}
         &:last-child{margin-bottom: 0;}
         &.active:before{display: block;}
+    }
+}
+.scrolled{
+    .dots-parts{opacity: 1;transition:translate(0, -50%);
+        li{cursor:pointer;}
+    }
+    .done .dots-parts{opacity: 0;transition:translate(50%,-50%);
+        li{cursor:pointer;}
     }
 }
 
