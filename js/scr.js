@@ -255,6 +255,7 @@ function scrollCircle(){
     var way = 1;
     var eventName;
     var blockScrolling = true;
+    var circlePause = false;
 
 $(window).bind('first', function(){
 
@@ -326,12 +327,13 @@ $(window).bind('circle', function(){
     var circle = parent.find('.big-sircle');
 
     if(!circle.is('.done')){
-        if(way == 1){
+        if(way == 1 && circlePause == false){
+            circlePause = true;
             if(parent.find('.go-go').length==(parent.find('.big-sircle-part').length-1)){
                 parent.find('.big-sircle-part').addClass('active go-go');
 
                 parent.find('.big-sircle').addClass('done');
-
+                setTimeout(function(){circlePause=false;},1500);
             }
             else{
                 parent.find('.go-go').removeClass('active');
@@ -339,9 +341,12 @@ $(window).bind('circle', function(){
                 parent.find('.dots-parts li').removeClass('active').eq(parent.find('.go-go').length).addClass('active');
 
                 parent.find('.big-sircle-part').eq(parent.find('.go-go').length).addClass('go-go active');
+
+                setTimeout(function(){circlePause=false;},1500);
             }
         }
-        else if(way == 0){
+        else if(way == 0 && circlePause == false){
+            circlePause = true;
             if(parent.find('.go-go').length==1){
                 parent.find('.big-sircle-part').removeClass('active go-go');
                 parent.find('.big-circle-wrap').removeClass('began-animate');
@@ -351,11 +356,15 @@ $(window).bind('circle', function(){
                 $('.scroll-section').removeClass('scrolled');
                 $('.scroll-section[data-id='+index+']').addClass('scrolled');
                 $(window).trigger('first');
+
+                setTimeout(function(){circlePause=false;},1500);
             }else if(parent.find('.go-go').length!=1){
                 parent.find('.big-sircle-part.active').removeClass('go-go active');
                 parent.find('.go-go').eq(parent.find('.go-go').length - 1).addClass('active');
 
                 parent.find('.dots-parts li').removeClass('active').eq(parent.find('.go-go').length - 1).addClass('active');
+
+                setTimeout(function(){circlePause=false;},1500);
             }
         }
     }else{
@@ -427,6 +436,9 @@ $('.dots-parts li').click(function(){
     var circleParts = parent.find('.big-sircle-part').length-1;
 
     if(!parent.find('.done').length && parent.is('.scrolled')){
+
+        circlePause = true;
+        setTimeout(function(){circlePause=false;}, 1500);
 
         parent.find('.big-sircle-part').removeClass('go-go active');
 
