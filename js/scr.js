@@ -256,6 +256,7 @@ function scrollCircle(){
     var eventName;
     var blockScrolling = true;
     var circlePause = false;
+    var pauseTimer = null;
 
 $(window).bind('first', function(){
 
@@ -333,7 +334,7 @@ $(window).bind('circle', function(){
                 parent.find('.big-sircle-part').addClass('active go-go');
 
                 parent.find('.big-sircle').addClass('done');
-                setTimeout(function(){circlePause=false;},1500);
+                pauseTimer = setTimeout(function(){circlePause=false;},1500);
             }
             else{
                 parent.find('.go-go').removeClass('active');
@@ -342,7 +343,7 @@ $(window).bind('circle', function(){
 
                 parent.find('.big-sircle-part').eq(parent.find('.go-go').length).addClass('go-go active');
 
-                setTimeout(function(){circlePause=false;},1500);
+                pauseTimer = setTimeout(function(){circlePause=false;},1500);
             }
         }
         else if(way == 0 && circlePause == false){
@@ -357,14 +358,14 @@ $(window).bind('circle', function(){
                 $('.scroll-section[data-id='+index+']').addClass('scrolled');
                 $(window).trigger('first');
 
-                setTimeout(function(){circlePause=false;},1500);
+                pauseTimer = setTimeout(function(){circlePause=false;},1500);
             }else if(parent.find('.go-go').length!=1){
                 parent.find('.big-sircle-part.active').removeClass('go-go active');
                 parent.find('.go-go').eq(parent.find('.go-go').length - 1).addClass('active');
 
                 parent.find('.dots-parts li').removeClass('active').eq(parent.find('.go-go').length - 1).addClass('active');
 
-                setTimeout(function(){circlePause=false;},1500);
+                pauseTimer = setTimeout(function(){circlePause=false;},1500);
             }
         }
     }else{
@@ -437,6 +438,7 @@ $('.dots-parts li').click(function(){
 
     if(!parent.find('.done').length && parent.is('.scrolled')){
 
+        clearTimeout(pauseTimer);
         circlePause = true;
         setTimeout(function(){circlePause=false;}, 1500);
 
