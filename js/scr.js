@@ -252,7 +252,7 @@ function scrollCircle(){
 
 //trycode
 
-    var way = 1;
+    var way = 0;
     var eventName;
     var blockScrolling = true;
     var pause = false;
@@ -521,8 +521,7 @@ $(document).ready(function() {
 $(window).load(function(){
 
     scrollCircle();
-
-    $(scroller).animate({scrollTop:0},0);
+    $(window).trigger('first');
 
 });
 
