@@ -355,7 +355,7 @@ function scrollCircle(){
                     parent.find('.big-sircle-part').eq(parent.find('.go-go').length).addClass('go-go active');
 
                 }
-                pauseTimer = setTimeout(function(){pause = false;pauseTimer = null;console.log(pause+', '+pauseTimer)},1500);
+                pauseTimer = setTimeout(function(){pause = false;pauseTimer = null;},1500);
             }
             else if(way == 0 && circlePause == null){
 
@@ -378,7 +378,7 @@ function scrollCircle(){
 
                 }
 
-                pauseTimer = setTimeout(function(){pause = false;pauseTimer = null;console.log(pause+', '+pauseTimer)},1500);
+                pauseTimer = setTimeout(function(){pause = false;pauseTimer = null;},1500);
 
             }
         }else{
