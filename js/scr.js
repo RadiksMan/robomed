@@ -357,7 +357,7 @@ function scrollCircle(){
                 }
                 pauseTimer = setTimeout(function(){pause = false;pauseTimer = null;},1500);
             }
-            else if(way == 0 && circlePause == null){
+            else if(way == 0 && pauseTimer == null){
 
                 //circlePause == true;
                 if(parent.find('.go-go').length==1){
