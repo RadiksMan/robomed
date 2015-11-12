@@ -340,7 +340,6 @@ function scrollCircle(){
         if(!circle.is('.done')){
             if(way == 1 && pauseTimer == null){
 
-                //circlePause = true;
                 if(parent.find('.go-go').length==(parent.find('.big-sircle-part').length-1)){
                     parent.find('.big-sircle-part').addClass('active go-go');
 
@@ -359,12 +358,12 @@ function scrollCircle(){
             }
             else if(way == 0 && pauseTimer == null){
 
-                //circlePause == true;
                 if(parent.find('.go-go').length==1){
                     parent.find('.big-sircle-part').removeClass('active go-go');
                     parent.find('.big-circle-wrap').removeClass('began-animate');
-                    var topIt = parent.offset().top - parent.height();
-                    $(scroller).stop().animate({scrollTop:topIt},500);
+                    //var topIt = parent.offset().top - parent.height();
+                    //$(scroller).stop().animate({scrollTop:topIt},500);
+                    //var index = parent.data('id')-1;
                     var index = parent.data('id')-2;
                     $('.scroll-section').removeClass('scrolled');
                     $('.scroll-section[data-id='+index+']').addClass('scrolled');
