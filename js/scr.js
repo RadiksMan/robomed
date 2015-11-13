@@ -323,7 +323,9 @@ function scrollCircle(){
                 $('.scroll-section').removeClass('scrolled');
                 $('.scroll-section[data-id='+index+']').addClass('scrolled');
             }else{
-               $(scroller).stop().animate({scrollTop:top},200);
+               if(blockScrolling == true){
+                   $(scroller).stop().animate({scrollTop:top},200);
+               }
                pause = false;
             }
         }
@@ -402,11 +404,11 @@ function scrollCircle(){
                 $('.scroll-section').removeClass('scrolled');
                 $('.scroll-section[data-id='+scrollIndex+']').addClass('scrolled');
                 if(blockScrolling == true){
-                    $(scroller).stop().animate({scrollTop:scrolledPosition},500,function(){
+                    $(scroller).stop().animate({scrollTop:scrolledPosition}, 500, function(){
                         pause = false;
                     });
                 }else if(blockScrolling == false){
-                    $(scroller).stop().animate({scrollTop:newTop},200);
+                    //$(scroller).stop().animate({scrollTop:newTop},200);
                     pause = false;
                 }
 
@@ -414,7 +416,9 @@ function scrollCircle(){
                     blockScrolling = false;
                 }
             }else{
-                $(scroller).stop().animate({scrollTop:newTop},200);
+                if(blockScrolling == true){
+                    $(scroller).stop().animate({scrollTop:newTop},200);
+                }
                 pause = false;
             }
         }else if(way == 0){
@@ -429,11 +433,13 @@ function scrollCircle(){
                         pause = false;
                     });
                 }else if(blockScrolling == false){
-                    $(scroller).stop().animate({scrollTop:newTop},200);
+                    //$(scroller).stop().animate({scrollTop:newTop},200);
                     pause = false;
                 }
             }else{
-                $(scroller).stop().animate({scrollTop:newTop},200);
+                if(blockScrolling == true){
+                    $(scroller).stop().animate({scrollTop:newTop},200);
+                }
                 pause = false;
             }
         }
@@ -484,7 +490,9 @@ function scrollCircle(){
 
     $(window).on('mousewheel DOMMouseScroll', function(event){
 
-        event.preventDefault();
+        if(pause == true){
+            event.preventDefault();
+        }
 
         if(event.originalEvent.wheelDelta<0 || event.originalEvent.deltaY > 0){
 
@@ -501,6 +509,7 @@ function scrollCircle(){
             eventName = $('.scrolled').data('event');
             if(blockScrolling == true){
                 pause = true;
+                event.preventDefault();
             }
             $(window).trigger(eventName);
         }

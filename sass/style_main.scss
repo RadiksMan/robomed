@@ -1,4 +1,7 @@
 /* basic for scroll sections */
+::-webkit-scrollbar {
+    display: none;
+}
 
 .scroll-section{position: relative;min-height: 2rem;overflow: hidden;
     &.footer{position: absolute;}
