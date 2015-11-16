@@ -488,7 +488,7 @@ function scrollCircle(){
     });
 
     //
-    if(device.windows()){
+    if(!device.ios() && !device.android() && !device.blackberry()){
 
         $(window).on('mousewheel DOMMouseScroll', function(event){
 
