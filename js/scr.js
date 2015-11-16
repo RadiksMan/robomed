@@ -259,6 +259,11 @@ function scrollCircle(){
     var circlePause = false;
     var pauseTimer = null;
 
+    $(window).on('mousedown', function(event){
+        if(event.which == 2){
+            return false;
+        }
+    })
 
     $(window).bind('first', function(){
 
@@ -324,9 +329,9 @@ function scrollCircle(){
                 $('.scroll-section').removeClass('scrolled');
                 $('.scroll-section[data-id='+index+']').addClass('scrolled');
             }else{
-               if(blockScrolling == true){
+               //if(blockScrolling == true){
                    $(scroller).stop().animate({scrollTop:top},200);
-               }
+               //}
                pause = false;
             }
         }
@@ -409,7 +414,7 @@ function scrollCircle(){
                         pause = false;
                     });
                 }else if(blockScrolling == false){
-                    //$(scroller).stop().animate({scrollTop:newTop},200);
+                    $(scroller).stop().animate({scrollTop:newTop},200);
                     pause = false;
                 }
 
@@ -417,9 +422,9 @@ function scrollCircle(){
                     blockScrolling = false;
                 }
             }else{
-                if(blockScrolling == true){
+                //if(blockScrolling == true){
                     $(scroller).stop().animate({scrollTop:newTop},200);
-                }
+                //}
                 pause = false;
             }
         }else if(way == 0){
@@ -434,13 +439,13 @@ function scrollCircle(){
                         pause = false;
                     });
                 }else if(blockScrolling == false){
-                    //$(scroller).stop().animate({scrollTop:newTop},200);
+                    $(scroller).stop().animate({scrollTop:newTop},200);
                     pause = false;
                 }
             }else{
-                if(blockScrolling == true){
+                //if(blockScrolling == true){
                     $(scroller).stop().animate({scrollTop:newTop},200);
-                }
+                //}
                 pause = false;
             }
         }
