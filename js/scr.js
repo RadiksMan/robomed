@@ -259,6 +259,7 @@ function scrollCircle(){
     var circlePause = false;
     var pauseTimer = null;
 
+
     $(window).bind('first', function(){
 
         if(way == 0){
@@ -487,34 +488,69 @@ function scrollCircle(){
     });
 
     //
+    if(device.windows()){
 
-    $(window).on('mousewheel DOMMouseScroll', function(event){
+        $(window).on('mousewheel DOMMouseScroll', function(event){
 
-        if(pause == true){
-            event.preventDefault();
-        }
-
-        if(event.originalEvent.wheelDelta<0 || event.originalEvent.deltaY > 0){
-
-            way = 1;
-
-        }
-        else if(event.originalEvent.wheelDelta>0 || event.originalEvent.deltaY < 0){
-
-            way = 0;
-
-        }
-
-        if(pause == false){
-            eventName = $('.scrolled').data('event');
-            if(blockScrolling == true){
-                pause = true;
+            if(pause == true){
                 event.preventDefault();
             }
-            $(window).trigger(eventName);
-        }
 
-    });
+            if(event.originalEvent.wheelDelta<0 || event.originalEvent.deltaY > 0){
+
+                way = 1;
+
+            }
+            else if(event.originalEvent.wheelDelta>0 || event.originalEvent.deltaY < 0 || touchStart < touchEnd){
+
+                way = 0;
+
+            }
+
+            if(pause == false){
+                eventName = $('.scrolled').data('event');
+                if(blockScrolling == true){
+                    pause = true;
+                    event.preventDefault();
+                }
+                $(window).trigger(eventName);
+            }
+
+        });
+
+    }
+    else{
+
+        var touchStart = 0;
+        var touchEnd = 0;
+
+        $(window).on('touchstart', function(event){
+
+            touchStart = event.originalEvent.changedTouches[0].pageY;
+            if(blockScrolling == true){
+                event.preventDefault();
+            }
+
+        });
+
+        $(window).on('touchend', function(event){
+
+            touchEnd = event.originalEvent.changedTouches[0].pageY;
+
+            if(touchStart > touchEnd){
+                way = 1;
+            }
+            else if(touchStart < touchEnd){
+                way = 0;
+            }
+
+            eventName = $('.scrolled').data('event');
+            $(window).trigger(eventName);
+
+        });
+
+    }
+
 };
 
 /* DOCUMENT READY  */

@@ -4,7 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
-	<meta id="viewport" name="viewport" content="width=1280,user-scalable=no">
+	<meta id="viewport" name="viewport" content="width=1280px,user-scalable=yes">
 	<meta name="format-detection" content="telephone=no">
 	<meta name="MobileOptimized" content="1280"/>
 	<meta name="HandheldFriendly" content="false"/>
@@ -26,6 +26,7 @@
 	<!--<link rel="stylesheet" href="css/tuesdayAnimate.css" media='all' />-->
 
 	<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+	<script src="js/device.js"></script>
 
 	<!-- bootstrap -->
 

@@ -105,6 +105,13 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  display: table;
+  width: 100%;
+}
+
+.big-sircle .mbox {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .big-circle-wrap {
