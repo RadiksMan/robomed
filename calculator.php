@@ -28,27 +28,27 @@
 
     </div>
 
-    <div class="calculator">
+    <div class="calculator-main">
         <div class="calculator-wrap">
             <form>
                 <div class="calculator-title">Введите текущие показатели:</div>
-                <div class="calculator-body">
+                <div class="calculator-body cfix">
                     <div class="calculator-col">
                         <div class="calculator-col-title">Пациентов в месяц:</div>
                         <div class="calculator-input">
-                            <input type="text" name="patients" />
+                            <input type="text" name="patients" value=0 />
                         </div>
                     </div>
                     <div class="calculator-col">
                         <div class="calculator-col-title">ФОТ:</div>
                         <div class="calculator-input">
-                            <input type="text" name="fot" />
+                            <input type="text" name="fot" value=0 />
                         </div>
                     </div>
                     <div class="calculator-col">
                         <div class="calculator-col-title">Средний чек (руб):</div>
                         <div class="calculator-input">
-                            <input type="text" name="check" />
+                            <input type="text" name="check" value=0 />
                         </div>
                     </div>
                 </div>
@@ -56,22 +56,28 @@
         </div>
         <div class="calculator-wrap-bottom color-line">
             <div class="calculator-optimization">
-                <div class="calculator-optimization-top">
+                <div class="calculator-optimization-top cfix">
                     <div class="calculator-optimization-col optimization-first-col">
-                        <div class="optimiztion-value"></div>
+                        <div class="optimiztion-value">0</div>
                         <div class="optimization-text">Оптимизация рекламы по аналитике</div>
                     </div>
                     <div class="calculator-optimization-col optimization-second-col">
-                        <div class="optimiztion-value"></div>
+                        <div class="optimiztion-value">0</div>
                         <div class="optimization-text">За счет сокращения неэффективных сотрудников</div>
                     </div>
                     <div class="calculator-optimization-col optimization-third-col">
-                        <div class="optimiztion-value"></div>
+                        <div class="optimiztion-value">0</div>
                         <div class="optimization-text">За счет продаж комплексов услуг</div>
                     </div>
                 </div>
-                <div class="calculator-optimization-bottom">
-
+                <div class="calculator-optimization-bottom cfix">
+                    <span class="optimization-bottom-text">Выгода в месяц:</span>
+                    <span class="optimization-value-wrap">
+                        <span class="optimization-value">
+                            0
+                        </span>
+                        руб
+                    </span>
                 </div>
             </div>
         </div>
