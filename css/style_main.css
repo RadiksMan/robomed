@@ -1,5 +1,5 @@
 /* basic for scroll sections */
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
   display: none;
 }
 
@@ -794,3 +794,124 @@
     transform: scale(1) translate(0, 0);
   }
 }
+
+/* inside pages */
+/* inside-header */
+header.inside-page {
+  position: relative;
+  -webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08);
+}
+
+/* /inside-header */
+/* inside-titles */
+.title-wrap {
+  position: relative;
+}
+
+.title-wrap:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.title-wrap.insider:before {
+  background-image: url(../images/inside-title-bg.jpg);
+}
+
+.title-wrap-main {
+  background-color: rgba(43, 43, 43, 0.9);
+  padding: 39px 0 28px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.title-wrap-main.white-bg {
+  background-color: transparent;
+}
+
+.title-wrap-main.white-bg .breadcrumbs span:last-child {
+  color: #cacbcc;
+}
+
+.title-wrap-main.white-bg .breadcrumbs span:last-child:before {
+  color: #cacbcc;
+}
+
+.breadcrumbs {
+  font-size: 15rem;
+  color: #4e4e4e;
+  margin-bottom: 2px;
+  letter-spacing: -0.5rem;
+}
+
+.breadcrumbs span {
+  display: inline-block;
+  margin-left: 34px;
+  position: relative;
+}
+
+.breadcrumbs span:before {
+  content: '-';
+  display: inline-block;
+  position: absolute;
+  right: 100%;
+  margin-right: 16px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #eb253c;
+}
+
+.breadcrumbs span:last-child:before {
+  color: #4e4e4e;
+}
+
+.breadcrumbs span:first-child {
+  margin-left: 0;
+}
+
+.breadcrumbs span:first-child:before {
+  display: none;
+}
+
+.breadcrumbs a {
+  color: #eb253c;
+  text-decoration: none;
+}
+
+.title-main {
+  font-size: 60px;
+  color: #eb253c;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: -2.1rem;
+}
+
+/* /inside-titles */
+/* calculator */
+.calculator-wrap {
+  max-width: 970px;
+  width: 100%;
+  margin: 0 auto 0 auto;
+}
+
+.calculator-optimization {
+  max-width: 970px;
+  width: 100%;
+  margin: 0 auto 0 auto;
+  padding: 0 100px 0 100px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* /calculator */
+/* /inside pages */
