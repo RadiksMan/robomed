@@ -69,6 +69,7 @@ body {
   position: relative;
   /*overflow: hidden;*/
   overflow-x: hidden;
+  font-size: 16rem;
 }
 
 img {
