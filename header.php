@@ -122,7 +122,7 @@
 </head>
 <body>
 	<?partial('zHiddenBlock');?>
-	<header class="header">
+	<header class="header <? if($act != index && $act != none){echo 'inside-page';} ?>">
 		<div class="header-wrap cfix">
 			<div class="mbox">
 				<div class="header-logo">
