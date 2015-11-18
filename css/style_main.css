@@ -824,6 +824,18 @@ header.inside-page {
   z-index: 1;
 }
 
+.title-wrap-main.white-bg {
+  background-color: transparent;
+}
+
+.title-wrap-main.white-bg .breadcrumbs span:last-child {
+  color: #cacbcc;
+}
+
+.title-wrap-main.white-bg .breadcrumbs span:last-child:before {
+  color: #cacbcc;
+}
+
 .breadcrumbs {
   font-size: 15rem;
   color: #4e4e4e;
