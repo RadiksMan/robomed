@@ -796,10 +796,16 @@ body::-webkit-scrollbar {
 }
 
 /* inside pages */
+/* inside-header */
 header.inside-page {
   position: relative;
+  -webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08);
 }
 
+/* /inside-header */
+/* inside-titles */
 .title-wrap {
   position: relative;
 }
@@ -889,4 +895,23 @@ header.inside-page {
   letter-spacing: -2.1rem;
 }
 
+/* /inside-titles */
+/* calculator */
+.calculator-wrap {
+  max-width: 970px;
+  width: 100%;
+  margin: 0 auto 0 auto;
+}
+
+.calculator-optimization {
+  max-width: 970px;
+  width: 100%;
+  margin: 0 auto 0 auto;
+  padding: 0 100px 0 100px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* /calculator */
 /* /inside pages */
