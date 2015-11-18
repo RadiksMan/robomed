@@ -250,13 +250,10 @@ function scrollCircle(){
 
     // /add delays to list items
 
-//trycode
-
     var way = 0;
     var eventName;
     var blockScrolling = true;
     var pause = false;
-    var circlePause = false;
     var pauseTimer = null;
 
     // kostil
@@ -339,6 +336,7 @@ function scrollCircle(){
                 if($('.scrolled').is('[data-event=circle]') && !$('.scrolled').find('.big-sircle').is('.done')){
                     $('.scrolled .big-circle-wrap').addClass('began-animate');
                     $(window).trigger('circle');
+                    $('.dots-parts li').eq(0).click();
 
                     $('.header').slideDown(300);
                     $('.main_slider').removeClass('show').css('height', $('[data-event="first"]').data('height'))/*.removeAttr('style')*/;
@@ -378,7 +376,7 @@ function scrollCircle(){
         if(!circle.is('.done')){
             if(way == 1 && pauseTimer == null){
 
-                if(parent.find('.go-go').length==(parent.find('.big-sircle-part').length-1)){
+                if(parent.find('.go-go').length == (parent.find('.big-sircle-part').length-1)){
                     parent.find('.big-sircle-part').addClass('active go-go');
 
                     parent.find('.big-sircle').addClass('done');
@@ -498,6 +496,8 @@ function scrollCircle(){
 
     $('.dots-parts li').click(function(){
 
+        pause = true;
+
         var parent = $(this).parents('.circle-section');
         var dots = parent.find('.dots-parts');
         var index = $(this).index();
@@ -507,8 +507,7 @@ function scrollCircle(){
         if(!parent.find('.done').length && parent.is('.scrolled')){
 
             clearTimeout(pauseTimer);
-            circlePause = true;
-            setTimeout(function(){circlePause=false;}, 1500);
+            setTimeout(function(){pauseTimer=null;pause = false;}, 1500);
 
             parent.find('.big-sircle-part').removeClass('go-go active');
 
