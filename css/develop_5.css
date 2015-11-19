@@ -1,3 +1,7 @@
+.title-wrap.clients .title-wrap-main {
+  padding: 0px 0 28px 0;
+}
+
 .title-wrap.clients:before {
   content: '';
   position: absolute;

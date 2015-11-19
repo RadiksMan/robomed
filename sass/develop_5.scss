@@ -1,5 +1,6 @@
 .title-wrap{
     &.clients{
+        .title-wrap-main{padding: 0px 0 28px 0;}
         &:before{content:'';position: absolute;width:100%;height: 100%;background-repeat: no-repeat;background-position: center center;}
         &:before{background-image:url("../images/support-title.jpg");}
     }
