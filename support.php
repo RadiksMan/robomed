@@ -1,0 +1,135 @@
+<?
+
+  if (!isset($_REQUEST['act']) || $_REQUEST['act']==__ROOT__.'/') $act='none';
+  else {
+    $act=explode('/',$_REQUEST['act']);
+    $act=$act[count($act)-1];
+  }
+
+?>
+
+<div class="<? echo $act; ?>">
+    <div class="support-wrap">
+        <div class="support-title">
+            <div class="mbox">
+                <div class="breadcrumbs">
+                    <span>
+                        <a href="#">Главная</a>
+                    </span>
+                    <span>Поддержка</span>
+                </div>
+                <div class="title-main">
+                    Поддержка
+                </div>
+            </div>
+        </div>
+        <div class="support-middle cfix">
+            <div class="mbox">
+                <div class="support-aside-main">
+                    <div class="support-aside-main-title">
+                        <h5>Популярные вопросы и ответы</h5>
+                    </div>
+                    <div class="support-aside-acordion-wrap">
+                        <div class="support-aside-acordion">
+                            <div class="support-acordion-item">
+                                <div class="support-acordion-item-title">
+                                    <span>Как выявляется неэффективный персонал?</span>
+                                </div>
+                                <div class="support-acordion-item-text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt ex omnis eaque impedit veniam asperiores eius accusantium aperiam dolorem odit aspernatur voluptas expedita totam quasi facere, velit doloremque quae cumque error dicta nihil unde illo. Explicabo, assumenda, saepe pariatur voluptatum recusandae dolorum quas quia doloremque officiis at et accusantium, nihil.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit sunt in, fugiat omnis ea inventore, aspernatur molestiae. Amet tempora nam voluptas fuga ducimus deleniti repellat ipsam ratione aliquid assumenda dignissimos quibusdam enim tempore nobis qui magnam id voluptates ipsum natus quas maxime, fugit, deserunt quasi quia. Officiis non ipsam earum porro assumenda dolor iusto dolore dicta, vitae totam atque alias incidunt unde, deserunt pariatur aliquid fugiat est esse aliquam! Doloribus recusandae quod a magnam perspiciatis est reiciendis fuga repudiandae, distinctio necessitatibus animi libero esse, natus, optio odit error repellendus. Asperiores ipsum soluta voluptates assumenda, eius consequuntur voluptatem magnam rem reprehenderit?</p>
+                                </div>
+                            </div>
+                            <div class="support-acordion-item">
+                                <div class="support-acordion-item-title">
+                                    <span>В чем ценность для главного врача?</span>
+                                </div>
+                                <div class="support-acordion-item-text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt ex omnis eaque impedit veniam asperiores eius accusantium aperiam dolorem odit aspernatur voluptas expedita totam quasi facere, velit doloremque quae cumque error dicta nihil unde illo. Explicabo, assumenda, saepe pariatur voluptatum recusandae dolorum quas quia doloremque officiis at et accusantium, nihil.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit sunt in, fugiat omnis ea inventore, aspernatur molestiae. Amet tempora nam voluptas fuga ducimus deleniti repellat ipsam ratione aliquid assumenda dignissimos quibusdam enim tempore nobis qui magnam id voluptates ipsum natus quas maxime, fugit, deserunt quasi quia. Officiis non ipsam earum porro assumenda dolor iusto dolore dicta, vitae totam atque alias incidunt unde, deserunt pariatur aliquid fugiat est esse aliquam! Doloribus recusandae quod a magnam perspiciatis est reiciendis fuga repudiandae, distinctio necessitatibus animi libero esse, natus, optio odit error repellendus. Asperiores ipsum soluta voluptates assumenda, eius consequuntur voluptatem magnam rem reprehenderit?</p>
+                                </div>
+                            </div>
+                            <div class="support-acordion-item">
+                                <div class="support-acordion-item-title">
+                                    <span>Как выявляется неэффективный персонал?</span>
+                                </div>
+                                <div class="support-acordion-item-text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt ex omnis eaque impedit veniam asperiores eius accusantium aperiam dolorem odit aspernatur voluptas expedita totam quasi facere, velit doloremque quae cumque error dicta nihil unde illo. Explicabo, assumenda, saepe pariatur voluptatum recusandae dolorum quas quia doloremque officiis at et accusantium, nihil.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit sunt in, fugiat omnis ea inventore, aspernatur molestiae. Amet tempora nam voluptas fuga ducimus deleniti repellat ipsam ratione aliquid assumenda dignissimos quibusdam enim tempore nobis qui magnam id voluptates ipsum natus quas maxime, fugit, deserunt quasi quia. Officiis non ipsam earum porro assumenda dolor iusto dolore dicta, vitae totam atque alias incidunt unde, deserunt pariatur aliquid fugiat est esse aliquam! Doloribus recusandae quod a magnam perspiciatis est reiciendis fuga repudiandae, distinctio necessitatibus animi libero esse, natus, optio odit error repellendus. Asperiores ipsum soluta voluptates assumenda, eius consequuntur voluptatem magnam rem reprehenderit?</p>
+                                </div>
+                            </div>
+                            <div class="support-acordion-item">
+                                <div class="support-acordion-item-title">
+                                    <span>В чем ценность для главного врача?</span>
+                                </div>
+                                <div class="support-acordion-item-text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt ex omnis eaque impedit veniam asperiores eius accusantium aperiam dolorem odit aspernatur voluptas expedita totam quasi facere, velit doloremque quae cumque error dicta nihil unde illo. Explicabo, assumenda, saepe pariatur voluptatum recusandae dolorum quas quia doloremque officiis at et accusantium, nihil.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit sunt in, fugiat omnis ea inventore, aspernatur molestiae. Amet tempora nam voluptas fuga ducimus deleniti repellat ipsam ratione aliquid assumenda dignissimos quibusdam enim tempore nobis qui magnam id voluptates ipsum natus quas maxime, fugit, deserunt quasi quia. Officiis non ipsam earum porro assumenda dolor iusto dolore dicta, vitae totam atque alias incidunt unde, deserunt pariatur aliquid fugiat est esse aliquam! Doloribus recusandae quod a magnam perspiciatis est reiciendis fuga repudiandae, distinctio necessitatibus animi libero esse, natus, optio odit error repellendus. Asperiores ipsum soluta voluptates assumenda, eius consequuntur voluptatem magnam rem reprehenderit?</p>
+                                </div>
+                            </div>
+                            <div class="support-acordion-item">
+                                <div class="support-acordion-item-title">
+                                    <span>Как выявляется неэффективный персонал?</span>
+                                </div>
+                                <div class="support-acordion-item-text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt ex omnis eaque impedit veniam asperiores eius accusantium aperiam dolorem odit aspernatur voluptas expedita totam quasi facere, velit doloremque quae cumque error dicta nihil unde illo. Explicabo, assumenda, saepe pariatur voluptatum recusandae dolorum quas quia doloremque officiis at et accusantium, nihil.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit sunt in, fugiat omnis ea inventore, aspernatur molestiae. Amet tempora nam voluptas fuga ducimus deleniti repellat ipsam ratione aliquid assumenda dignissimos quibusdam enim tempore nobis qui magnam id voluptates ipsum natus quas maxime, fugit, deserunt quasi quia. Officiis non ipsam earum porro assumenda dolor iusto dolore dicta, vitae totam atque alias incidunt unde, deserunt pariatur aliquid fugiat est esse aliquam! Doloribus recusandae quod a magnam perspiciatis est reiciendis fuga repudiandae, distinctio necessitatibus animi libero esse, natus, optio odit error repellendus. Asperiores ipsum soluta voluptates assumenda, eius consequuntur voluptatem magnam rem reprehenderit?</p>
+                                </div>
+                            </div>
+                            <div class="support-acordion-item">
+                                <div class="support-acordion-item-title">
+                                    <span>В чем ценность для главного врача?</span>
+                                </div>
+                                <div class="support-acordion-item-text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt ex omnis eaque impedit veniam asperiores eius accusantium aperiam dolorem odit aspernatur voluptas expedita totam quasi facere, velit doloremque quae cumque error dicta nihil unde illo. Explicabo, assumenda, saepe pariatur voluptatum recusandae dolorum quas quia doloremque officiis at et accusantium, nihil.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit sunt in, fugiat omnis ea inventore, aspernatur molestiae. Amet tempora nam voluptas fuga ducimus deleniti repellat ipsam ratione aliquid assumenda dignissimos quibusdam enim tempore nobis qui magnam id voluptates ipsum natus quas maxime, fugit, deserunt quasi quia. Officiis non ipsam earum porro assumenda dolor iusto dolore dicta, vitae totam atque alias incidunt unde, deserunt pariatur aliquid fugiat est esse aliquam! Doloribus recusandae quod a magnam perspiciatis est reiciendis fuga repudiandae, distinctio necessitatibus animi libero esse, natus, optio odit error repellendus. Asperiores ipsum soluta voluptates assumenda, eius consequuntur voluptatem magnam rem reprehenderit?</p>
+                                </div>
+                            </div>
+                            <div class="support-acordion-item">
+                                <div class="support-acordion-item-title">
+                                    <span>Как выявляется неэффективный персонал?</span>
+                                </div>
+                                <div class="support-acordion-item-text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt ex omnis eaque impedit veniam asperiores eius accusantium aperiam dolorem odit aspernatur voluptas expedita totam quasi facere, velit doloremque quae cumque error dicta nihil unde illo. Explicabo, assumenda, saepe pariatur voluptatum recusandae dolorum quas quia doloremque officiis at et accusantium, nihil.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit sunt in, fugiat omnis ea inventore, aspernatur molestiae. Amet tempora nam voluptas fuga ducimus deleniti repellat ipsam ratione aliquid assumenda dignissimos quibusdam enim tempore nobis qui magnam id voluptates ipsum natus quas maxime, fugit, deserunt quasi quia. Officiis non ipsam earum porro assumenda dolor iusto dolore dicta, vitae totam atque alias incidunt unde, deserunt pariatur aliquid fugiat est esse aliquam! Doloribus recusandae quod a magnam perspiciatis est reiciendis fuga repudiandae, distinctio necessitatibus animi libero esse, natus, optio odit error repellendus. Asperiores ipsum soluta voluptates assumenda, eius consequuntur voluptatem magnam rem reprehenderit?</p>
+                                </div>
+                            </div>
+                            <div class="support-acordion-item">
+                                <div class="support-acordion-item-title">
+                                    <span>В чем ценность для главного врача?</span>
+                                </div>
+                                <div class="support-acordion-item-text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt ex omnis eaque impedit veniam asperiores eius accusantium aperiam dolorem odit aspernatur voluptas expedita totam quasi facere, velit doloremque quae cumque error dicta nihil unde illo. Explicabo, assumenda, saepe pariatur voluptatum recusandae dolorum quas quia doloremque officiis at et accusantium, nihil.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit sunt in, fugiat omnis ea inventore, aspernatur molestiae. Amet tempora nam voluptas fuga ducimus deleniti repellat ipsam ratione aliquid assumenda dignissimos quibusdam enim tempore nobis qui magnam id voluptates ipsum natus quas maxime, fugit, deserunt quasi quia. Officiis non ipsam earum porro assumenda dolor iusto dolore dicta, vitae totam atque alias incidunt unde, deserunt pariatur aliquid fugiat est esse aliquam! Doloribus recusandae quod a magnam perspiciatis est reiciendis fuga repudiandae, distinctio necessitatibus animi libero esse, natus, optio odit error repellendus. Asperiores ipsum soluta voluptates assumenda, eius consequuntur voluptatem magnam rem reprehenderit?</p>
+                                </div>
+                            </div>
+                            <div class="support-acordion-item">
+                                <div class="support-acordion-item-title">
+                                    <span>Как выявляется неэффективный персонал?</span>
+                                </div>
+                                <div class="support-acordion-item-text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt ex omnis eaque impedit veniam asperiores eius accusantium aperiam dolorem odit aspernatur voluptas expedita totam quasi facere, velit doloremque quae cumque error dicta nihil unde illo. Explicabo, assumenda, saepe pariatur voluptatum recusandae dolorum quas quia doloremque officiis at et accusantium, nihil.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit sunt in, fugiat omnis ea inventore, aspernatur molestiae. Amet tempora nam voluptas fuga ducimus deleniti repellat ipsam ratione aliquid assumenda dignissimos quibusdam enim tempore nobis qui magnam id voluptates ipsum natus quas maxime, fugit, deserunt quasi quia. Officiis non ipsam earum porro assumenda dolor iusto dolore dicta, vitae totam atque alias incidunt unde, deserunt pariatur aliquid fugiat est esse aliquam! Doloribus recusandae quod a magnam perspiciatis est reiciendis fuga repudiandae, distinctio necessitatibus animi libero esse, natus, optio odit error repellendus. Asperiores ipsum soluta voluptates assumenda, eius consequuntur voluptatem magnam rem reprehenderit?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="support-aside-sub">
+                    <div class="aside-sub-item">
+                        <div class="aside-sub-text"><span>Узнайте больше <br>о Robomed:</span></div>
+                        <div class="aside-sub-button red">
+                            <a href="#"><span>Загрузить презентацию</span></a>
+                        </div>
+                    </div>
+                    <div class="aside-sub-item">
+                        <div class="aside-sub-text"><span>Посчитать выгоду <br>с Robomed:</span></div>
+                        <div class="aside-sub-button">
+                            <a href="#"><span class="icon icon-calc"></span><span>калькулятор</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

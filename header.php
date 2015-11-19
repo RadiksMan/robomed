@@ -72,9 +72,8 @@
 
 	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 	<script>
-		var cordX = 55.822389;
-		var cordY= 37.647088;
-		var googleText = "Москва, Проспект Мира д. 150";
+		var cordX = 59.931058;
+		var cordY= 30.326959;
 	</script>
 	<script src='js/googleMapsScr.js'></script>
 
