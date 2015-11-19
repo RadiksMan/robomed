@@ -57,6 +57,14 @@
 
 @font-face {
   font-family: 'ProximaNova';
+  src: url("../fonts/ProximaNovaBold.eot");
+  src: local("O"), url("../fonts/ProximaNovaBold.woff") format("woff"), url("../fonts/ProximaNovaBold.woff2") format("woff2"), url("../fonts/ProximaNovaBold.ttf") format("truetype"), url("../fonts/ProximaNovaBold.svg") format("svg");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNova';
   src: url("../fonts/ProximaNovaA-Extrabld.eot");
   src: local("O"), url("../fonts/ProximaNovaA-Extrabld.woff") format("woff"), url("../fonts/ProximaNovaA-Extrabld.woff2") format("woff2"), url("../fonts/ProximaNovaA-Extrabld.ttf") format("truetype"), url("../fonts/ProximaNovaA-Extrabld.svg") format("svg");
   font-weight: 800;
@@ -76,6 +84,22 @@
   src: url("../fonts/ProximaNova-Regular.eot");
   src: local("O"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.ttf") format("truetype"), url("../fonts/ProximaNova-Regular.svg") format("svg");
   font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MuseoSans';
+  src: url("../fonts/MuseoSansCyrl_1.eot");
+  src: local("O"), url("../fonts/MuseoSansCyrl_1.woff") format("woff"), url("../fonts/MuseoSansCyrl_1.woff2") format("woff2"), url("../fonts/MuseoSansCyrl_1.ttf") format("truetype"), url("../fonts/MuseoSansCyrl_1.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MuseoSans';
+  src: url("../fonts/MuseoSansCyrl_2eot");
+  src: local("O"), url("../fonts/MuseoSansCyrl_2woff") format("woff"), url("../fonts/MuseoSansCyrl_2woff2") format("woff2"), url("../fonts/MuseoSansCyrl_2ttf") format("truetype"), url("../fonts/MuseoSansCyrl_2svg") format("svg");
+  font-weight: 700;
   font-style: normal;
 }
 
