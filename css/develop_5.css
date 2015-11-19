@@ -1,3 +1,24 @@
+.title-wrap.clients .title-wrap-main {
+  padding: 0px 0 28px 0;
+}
+
+.title-wrap.clients:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.title-wrap.clients:before {
+  background-image: url("../images/support-title.jpg");
+}
+
+.client-wrapp a {
+  outline: 0;
+}
+
 .client-wrapp .client-align .slider-box-clients {
   padding-top: 72px;
 }
@@ -6,13 +27,69 @@
   -webkit-box-shadow: 0 0 28px 10px #f8f8f8;
   -moz-box-shadow: 0 0 28px 10px #f8f8f8;
   box-shadow: 0 0 28px 10px #f8f8f8;
-  padding: 82px 118px 86px;
+  padding: 82px 118px 71px;
   text-align: justify;
 }
 
 .client-wrapp .client-align .slider-box-clients .slider-client .slider-client-item {
   display: inline-block;
   padding: 0 11px 0;
+}
+
+.client-wrapp .client-align .slider-box-clients .slider-client .slider-client-item:focus {
+  outline: 0;
+}
+
+.client-wrapp .client-align .slider-box-clients .slider-client .slick-next {
+  right: 24px;
+}
+
+.client-wrapp .client-align .slider-box-clients .slider-client .slick-prev {
+  left: 34px;
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+.client-wrapp .client-align .slider-box-clients .slider-client .slick-arrow {
+  background-color: transparent;
+  border: 0;
+  position: absolute;
+  top: 43%;
+}
+
+.client-wrapp .client-align .slider-box-clients .slider-client .slick-arrow:focus {
+  outline: 0;
+}
+
+.client-wrapp .client-align .slider-box-clients .slider-client .slick-arrow:before {
+  content: "";
+  width: 31px;
+  height: 31px;
+  border: 2px solid #bbb;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  display: block;
+}
+
+.client-wrapp .client-align .slider-box-clients .slider-client .slick-arrow:after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-left: 1px solid #bbb;
+  border-top: 1px solid #bbb;
+  display: block;
+  position: absolute;
+  top: 13px;
+  left: 17px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
 }
 
 .client-wrapp .client-align span {
@@ -32,6 +109,10 @@
 
 .client-wrapp .client-align .slider-box-comment .comment-align .comment-title span {
   text-transform: uppercase;
+}
+
+.client-wrapp .client-align .slider-box-comment .comment-align .comment-content:focus {
+  outline: 0;
 }
 
 .client-wrapp .client-align .slider-box-comment .comment-align .comment-content .comment-img {
@@ -92,8 +173,69 @@
   line-height: 31rem;
 }
 
+.client-wrapp .client-align .slider-box-comment .comment-align .slick-arrow {
+  display: none !important;
+}
+
+.client-wrapp .client-align .slider-box-comment .comment-align .slick-dots {
+  padding-top: 25px;
+}
+
+.client-wrapp .client-align .slider-box-comment .comment-align .slick-dots li {
+  display: inline-block;
+}
+
+.client-wrapp .client-align .slider-box-comment .comment-align .slick-dots li button {
+  background-color: transparent;
+  border: none;
+  font-size: 0;
+  position: relative;
+  width: 15px;
+  height: 15px;
+}
+
+.client-wrapp .client-align .slider-box-comment .comment-align .slick-dots li button:focus {
+  outline: 0;
+}
+
+.client-wrapp .client-align .slider-box-comment .comment-align .slick-dots li button:before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid #bbb;
+  display: block;
+  position: absolute;
+  top: -webkit-calc(50% - 2px);
+  top: -moz-calc(50% - 2px);
+  top: calc(50% - 2px);
+  left: -webkit-calc(50% - 2px);
+  left: -moz-calc(50% - 2px);
+  left: calc(50% - 2px);
+}
+
+.client-wrapp .client-align .slider-box-comment .comment-align .slick-dots .slick-active button:before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #cf1628;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: -webkit-calc(50% - 4px);
+  top: -moz-calc(50% - 4px);
+  top: calc(50% - 4px);
+  left: -webkit-calc(50% - 4px);
+  left: -moz-calc(50% - 4px);
+  left: calc(50% - 4px);
+}
+
 .client-wrapp .client-align .simple-box {
-  padding: 129px 0 0;
+  padding: 79px 0 0;
   text-align: center;
 }
 
