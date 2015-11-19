@@ -21,9 +21,17 @@ function inputNumber(block) {
 	$('input', block).keyup(function() {
 		$inputNum = $(this);
 		if ($inputNum.val == '' || $inputNum.val() == 0) {
-			$inputNum.val('0');
+			$inputNum.val('');
 		}
 	});
+
+    $('input', block).blur(function() {
+        $inputNum = $(this);
+        if ($inputNum.val == '' || $inputNum.val() == 0) {
+            $inputNum.val(0);
+        }
+    });
+
 }
 
 
@@ -738,7 +746,21 @@ function scrollCircle(){
 
 function calculatorScript(){
 
+    $('.calculator-input input').keyup(function(){
 
+        var inputValue = $(this).val();
+
+        if($(this).is('[name=patients]')){
+            $('.optimization-first-col .optimiztion-value').text(parseInt(inputValue*1.10));
+        }
+        else if($(this).is('[name=fot]')){
+            $('.optimization-second-col .optimiztion-value').text(parseInt(inputValue*0.92));
+        }
+        else if($(this).is('[name=check]')){
+            $('.optimization-third-col .optimiztion-value').text(parseInt(inputValue*1.20));
+        }
+
+    });
 
 }
 
