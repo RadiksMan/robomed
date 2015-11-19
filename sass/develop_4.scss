@@ -188,7 +188,21 @@
 }
 .call_success_subtext{text-align: center;font-size: 18px;color: #262626;}
 
-
-
-
 /*/contact*/
+
+// support page
+.support-wrap{color: #262626;font-size: 22px;
+    .support-title{background: url('../images/support-title.jpg') center center no-repeat;height: 163px;}
+    .breadcrumbs{padding-top: 41px;}
+
+    .support-aside-main{width: 72%;float: left;}
+    .support-aside-sub{width: calc(28% - 60px);float: right;}
+    .support-aside-main-title{padding-top: 89px;padding-bottom: 46px;
+        h5{font-size: 50px;font-weight: bold;}
+    }
+
+    .support-aside-acordion{}
+    .support-acordion-item{background-color: pink;padding: 37px 42px;}
+    .support-acordion-item-title{}
+    .support-acordion-item-text{display: none;}
+}

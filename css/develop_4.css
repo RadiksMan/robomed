@@ -647,3 +647,47 @@
 }
 
 /*/contact*/
+.support-wrap {
+  color: #262626;
+  font-size: 22px;
+}
+
+.support-wrap .support-title {
+  background: url("../images/support-title.jpg") center center no-repeat;
+  height: 163px;
+}
+
+.support-wrap .breadcrumbs {
+  padding-top: 41px;
+}
+
+.support-wrap .support-aside-main {
+  width: 72%;
+  float: left;
+}
+
+.support-wrap .support-aside-sub {
+  width: -webkit-calc(28% - 60px);
+  width: -moz-calc(28% - 60px);
+  width: calc(28% - 60px);
+  float: right;
+}
+
+.support-wrap .support-aside-main-title {
+  padding-top: 89px;
+  padding-bottom: 46px;
+}
+
+.support-wrap .support-aside-main-title h5 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.support-wrap .support-acordion-item {
+  background-color: pink;
+  padding: 37px 42px;
+}
+
+.support-wrap .support-acordion-item-text {
+  display: none;
+}
