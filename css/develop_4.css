@@ -870,6 +870,28 @@
 }
 
 /*manynews page*/
+.manynews .manynews-title {
+  background-image: url("../images/support-title.jpg");
+  height: 163px;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.manynews .manynews-title:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(43, 43, 43, 0.9);
+}
+
 .manynews .news-item {
   width: 15%;
 }
