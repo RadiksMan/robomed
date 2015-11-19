@@ -235,9 +235,9 @@
 }
 .aside-sub-button{text-align: center;
     &.red{
-        &:hover{a{color: #eb253c;background-color: #fff;}}
         a{background-color: #eb253c;transition:all ease-out .2s;
             &:hover{color: #eb253c;background-color: #fff;}
+        }
     }
     a{text-decoration: none;width: 100%;display: inline-block;padding: 25px 0px;text-transform: uppercase;font-size: 17px;background-color: #2b2b2b;color: white;border-radius:10px;transition:all ease-out .2s;
         &:hover{color: #2b2b2b;background-color: #fff;}
