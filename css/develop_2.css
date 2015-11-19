@@ -126,3 +126,12 @@
   width: 270px;
   margin: 0 auto;
 }
+
+.patient-wrap .patient-box .button-calc .aside-sub-button .aside-sub-item .aside-sub-button a {
+  background-color: #eb253c;
+}
+
+.patient-wrap .patient-box .button-calc .aside-sub-button .aside-sub-item .aside-sub-button a:hover {
+  background-color: black;
+  color: white;
+}
