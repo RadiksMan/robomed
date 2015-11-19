@@ -1,4 +1,4 @@
-/* header */
+/*header */
 .header {
   position: absolute;
   z-index: 1;
@@ -376,6 +376,7 @@
 .contact-wrap #google-map {
   height: 1250px;
   margin-top: -219px;
+  margin-left: -175px;
 }
 
 .contact-wrap .contact-bottom-form {
@@ -449,6 +450,22 @@
   resize: none;
 }
 
+.contact-wrap .contact-form-item-sur textarea::-webkit-input-placeholder {
+  color: #797f87;
+}
+
+.contact-wrap .contact-form-item-sur textarea:-moz-placeholder {
+  color: #797f87;
+}
+
+.contact-wrap .contact-form-item-sur textarea::-moz-placeholder {
+  color: #797f87;
+}
+
+.contact-wrap .contact-form-item-sur textarea:-ms-input-placeholder {
+  color: #797f87;
+}
+
 .contact-wrap .contact-form-item-text {
   padding-bottom: 34px;
 }
@@ -474,6 +491,22 @@
   outline: none;
 }
 
+.contact-wrap .contact-form-item-input input::-webkit-input-placeholder {
+  color: #797f87;
+}
+
+.contact-wrap .contact-form-item-input input:-moz-placeholder {
+  color: #797f87;
+}
+
+.contact-wrap .contact-form-item-input input::-moz-placeholder {
+  color: #797f87;
+}
+
+.contact-wrap .contact-form-item-input input:-ms-input-placeholder {
+  color: #797f87;
+}
+
 .contact-wrap .contact-form-item-input:after {
   position: absolute;
   background-color: #ec253c;
@@ -482,6 +515,13 @@
   left: 0;
   bottom: -13px;
   content: '';
+}
+
+.contact-wrap .contact-form-item-input .errorText {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  color: #ec253c;
 }
 
 .contact-wrap .contact-submit {
@@ -513,7 +553,7 @@
 
 .contact-wrap .contact-top {
   position: absolute;
-  bottom: 79vh;
+  bottom: 500px;
   right: 168px;
   background-color: #fff;
   padding: 53px 43px;
@@ -585,6 +625,25 @@
   text-decoration: none;
   color: #eb253c;
   font-size: 25px;
+}
+
+#call_success {
+  padding: 10px;
+}
+
+.call_success_text h5 {
+  text-align: center;
+  outline: none;
+  font-size: 25px;
+  font-weight: bold;
+  color: #262626;
+  padding-bottom: 20px;
+}
+
+.call_success_subtext {
+  text-align: center;
+  font-size: 18px;
+  color: #262626;
 }
 
 /*/contact*/
