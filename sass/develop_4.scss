@@ -192,10 +192,9 @@
 /*/contact*/
 
 // support page
+.support-title{background: url('../images/support-title.jpg') center center no-repeat;height: 163px;}
+.breadcrumbs{padding-top: 41px;}
 .support-wrap{color: #262626;font-size: 22px;
-    .support-title{background: url('../images/support-title.jpg') center center no-repeat;height: 163px;}
-    .breadcrumbs{padding-top: 41px;}
-
     .support-aside-main{width: 72%;float: left;}
     .support-aside-sub{width: calc(28% - 60px);float: right;padding-top: 109px;}
     .support-aside-main-title{padding-top: 89px;padding-bottom: 46px;
@@ -216,17 +215,6 @@
     .support-aside-sub{}
     .aside-sub-item{margin-bottom: 79px;}
     .aside-sub-text{font-size: 24px;font-weight: bold;padding-bottom: 28px;}
-    .aside-sub-button{text-align: center;
-        &.red{
-            &:hover{a{color: #eb253c;background-color: #fff;}}
-            a{background-color: #eb253c;transition:all ease-out .2s;}
-        }
-        a{text-decoration: none;width: 100%;display: inline-block;padding: 25px 0px;text-transform: uppercase;font-size: 17px;background-color: #2b2b2b;color: white;border-radius:10px;transition:all ease-out .2s;
-
-        }
-         &:hover{a{color: #2b2b2b;background-color: #fff;}}
-        .icon-calc{width: 19px;height: 25px;display: inline-block;vertical-align: middle;margin-right: 5px;background: url('../images/icon-calc.png') center center no-repeat;}
-    }
     .support-bottom{float: left;width: 100%;background: url('../images/support-bg.jpg') center center no-repeat;padding-bottom: 32px;}
     .support-bottom-wrap{
         .support-bottom-title{color: white;font-size: 38px;text-align: center;padding-top: 93px;padding-bottom: 55px;
@@ -243,3 +231,16 @@
     .contact-bottom-form{position: relative;}
     .contact-form-title h5{}
 }
+.aside-sub-button{text-align: center;
+    &.red{
+        &:hover{a{color: #eb253c;background-color: #fff;}}
+        a{background-color: #eb253c;transition:all ease-out .2s;}
+    }
+    a{text-decoration: none;width: 100%;display: inline-block;padding: 25px 0px;text-transform: uppercase;font-size: 17px;background-color: #2b2b2b;color: white;border-radius:10px;transition:all ease-out .2s;
+
+    }
+     &:hover{a{color: #2b2b2b;background-color: #fff;}}
+    .icon-calc{width: 19px;height: 25px;display: inline-block;vertical-align: middle;margin-right: 5px;background: url('../images/icon-calc.png') center center no-repeat;}
+}
+
+/*manynews page*/
