@@ -16,7 +16,10 @@
     </div>
     <div class="mbox">
         <div class="manynews-wrap">
-
+            <div class="manynews-super-wrap">
+                <div class="news-item big"></div>
+                <div class="news-item"></div>
+            </div>
         </div>
     </div>
 </div>
