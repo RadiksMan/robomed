@@ -1,0 +1,85 @@
+ .client-wrapp{
+    .client-align{
+        .slider-box-clients{    padding-top: 72px;
+            .slider-client{box-shadow: 0 0 28px 10px #f8f8f8;    padding: 82px 118px 86px; text-align: justify;
+                .slider-client-item{ display: inline-block;     padding: 0 11px 0;
+                    a{
+                        img{}
+                    }
+                }
+            }
+        }
+        span{font: 100 28px 'ProximaNova',sans-serif;color:#262626;}
+        .slider-box-comment{text-align:center;     padding: 91px 200px 0;
+            .comment-align{
+                .comment-title{     padding-bottom: 64px;     padding-left: 58px;
+                    span{text-transform: uppercase;}
+                }
+                .comment-content{
+                    .comment-img{float:left;     padding-top: 8px;
+                        .round{width:120px; height: 120px; border-radius: 50%; overflow: hidden; position: relative;
+                            img{max-width: none;    position: absolute;    left: 50%;    top: 50%;   transform: translate(-50%, -50%);}
+                        }
+                    }
+                    .comment-text{ text-align: left; margin-left: 166px;
+                        .text-title{
+                            span{font: 700 22px 'MuseoSans',sans-serif;letter-spacing: -0.4rem;word-spacing: 1px; color:#272727;}
+                        }
+                        .text-mini-title{    padding-top: 3px;
+                            span{font: 500 14px 'MuseoSans',sans-serif;color:#272727;}
+                        }
+                        .text-box{    padding-top: 18px;
+                            span{font: 400 18px 'ProximaNova',sans-serif;color:#919191;    line-height: 31rem;}
+                        }
+                    }
+                }
+            }
+        }
+        .simple-box{padding: 129px 0 0;    text-align: center;
+            .simple-title-box{    padding-bottom: 48px;
+                .small-title{span{font-size: 18px;    letter-spacing: 3px;color:#919191;text-transform: uppercase;}}
+                .big-title{    padding-top: 5px;
+                    span{font-size: 30px;text-transform: uppercase;    letter-spacing: 5px;}
+                }
+            }
+            .shadow-box{ box-shadow: 0 0 28px 10px #f8f8f8; width: 100%;     padding-top: 69px; margin-bottom: 113px;
+                .text-content-box{   padding: 0 6.5% 38px 8.5%;
+                    .text-content{text-align: left;width:41%;
+                        .title{    padding-bottom: 36px;
+                            span{    letter-spacing: -0.3rem;}
+                        }
+                        .text-block{    padding-bottom: 34px;
+                            span{font: 400 24px 'ProximaNova',sans-serif;    line-height: 34px;
+                                i{color: #eb253c; letter-spacing: 0.3rem;}
+                            }
+                        }
+                    }
+                }
+                .left{float:left;}
+                .right{float:right;}
+                .diag-block{ padding: 0 0 58px 8.5%; text-align: left;
+                    .item-diag{display: inline-block; margin-right: 49px; vertical-align: top;     padding-top: 29px;
+                        .diag-img{float:left;
+                            img{}
+                        }
+                        .diag-text-block{    margin-left: 125px;     margin-top: -8px;     width: 200px;
+                            .diag-title{
+                                span{font: 400 30.62rem 'ProximaNova',sans-serif;}
+                            }
+                            .diag-text{
+                                span{font: 400 20.42rem 'ProximaNova',sans-serif;color:#919191;line-height: 29rem;}
+                            }
+                        }
+                        &:nth-child(2){    padding-top: 0;     margin-right: 28px;
+                            .diag-text-block{    width: 215px;    margin-left: 63px;}
+                        }
+                        &:nth-child(3){ margin-right:0px; padding-top: 39px;
+                            .diag-text-block{    width: 215px;    margin-left: 63px;}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
