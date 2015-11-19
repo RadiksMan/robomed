@@ -824,17 +824,17 @@
   text-align: center;
 }
 
-.aside-sub-button.red:hover a {
-  color: #eb253c;
-  background-color: #fff;
-}
-
 .aside-sub-button.red a {
   background-color: #eb253c;
   -webkit-transition: all ease-out .2s;
   -moz-transition: all ease-out .2s;
   -o-transition: all ease-out .2s;
   transition: all ease-out .2s;
+}
+
+.aside-sub-button.red a:hover {
+  color: #eb253c;
+  background-color: #fff;
 }
 
 .aside-sub-button a {
@@ -855,7 +855,7 @@
   transition: all ease-out .2s;
 }
 
-.aside-sub-button:hover a {
+.aside-sub-button a:hover {
   color: #2b2b2b;
   background-color: #fff;
 }
