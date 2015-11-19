@@ -1104,13 +1104,8 @@ header.inside-page {
   color: #eb253c;
 }
 
-.tabs-item {
-  display: none;
-}
-
-.tabs-item.active {
-  display: block;
-}
-
+/*.tabs-item{display: none;
+    &.active{display: block;}
+}*/
 /* /produt tabs */
 /* /inside pages */

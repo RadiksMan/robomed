@@ -812,7 +812,7 @@ $(window).load(function(){
 
     /* product */
 
-    u_tabs('.tabs a', '.tabs-item');
+    //u_tabs('.tabs a', '.tabs-item');
 
     /* /product */
 

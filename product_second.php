@@ -35,7 +35,7 @@
                     <a href="#" data-utab=0>Для врача</a>
                 </li>
                 <li>
-                    <a href="#" data-utab=1>Для управляющего</a>
+                    <a href="#" class="active" data-utab=1>Для управляющего</a>
                 </li>
                 <li>
                     <a href="#" data-utab=2>Для пациента</a>
@@ -44,25 +44,9 @@
         </div>
     </div>
 
-    <div class="tabs-body">
+    <div class="product-body">
 
-        <div class="tabs-item" data-utab=0>
-
-            <? partial('product_doctor'); ?>
-
-        </div>
-
-        <div class="tabs-item" data-utab=1>
-
-            <? partial('product_controller'); ?>
-
-        </div>
-
-        <div class="tabs-item" data-utab=2>
-
-            <? partial('product_patient'); ?>
-
-        </div>
+        <? partial('product_controller'); ?>
 
     </div>
 
