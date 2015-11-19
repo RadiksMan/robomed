@@ -1077,5 +1077,43 @@ header.inside-page {
   border-color: #f3f3f3;
 }
 
+.tabs li {
+  float: left;
+  height: 100px;
+  width: 33.33%;
+  border-width: 0 0 0 1px;
+  border-style: solid;
+  border-color: #f3f3f3;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: table;
+  text-align: center;
+}
+
+.tabs li:last-child {
+  border-width: 0 1px 0 1px;
+}
+
+.tabs a {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 28px;
+  color: #2b2b2b;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 3px solid transparent;
+}
+
+.tabs a.active, .tabs a:hover {
+  border-color: #eb253c;
+  color: #eb253c;
+}
+
+/*.tabs-item{display: none;
+    &.active{display: block;}
+}*/
 /* /produt tabs */
 /* /inside pages */
