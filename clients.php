@@ -1,7 +1,25 @@
+<div class="title-wrap clients">
+
+    <div class="title-wrap-main">
+        <div class="mbox">
+            <div class="breadcrumbs">
+                <span>
+                    <a href="#">Главная</a>
+                </span>
+                <span>Клиенты</span>
+            </div>
+            <div class="title-main">
+                Клиенты
+            </div>
+        </div>
+    </div>
+
+</div>
+
 <div class="client-wrapp">
     <div class="client-align mbox">
         <div class="slider-box-clients">
-            <div class="slider-client variable-width jfix">
+            <div class="slider-client qwe-width jfix">
                 <div class="slider-client-item">
                     <a href="#"><img src="images/001.png" alt=""></a>
                 </div>
@@ -23,22 +41,44 @@
         <div class="slider-box-comment">
             <div class="comment-align">
                 <div class="comment-title"><span>Отзывы клиентов:</span></div>
-                <div class="comment-content cfix">
-                    <div class="comment-img">
-                        <div class="round"><img src="images/mugik.png" alt=""></div>
+                    <div class="slider-viktor-pots">
+                        <div class="comment-content cfix">
+                            <div class="comment-img">
+                                <div class="round"><img src="images/mugik.png" alt=""></div>
+                            </div>
+                            <div class="comment-text">
+                                <div class="text-title"><span>Сергей Васильев</span></div>
+                                <div class="text-mini-title"><span>Директор клиники Семь клиник</span></div>
+                                <div class="text-box"><span>Хочу выразить огромную признательность Тимуру Акифовичу за его внимательное отношение к моему здоровью. Врач очень квалифицированный с большой буквы. Узнала о клинике из интернета, но сначала не очень поверила отзывам. Когда пришла меня очень впечатлил прием.</span></div>
+                            </div>
+                        </div>
+                        <div class="comment-content cfix">
+                            <div class="comment-img">
+                                <div class="round"><img src="images/mugik.png" alt=""></div>
+                            </div>
+                            <div class="comment-text">
+                                <div class="text-title"><span>Сергей Васильев</span></div>
+                                <div class="text-mini-title"><span>Директор клиники Семь клиник</span></div>
+                                <div class="text-box"><span>Хочу выразить огромную признательность Тимуру Акифовичу за его внимательное отношение к моему здоровью. Врач очень квалифицированный с большой буквы. Узнала о клинике из интернета, но сначала не очень поверила отзывам. Когда пришла меня очень впечатлил прием.</span></div>
+                            </div>
+                        </div>
+                        <div class="comment-content cfix">
+                            <div class="comment-img">
+                                <div class="round"><img src="images/mugik.png" alt=""></div>
+                            </div>
+                            <div class="comment-text">
+                                <div class="text-title"><span>Сергей Васильев</span></div>
+                                <div class="text-mini-title"><span>Директор клиники Семь клиник</span></div>
+                                <div class="text-box"><span>Хочу выразить огромную признательность Тимуру Акифовичу за его внимательное отношение к моему здоровью. Врач очень квалифицированный с большой буквы. Узнала о клинике из интернета, но сначала не очень поверила отзывам. Когда пришла меня очень впечатлил прием.</span></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="comment-text">
-                        <div class="text-title"><span>Сергей Васильев</span></div>
-                        <div class="text-mini-title"><span>Директор клиники Семь клиник</span></div>
-                        <div class="text-box"><span>Хочу выразить огромную признательность Тимуру Акифовичу за его внимательное отношение к моему здоровью. Врач очень квалифицированный с большой буквы. Узнала о клинике из интернета, но сначала не очень поверила отзывам. Когда пришла меня очень впечатлил прием.</span></div>
-                    </div>
-                </div>
             </div>
         </div>
         <div class="simple-box">
             <div class="simple-title-box">
                 <div class="small-title"><span>пример</span></div>
-                <div class="big-title"><span>внедрения «robomad»</span></div>
+                <div class="big-title"><span>внедрения «robomed»</span></div>
             </div>
             <div class="shadow-box">
                 <div class="text-content-box cfix">
