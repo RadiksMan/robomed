@@ -23,11 +23,6 @@ function googleMap(mapWrap){
         }
         var map = new google.maps.Map(document.getElementById(mapWrap), myOptions);
 
-        var contentString = '<div class="marker-test">'+googleText+'</div>';
-        var infowindow = new google.maps.InfoWindow({
-            content: contentString
-        });
-
         var image = 'images/marker.png';   // иконка картинкой
 
         var marker = new google.maps.Marker({
@@ -36,7 +31,27 @@ function googleMap(mapWrap){
             animation: google.maps.Animation.DROP, // анимация при загрузке карты
             icon: image //  иконка картинкой
         });
-
+        map.set('styles', [
+            {
+              stylers: [
+                { hue: "#ff0000" },
+                { saturation: -100 }
+              ]
+            },{
+              featureType: "road",
+              elementType: "geometry",
+              stylers: [
+               { saturation: 0 },
+                { invert_lightness: false }
+              ]
+            },{
+              featureType: "road",
+              elementType: "labels",
+              stylers: [
+                { visibility: "off" }
+              ]
+            }
+        ]);
 
 
     }

@@ -189,6 +189,7 @@ function validationCall(form){
             fitToView:false,
             wrapCSS:"call-popup",
             autoSize:true,
+            'closeBtn' : false,
             afterClose: function(){
                 $('form').trigger("reset");
                 clearTimeout(timer);
@@ -199,11 +200,16 @@ function validationCall(form){
         timer = setTimeout(function(){
             $('form').trigger("reset");
             $.fancybox.close("#call_success");
-        },2000);
+        },3000);
 
 
     }
 }
+
+function formMaskInput(){
+    $(".tel-mask").mask("+7 (999) 999-99-99");
+}
+
 
 function animationBlock(item){
 
@@ -607,11 +613,12 @@ function scrollCircle(){
 
 /* DOCUMENT READY  */
 $(document).ready(function() {
+    formMaskInput();
 	modernize();
 	$('.footer_placeholder').height($('.footer').outerHeight());
 
 	oneHeightItems();
-
+    validate('.contact-form', {submitFunction:validationCall});
 });
 
 function calculatorScript(){

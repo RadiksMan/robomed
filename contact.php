@@ -24,7 +24,7 @@
                     </div>
                     <div class="contact-bottom">
                         <div class="contact-bottom-form">
-                            <form action="" name="">
+                            <form action="ajax.php" name=""class="contact-form">
                                 <div class="contact-form-title">
                                     <h5>Остались вопросы? заполните заявку и мы свяжемся с вами</h5>
                                 </div>
@@ -33,16 +33,20 @@
                                         <div class="contact-form-item-text">
                                             <span>Ваше имя<span>*</span>:</span>
                                         </div>
-                                        <div class="contact-form-item-input">
-                                            <input type="text" name="contact_name" required="required" value="Андрей">
+                                        <div class="contact-form-item-input form_row">
+                                            <div class="contact-form-item-input-wrap form_input">
+                                                <input type="text" name="contact_name" required="required" value="" placeholder="Ваше имя">
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="contact-form-item">
                                         <div class="contact-form-item-text">
                                             <span>Ваш e-mail<span>*</span>:</span>
                                         </div>
-                                        <div class="contact-form-item-input">
-                                            <input type="text" name="contact_name" required="required" value="mail@mail.ru">
+                                        <div class="contact-form-item-input form_row">
+                                            <div class="contact-form-item-input-wrap form_input">
+                                                <input type="email" name="contact_email" required="required" value="" placeholder="mail@mail.ru">
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="contact-form-item">
@@ -50,7 +54,7 @@
                                             <span>Ваш телефон:</span>
                                         </div>
                                         <div class="contact-form-item-input">
-                                            <input type="text" name="contact_name" value="+7 (123) 456-77-88">
+                                            <input type="text" name="contact_name" value="" placeholder="+7 (123) 456-77-88" class="tel-mask">
                                         </div>
                                     </div>
                                 </div>
@@ -60,7 +64,7 @@
                                             <span>Дополнительная информация:</span>
                                         </div>
                                         <div class="contact-form-item-input">
-                                            <textarea name="" id="" cols="10" rows="1">Ваш вопрос</textarea>
+                                            <textarea name="" id="" cols="10" rows="1" placeholder="Ваш вопрос"></textarea>
                                         </div>
                                     </div>
                                     <div class="contact-form-item">
