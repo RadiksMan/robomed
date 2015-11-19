@@ -11,7 +11,7 @@
     a{text-decoration: none;color: #000;text-transform: uppercase;}
 }
 
-.header-wrap{background: linear-gradient(to right, #ffffff 0%,#fcfcfc 25%,#f6f6f6 50%,#f0f0f0 75%,#f0f0f0 100%);padding-bottom: 23px;
+.header-wrap{background:#fff;background: linear-gradient(to right, #ffffff 0%,#fcfcfc 25%,#f6f6f6 50%,#f0f0f0 75%,#f0f0f0 100%);padding-bottom: 23px;
     .header-logo{float: left;padding-top: 7px;}
 }
 
@@ -19,9 +19,10 @@
 
 /* slider */
 
-.main_slider{/*height: calc(100vh - 89rem);*/transition:height 300ms ease;overflow: hidden;}
+.main_slider{/*height: calc(100vh - 89rem);*/transition:height 300ms ease;-ms-transition:height 300ms ease;overflow: hidden;}
 .main_slider_wrap{position: relative;
-    .mouse-scroll{position: absolute;left: 50%;bottom: 102px;transform: translateX(-50%);height: 48px;width: 48px;background: url('../images/scroll_mause.png') center center no-repeat;cursor: pointer;border-radius: 50%;overflow: hidden;
+    .slick-slider{z-index:0;}
+    .mouse-scroll{position: absolute;left: 50%;bottom: 102px;transform: translateX(-50%);height: 48px;width: 48px;background: url('../images/scroll_mause.png') center center no-repeat;cursor: pointer;border-radius: 50%;overflow: hidden;z-index:1;
         &:before{content: '';position: absolute;width: 48px;height: 48px;background:url(../images/scroll_mause-hover.png);opacity: 0;transition:opacity 300ms ease;}
         &:hover:before{opacity: 1;}
     }
@@ -155,8 +156,7 @@
         }
     }
     .contact-top{position: absolute;bottom: 79vh;right: 168px;background-color: #fff;padding: 53px 43px;border-radius: 16px;box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.21);
-        &:after{
-            content: '';position: absolute;top:0;left: 10px;border-style: solid;border-width: 0 30px 20px 0;border-color: transparent #fff transparent transparent;width: 0;height: 0;top: 45px;left: -25px;
+        &:after{content: '';position: absolute;top:0;left: 10px;border-style: solid;border-width: 0 30px 20px 0;border-color: transparent #fff transparent transparent;width: 0;height: 0;top: 45px;left: -25px;
         }
         .contact-top-text-desc{font-size: 18px;color: #262626;line-height: 27px;padding-bottom: 30px;padding-left: 6px;}
         .contact-top-text-tel{padding: 0px 6px;

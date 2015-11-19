@@ -1,6 +1,8 @@
 /* basic for scroll sections */
 body::-webkit-scrollbar {display: none;}
 
+.main{position: relative;z-index: 0;}
+
 .scroll-section{position: relative;min-height: 2rem;overflow: hidden;
     &.footer{position: absolute;}
 }
@@ -109,11 +111,11 @@ body::-webkit-scrollbar {display: none;}
     &.part-bottom{bottom:15rem;
         .big-sircle-part-wrap{background-image:url(../images/circle-part-bottom.png);transform:translate(0, 50%);}
         .big-sircle-list{top: 100%;left: 50%;transform:translate(-50%, 0);margin-top: 87rem;
-            li{transform:translate(0, 50%);
+            li{transform:translate(0, 50%);vertical-align: top;
                 &:after{transform:rotate(-90deg);}
-                &:nth-child(1):after{bottom: calc(100% + 47rem);}
-                &:nth-child(2):after{bottom: calc(100% + 24rem);}
-                &:nth-child(3):after{bottom: calc(100% + 69rem);}
+                &:nth-child(1):after{bottom: calc(100% + 47px);}
+                &:nth-child(2):after{bottom: calc(100% + 24px);}
+                &:nth-child(3):after{bottom: calc(100% + 69px);}
             }
         }
     }
@@ -192,6 +194,9 @@ body::-webkit-scrollbar {display: none;}
 @media screen and (min-width: 4000px) {
     .big-sircle{padding-top: 29vh;}
     .big-circle-wrap{transform:scale(1) translate(0, 0);}
+}
+@media screen and (max-height: 975px){
+    .big-circle-wrap{transform:scale(.7) translate(0, -120px);}
 }
 
 
