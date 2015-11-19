@@ -1062,4 +1062,12 @@ header.inside-page {
 }
 
 /* /calculator */
+/* product tabs */
+.tabs {
+  border-width: 1px 0 1px 0;
+  border-style: solid;
+  border-color: #f3f3f3;
+}
+
+/* /produt tabs */
 /* /inside pages */
