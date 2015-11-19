@@ -58,7 +58,16 @@ function googleMap(mapWrap){
     initialize();
 }
 
+function supportAcordion(){
+  $('.support-acordion-item:not(.active)').click(function() {
+    $('.support-acordion-item').removeClass('active');
+    $('.support-acordion-item .support-acordion-item-text').slideUp(300);
+    $(this).addClass('active');
+    $(this).find('.support-acordion-item-text').stop().slideDown(300);
+  });
+}
 $(document).ready(function() {
+  supportAcordion();
     mailSlider();
     googleMap('google-map'); //id
 });
