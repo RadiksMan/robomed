@@ -1,22 +1,24 @@
 .patient-wrap{ background-image: url(../images/background-patient.png); background-position: center center;
     .patient-box{
         .patient-container{
-            .image-conteiner{ float: left; width: 500px; height: 500px;
-                img{ vertical-align: middle; margin: 0 auto; }
+            .image-conteiner{ display: inline-block; width: 42%; padding-top: 150px;padding-bottom: 79px;
+                img{  margin-left: calc(268px - 335px/2); }
             }
-            .subtext-conteiner{ width: 670px;
-                .list-number{ font-size: 32px; font-family: "ProximaNova", sans-serif; font-weight: 700; color:#2b2b2b; padding-bottom: 30px; padding-top: 60px;
+            .subtext-conteiner{ display: inline-block; width: 55%; vertical-align: top;
+                .list-number{ font-size: 32px; font-family: "ProximaNova", sans-serif; font-weight: 700; color:#2b2b2b; padding-bottom: 18px; padding-top: 54px;
                     span{ color:#eb253c; font-size: 44px; }
                 }
-                .patient-header{ font-size: 44px; font-family: "ProximaNova", sans-serif; font-weight: 500; color:#eb253c;padding-bottom: 30px;}
-                .text-about{font-size: 20px; font-family: "ProximaNova", sans-serif; font-weight: 500; color:#2b2b2b;padding-bottom: 30px; text-transform: uppercase; padding-bottom: 40px;}
-                .list-for-standart{
+                .patient-header{ font-size: 44px; font-family: "ProximaNova", sans-serif; font-weight: 500; color:#eb253c;padding-bottom: 18px;}
+                .text-about{font-size: 20px; font-family: "ProximaNova", sans-serif; font-weight: 500; color:#2b2b2b;padding-bottom: 37px; text-transform: uppercase; padding-bottom: 37px;}
+                .list-for-standart{ width: 100%;
                     ol{
-                        li{list-style-type:decimal; font-size: 18px; font-family: "ProximaNova", sans-serif; font-weight: 500; color:#2b2b2b; line-height: 26px; position: relative;
+                        li{list-style-type: none; font-size: 18px; font-family: "ProximaNova", sans-serif; font-weight: 500; color:#2b2b2b; line-height: 26px; position: relative; counter-increment: step-counter; padding-left: 51px; padding-bottom: 28px;
+                            &:after{content: ''; background-color: red; width: 2px; height: 2px; border-radius: 10px; position: absolute; left: 20px; border-style: solid; border-width: 9px; border-color: rgb(255, 255, 255); background-color: rgb(207, 22, 40);box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.78); top: 3px; left: 7px;}
+                            &:before {counter-increment: subsection; content: counter(section) counter(step-counter)". "; color:#eb253c;  }
                         }
-                        &:before{content: ''; background-color: red; width: 20px; height: 20px; border-radius: 10px; position: absolute; left: 20px; }
                     }
                 }
+                &:before { content: "03"; color:#ececec; font-size: 422px; font-family: "ProximaNova", sans-serif; font-weight: 900; position: absolute; z-index: -1; right: 0px;top: 66px;}
             }
         }
     }
