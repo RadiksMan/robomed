@@ -744,6 +744,10 @@ function scrollCircle(){
 
 };
 
+function gap(strval) {
+  return strval.replace(/\d(?=(?:\d{3})+\b)/g, "$&" +' ');
+}
+
 function calculatorScript(){
 
     $('.calculator-input input').keyup(function(){
@@ -759,6 +763,21 @@ function calculatorScript(){
         else if($(this).is('[name=check]')){
             $('.optimization-third-col .optimiztion-value').text(parseInt(inputValue*1.20));
         }
+
+        var patients = $('input[name=patients]').val();
+        var newPatients = parseInt($('.optimization-first-col .optimiztion-value').text());
+
+        var fot = $('input[name=fot]').val();
+        var newFot = parseInt($('.optimization-second-col .optimiztion-value').text());
+
+        var check = $('input[name=check]').val();
+        var newCheck = parseInt($('.optimization-third-col .optimiztion-value').text());
+
+        var formuleValue = parseInt((patients + newFot)*10.989);
+
+        formuleValue = gap(formuleValue.toString());
+
+        $('.calculator-optimization-bottom .optimization-value').text(formuleValue);
 
     });
 
