@@ -6,6 +6,17 @@
         <div class="contact-wrap-text">
             <div class="contact-text">
                 <div class="mbox">
+                    <div class="contact-title">
+                        <div class="breadcrumbs">
+                            <span>
+                                <a href="#">Главная</a>
+                            </span>
+                            <span>Контакты</span>
+                        </div>
+                        <div class="title-main">
+                            Контакты
+                        </div>
+                    </div>
                     <div class="contact-top">
                         <div class="contact-top-text">
                             <div class="contact-top-text-desc">

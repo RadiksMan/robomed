@@ -31,6 +31,7 @@ function googleMap(mapWrap){
             animation: google.maps.Animation.DROP, // анимация при загрузке карты
             icon: image //  иконка картинкой
         });
+
         map.set('styles', [
             {
               stylers: [
@@ -52,7 +53,6 @@ function googleMap(mapWrap){
               ]
             }
         ]);
-
 
     }
     initialize();
