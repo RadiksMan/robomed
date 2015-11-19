@@ -1,0 +1,219 @@
+.client-wrapp .client-align .slider-box-clients {
+  padding-top: 72px;
+}
+
+.client-wrapp .client-align .slider-box-clients .slider-client {
+  -webkit-box-shadow: 0 0 28px 10px #f8f8f8;
+  -moz-box-shadow: 0 0 28px 10px #f8f8f8;
+  box-shadow: 0 0 28px 10px #f8f8f8;
+  padding: 82px 118px 86px;
+  text-align: justify;
+}
+
+.client-wrapp .client-align .slider-box-clients .slider-client .slider-client-item {
+  display: inline-block;
+  padding: 0 11px 0;
+}
+
+.client-wrapp .client-align span {
+  font: 100 28px 'ProximaNova',sans-serif;
+  color: #262626;
+}
+
+.client-wrapp .client-align .slider-box-comment {
+  text-align: center;
+  padding: 91px 200px 0;
+}
+
+.client-wrapp .client-align .slider-box-comment .comment-align .comment-title {
+  padding-bottom: 64px;
+  padding-left: 58px;
+}
+
+.client-wrapp .client-align .slider-box-comment .comment-align .comment-title span {
+  text-transform: uppercase;
+}
+
+.client-wrapp .client-align .slider-box-comment .comment-align .comment-content .comment-img {
+  float: left;
+  padding-top: 8px;
+}
+
+.client-wrapp .client-align .slider-box-comment .comment-align .comment-content .comment-img .round {
+  width: 120px;
+  height: 120px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.client-wrapp .client-align .slider-box-comment .comment-align .comment-content .comment-img .round img {
+  max-width: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.client-wrapp .client-align .slider-box-comment .comment-align .comment-content .comment-text {
+  text-align: left;
+  margin-left: 166px;
+}
+
+.client-wrapp .client-align .slider-box-comment .comment-align .comment-content .comment-text .text-title span {
+  font: 700 22px 'MuseoSans',sans-serif;
+  letter-spacing: -0.4rem;
+  word-spacing: 1px;
+  color: #272727;
+}
+
+.client-wrapp .client-align .slider-box-comment .comment-align .comment-content .comment-text .text-mini-title {
+  padding-top: 3px;
+}
+
+.client-wrapp .client-align .slider-box-comment .comment-align .comment-content .comment-text .text-mini-title span {
+  font: 500 14px 'MuseoSans',sans-serif;
+  color: #272727;
+}
+
+.client-wrapp .client-align .slider-box-comment .comment-align .comment-content .comment-text .text-box {
+  padding-top: 18px;
+}
+
+.client-wrapp .client-align .slider-box-comment .comment-align .comment-content .comment-text .text-box span {
+  font: 400 18px 'ProximaNova',sans-serif;
+  color: #919191;
+  line-height: 31rem;
+}
+
+.client-wrapp .client-align .simple-box {
+  padding: 129px 0 0;
+  text-align: center;
+}
+
+.client-wrapp .client-align .simple-box .simple-title-box {
+  padding-bottom: 48px;
+}
+
+.client-wrapp .client-align .simple-box .simple-title-box .small-title span {
+  font-size: 18px;
+  letter-spacing: 3px;
+  color: #919191;
+  text-transform: uppercase;
+}
+
+.client-wrapp .client-align .simple-box .simple-title-box .big-title {
+  padding-top: 5px;
+}
+
+.client-wrapp .client-align .simple-box .simple-title-box .big-title span {
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.client-wrapp .client-align .simple-box .shadow-box {
+  -webkit-box-shadow: 0 0 28px 10px #f8f8f8;
+  -moz-box-shadow: 0 0 28px 10px #f8f8f8;
+  box-shadow: 0 0 28px 10px #f8f8f8;
+  width: 100%;
+  padding-top: 69px;
+  margin-bottom: 113px;
+}
+
+.client-wrapp .client-align .simple-box .shadow-box .text-content-box {
+  padding: 0 6.5% 38px 8.5%;
+}
+
+.client-wrapp .client-align .simple-box .shadow-box .text-content-box .text-content {
+  text-align: left;
+  width: 41%;
+}
+
+.client-wrapp .client-align .simple-box .shadow-box .text-content-box .text-content .title {
+  padding-bottom: 36px;
+}
+
+.client-wrapp .client-align .simple-box .shadow-box .text-content-box .text-content .title span {
+  letter-spacing: -0.3rem;
+}
+
+.client-wrapp .client-align .simple-box .shadow-box .text-content-box .text-content .text-block {
+  padding-bottom: 34px;
+}
+
+.client-wrapp .client-align .simple-box .shadow-box .text-content-box .text-content .text-block span {
+  font: 400 24px 'ProximaNova',sans-serif;
+  line-height: 34px;
+}
+
+.client-wrapp .client-align .simple-box .shadow-box .text-content-box .text-content .text-block span i {
+  color: #eb253c;
+  letter-spacing: 0.3rem;
+}
+
+.client-wrapp .client-align .simple-box .shadow-box .left {
+  float: left;
+}
+
+.client-wrapp .client-align .simple-box .shadow-box .right {
+  float: right;
+}
+
+.client-wrapp .client-align .simple-box .shadow-box .diag-block {
+  padding: 0 0 58px 8.5%;
+  text-align: left;
+}
+
+.client-wrapp .client-align .simple-box .shadow-box .diag-block .item-diag {
+  display: inline-block;
+  margin-right: 49px;
+  vertical-align: top;
+  padding-top: 29px;
+}
+
+.client-wrapp .client-align .simple-box .shadow-box .diag-block .item-diag .diag-img {
+  float: left;
+}
+
+.client-wrapp .client-align .simple-box .shadow-box .diag-block .item-diag .diag-text-block {
+  margin-left: 125px;
+  margin-top: -8px;
+  width: 200px;
+}
+
+.client-wrapp .client-align .simple-box .shadow-box .diag-block .item-diag .diag-text-block .diag-title span {
+  font: 400 30.62rem 'ProximaNova',sans-serif;
+}
+
+.client-wrapp .client-align .simple-box .shadow-box .diag-block .item-diag .diag-text-block .diag-text span {
+  font: 400 20.42rem 'ProximaNova',sans-serif;
+  color: #919191;
+  line-height: 29rem;
+}
+
+.client-wrapp .client-align .simple-box .shadow-box .diag-block .item-diag:nth-child(2) {
+  padding-top: 0;
+  margin-right: 28px;
+}
+
+.client-wrapp .client-align .simple-box .shadow-box .diag-block .item-diag:nth-child(2) .diag-text-block {
+  width: 215px;
+  margin-left: 63px;
+}
+
+.client-wrapp .client-align .simple-box .shadow-box .diag-block .item-diag:nth-child(3) {
+  margin-right: 0px;
+  padding-top: 39px;
+}
+
+.client-wrapp .client-align .simple-box .shadow-box .diag-block .item-diag:nth-child(3) .diag-text-block {
+  width: 215px;
+  margin-left: 63px;
+}

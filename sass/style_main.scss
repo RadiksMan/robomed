@@ -281,4 +281,21 @@ header.inside-page{position: relative;box-shadow:0 2px 6px 0 rgba(0,0,0,0.08);}
 
 /* /calculator */
 
+/* product tabs */
+
+.tabs{border-width: 1px 0 1px 0;border-style:solid;border-color: #f3f3f3;
+    li{float: left;height: 100px;width: 33.33%;border-width: 0 0 0 1px;border-style:solid;border-color: #f3f3f3;box-sizing:border-box;display: table;text-align: center;
+        &:last-child{border-width: 0 1px 0 1px;}
+    }
+    a{display: table-cell;vertical-align: middle;font-size: 28px;color:#2b2b2b;text-decoration: none;box-sizing:border-box;border-bottom: 3px solid transparent;
+        &.active, &:hover{border-color:#eb253c;color:#eb253c;}
+    }
+}
+
+/*.tabs-item{display: none;
+    &.active{display: block;}
+}*/
+
+/* /produt tabs */
+
 /* /inside pages */
