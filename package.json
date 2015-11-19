@@ -2,10 +2,10 @@
   "name": "ship.fish.verst",
   "version": "0.0.0",
   "devDependencies": {
-    "browser-sync": "^2.9.11",
+    "browser-sync": "^2.10.0",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
-    "gulp-sass": "^2.0.4",
-    "gulp-uglify": "^1.4.2"
+    "gulp-sass": "^2.1.0",
+    "gulp-uglify": "^1.5.1"
   }
 }

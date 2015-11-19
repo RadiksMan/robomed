@@ -32,19 +32,13 @@
         <div class="mbox">
             <ul>
                 <li class="active">
-                    <span>
-                        <a href="#">Для врача</a>
-                    </span>
+                    <a href="#">Для врача</a>
                 </li>
                 <li>
-                    <span>
-                        <a href="#">Для управляющего</a>
-                    </span>
+                    <a href="#">Для управляющего</a>
                 </li>
                 <li>
-                    <span>
-                        <a href="#">Для пациента</a>
-                    </span>
+                    <a href="#">Для пациента</a>
                 </li>
             </ul>
         </div>
