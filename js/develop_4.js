@@ -61,7 +61,7 @@ function googleMap(mapWrap){
 function supportAcordion(){
   $('.support-acordion-item:not(.active)').click(function() {
     $('.support-acordion-item').removeClass('active');
-    $('.support-acordion-item .support-acordion-item-text').slideUp(300);
+    $('.support-acordion-item .support-acordion-item-text').stop().slideUp(300);
     $(this).addClass('active');
     $(this).find('.support-acordion-item-text').stop().slideDown(300);
   });
@@ -69,5 +69,7 @@ function supportAcordion(){
 $(document).ready(function() {
   supportAcordion();
     mailSlider();
-    googleMap('google-map'); //id
+    if($('#google-map').length){
+      googleMap('google-map');
+    }
 });

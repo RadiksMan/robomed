@@ -216,6 +216,7 @@ function validationCall(form){
 
 function formMaskInput(){
     $(".tel-mask").mask("+7 (999) 999-99-99");
+    $(".tel-mask-support").mask("+7 (999) 999-99-99");
 }
 
 
@@ -785,16 +786,17 @@ function calculatorScript(){
 
 /* DOCUMENT READY  */
 $(document).ready(function() {
-
-    formMaskInput();
 	modernize();
+    formMaskInput();
 	$('.footer_placeholder').height($('.footer').outerHeight());
 
 	oneHeightItems();
     validate('.contact-form', {submitFunction:validationCall});
+    validate('.contact-form-support', {submitFunction:validationCall});
 });
 
 $(window).load(function(){
+
 
     /* index page */
 
