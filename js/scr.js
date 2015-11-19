@@ -357,8 +357,8 @@ function scrollCircle(){
                         $(scroller).stop().animate({scrollTop:sectionCircle},500,function(){//
                             pause = false;
                         });
-                        $('.header').slideDown(300);
-                        $('.main_slider').removeClass('show').animate({height:$('[data-event="first"]').data('height')},300)/*.css('height', $('[data-event="first"]').data('height')).removeAttr('style')*/;
+                        $('.header').slideDown(0);
+                        $('.main_slider').removeClass('show').animate({height:$('[data-event="first"]').data('height')},0)/*.css('height', $('[data-event="first"]').data('height')).removeAttr('style')*/;
                     }
                     else if(blockScrolling == false){
                         //$(scroller).stop().animate({scrollTop:top},200);
@@ -425,7 +425,7 @@ function scrollCircle(){
 
                     }
 
-                    /*if(!Modernizr.csstransitions){
+                    if(!Modernizr.csstransitions){
                         $('.big-sircle-part').each(function(){
                             var theX = $(this).find('li').data('x')+'%';
                             var theY = $(this).find('li').data('y')+'%';
@@ -434,18 +434,37 @@ function scrollCircle(){
                             var part = $(this).find('li');
                             var partLength = part.length;
                             var partPoint = 0;
+                            console.log(partLength);
 
                             if($(this).is('.active')){
-                                ieTimer = setInterval({
-                                    part.eq(partPoint).animate({opacity:1, transform:translate(theX, theY)},300);
+                                ieTimer = setInterval(function(){
+                                    part.eq(partPoint).animate(
+                                        {opacity:1},
+                                        {
+                                            step:function(){
+                                                part.eq(partPoint).css({'transform':'translate(0,0)'});
+                                            },
+                                            duration:300
+                                        },
+                                        'linear'
+                                    );
                                     partPoint++;
                                     if(partPoint == partLength){
                                         clearInterval(ieTimer);
                                     }
                                 },200);
                             }else{
-                                ieTimer = setInterval({
-                                    part.eq(partPoint).animate({opacity:0, transform:translate(0,0)},300);
+                                ieTimer = setInterval(function(){
+                                    part.eq(partPoint).animate(
+                                        {opacity:0},
+                                        {
+                                            step:function(){
+                                                part.eq(partPoint).css({'transform':'translate('+theX+','+theY+')'});
+                                            },
+                                            duration:300
+                                        },
+                                        'linear'
+                                    );
                                     partPoint++;
                                     if(partPoint == partLength){
                                         clearInterval(ieTimer);
@@ -453,7 +472,7 @@ function scrollCircle(){
                                 },200)
                             }
                         });
-                    }*/
+                    }
 
                     pauseTimer = setTimeout(function(){pause = false;pauseTimer = null;},1500);
                 }
@@ -476,6 +495,55 @@ function scrollCircle(){
 
                         parent.find('.dots-parts li').removeClass('active').eq(parent.find('.go-go').length - 1).addClass('active');
 
+                    }
+
+                    if(!Modernizr.csstransitions){
+                        $('.big-sircle-part').each(function(){
+                            var theX = $(this).find('li').data('x')+'%';
+                            var theY = $(this).find('li').data('y')+'%';
+
+                            var ieTimer = null;
+                            var part = $(this).find('li');
+                            var partLength = part.length;
+                            var partPoint = 0;
+                            console.log(partLength);
+
+                            if($(this).is('.active')){
+                                ieTimer = setInterval(function(){
+                                    part.eq(partPoint).animate(
+                                        {opacity:1},
+                                        {
+                                            step:function(){
+                                                part.eq(partPoint).css({'transform':'translate(0,0)'});
+                                            },
+                                            duration:300
+                                        },
+                                        'linear'
+                                    );
+                                    partPoint++;
+                                    if(partPoint == partLength){
+                                        clearInterval(ieTimer);
+                                    }
+                                },200);
+                            }else{
+                                ieTimer = setInterval(function(){
+                                    part.eq(partPoint).animate(
+                                        {opacity:0},
+                                        {
+                                            step:function(){
+                                                part.eq(partPoint).css({'transform':'translate('+theX+','+theY+')'});
+                                            },
+                                            duration:300
+                                        },
+                                        'linear'
+                                    );
+                                    partPoint++;
+                                    if(partPoint == partLength){
+                                        clearInterval(ieTimer);
+                                    }
+                                },200)
+                            }
+                        });
                     }
 
                     pauseTimer = setTimeout(function(){pause = false;pauseTimer = null;},1500);
