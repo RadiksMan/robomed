@@ -853,3 +853,10 @@
 }
 
 /*manynews page*/
+.manynews .news-item {
+  width: 15%;
+}
+
+.manynews .news-item.big {
+  width: 66%;
+}

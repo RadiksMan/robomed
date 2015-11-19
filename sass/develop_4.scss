@@ -244,3 +244,9 @@
 }
 
 /*manynews page*/
+.manynews{
+    .manynews-title{}
+    .news-item{width: 15%;
+        &.big{width: 66%}
+    }
+}
