@@ -810,6 +810,12 @@ $(window).load(function(){
 
     /* /calculator */
 
+    /* product */
+
+    u_tabs('.tabs a', '.tabs-item');
+
+    /* /product */
+
 });
 
 $(window).resize(function() {

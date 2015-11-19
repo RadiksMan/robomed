@@ -1087,11 +1087,6 @@ header.inside-page {
   border-width: 0 1px 0 1px;
 }
 
-.tabs li.active a, .tabs li:hover a {
-  border-color: #eb253c;
-  color: #eb253c;
-}
-
 .tabs a {
   display: table-cell;
   vertical-align: middle;
@@ -1102,6 +1097,19 @@ header.inside-page {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   border-bottom: 3px solid transparent;
+}
+
+.tabs a.active, .tabs a:hover {
+  border-color: #eb253c;
+  color: #eb253c;
+}
+
+.tabs-item {
+  display: none;
+}
+
+.tabs-item.active {
+  display: block;
 }
 
 /* /produt tabs */

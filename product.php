@@ -31,14 +31,14 @@
     <div class="tabs">
         <div class="mbox">
             <ul>
-                <li class="active">
-                    <a href="#">Для врача</a>
+                <li>
+                    <a href="#" data-utab=0>Для врача</a>
                 </li>
                 <li>
-                    <a href="#">Для управляющего</a>
+                    <a href="#" data-utab=1>Для управляющего</a>
                 </li>
                 <li>
-                    <a href="#">Для пациента</a>
+                    <a href="#" data-utab=2>Для пациента</a>
                 </li>
             </ul>
         </div>
@@ -46,19 +46,19 @@
 
     <div class="tabs-body">
 
-        <div class="tabs-item active">
+        <div class="tabs-item" data-utab=0>
 
             <? partial('product_doctor'); ?>
 
         </div>
 
-        <div class="tabs-item">
+        <div class="tabs-item" data-utab=1>
 
             <? partial('product_controller'); ?>
 
         </div>
 
-        <div class="tabs-item">
+        <div class="tabs-item" data-utab=2>
 
             <? partial('product_patient'); ?>
 
