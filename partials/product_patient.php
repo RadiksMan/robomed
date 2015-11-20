@@ -1,13 +1,14 @@
 <div class="tabs-item-top">
      <!-- artem marking  background-patient.png-->
 
-    <div class="patient-wrap">
+    <div class="patient-wrap style-wrap-box">
         <div class="patient-box mbox">
             <figure class="patient-container">
                 <div class="image-conteiner ">
                     <img src="images/happypatient.png" alt="">
                 </div>
                 <figurecaption class="subtext-conteiner">
+                    <div class="bg-number">03</div>
                     <div class="list-number"><span>3</span> /3</div>
                     <div class="patient-header"> Для пациента </div>
                     <div class="text-about"> Системно увеличивается качество лечения,<br /> за счет внедрения стандартов и фалгоритмов для врачей </div>
