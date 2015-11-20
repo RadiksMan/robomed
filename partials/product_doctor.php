@@ -144,7 +144,8 @@
         </div>
 
         <div class="doctor-white-block">
-            <div class="doctor-white-block-wrap">
+
+            <div class="doctor-white-block-wrap cfix">
                 <div class="doctor-white-block-col">
                     <div class="doctor-white-block-img">
                         <img src="images/doctor-white-block-img1.png" alt="" />
