@@ -211,7 +211,7 @@ header.inside-page{position: relative;box-shadow:0 2px 6px 0 rgba(0,0,0,0.08);}
 
 /* color line */
 
-.color-line{background-image:url(../images/color-line.png);background-position: center center;background-repeat: repeat-x;min-height: 156px;}
+.color-line{background-image:url(../images/color-line.png);background-position: center center;background-repeat: no-repeat;min-height: 156px;}
 
 /* /color line */
 
@@ -253,6 +253,8 @@ header.inside-page{position: relative;box-shadow:0 2px 6px 0 rgba(0,0,0,0.08);}
 
 .calculator-main{padding-top: 8px;margin-bottom: 97px;}
 .calculator-wrap{max-width: 970px;width:100%;margin: 0 auto 48px auto;}
+
+.calculator-wrap-bottom.color-line{background-position: 40% 130px;}
 
 .calculator-title{font-size: 20rem;color:#262626;font-weight: 700;margin-bottom: 37px;}
 .calculator-col{float: left;text-align: left;width:247px;
@@ -395,6 +397,7 @@ header.inside-page{position: relative;box-shadow:0 2px 6px 0 rgba(0,0,0,0.08);}
     &:nth-child(1){width: 250px;}
     &:nth-child(2){margin:0 71px 0 62px;width: 235px;}
 }
+
 
 /* /product inside */
 

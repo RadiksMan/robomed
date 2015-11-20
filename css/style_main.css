@@ -825,7 +825,7 @@ header.inside-page {
 .color-line {
   background-image: url(../images/color-line.png);
   background-position: center center;
-  background-repeat: repeat-x;
+  background-repeat: no-repeat;
   min-height: 156px;
 }
 
@@ -944,6 +944,10 @@ header.inside-page {
   max-width: 970px;
   width: 100%;
   margin: 0 auto 48px auto;
+}
+
+.calculator-wrap-bottom.color-line {
+  background-position: 40% 130px;
 }
 
 .calculator-title {

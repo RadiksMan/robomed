@@ -1,15 +1,15 @@
 /*clients*/
     .title-wrap{
         &.clients{
-            .title-wrap-main{padding: 0px 0 28px 0;}
+            .title-wrap-main{padding: 39px 0 32px 0;}
              &:before{background-image:url("../images/support-title.jpg");}
         }
     }
      .client-wrapp{
          a{outline: 0;}
         .client-align{
-            .slider-box-clients{    padding-top: 72px;
-                .slider-client{box-shadow: 0 0 28px 10px #f8f8f8;    padding: 82px 118px 71px; text-align: justify;
+            .slider-box-clients{    padding-top: 70px;
+                .slider-client{box-shadow: 0 0 28px 10px #f8f8f8;    padding: 85px 118px 68px; text-align: justify;
                     .slider-client-item{ display: inline-block;     padding: 0 11px 0; &:focus{outline:0;}
                         a{
                             img{}
@@ -25,7 +25,7 @@
                 }
             }
             span{font: 100 28px 'ProximaNova',sans-serif;color:#262626;}
-            .slider-box-comment{text-align:center;     padding: 91px 200px 0;
+            .slider-box-comment{text-align:center;     padding: 91px 200px 0 203px;
                 .comment-align{
                     .comment-title{     padding-bottom: 64px;     padding-left: 58px;
                         span{text-transform: uppercase;}
@@ -43,13 +43,13 @@
                             .text-mini-title{    padding-top: 3px;
                                 span{font: 500 14px 'MuseoSans',sans-serif;color:#272727;}
                             }
-                            .text-box{    padding-top: 18px;
+                            .text-box{    padding-top: 16px;
                                 span{font: 400 18px 'ProximaNova',sans-serif;color:#919191;    line-height: 31rem;}
                             }
                         }
                     }
                     .slick-arrow{display:none!important;}
-                    .slick-dots{padding-top: 25px;
+                    .slick-dots{padding-top: 27px;
                         li{display: inline-block;
                             button{background-color: transparent; border:none; font-size: 0;position: relative;width: 15px; height: 15px;
                                 &:focus{outline: 0;}
@@ -71,35 +71,35 @@
                         span{font-size: 30px;text-transform: uppercase;    letter-spacing: 5px;}
                     }
                 }
-                .shadow-box{ box-shadow: 0 0 28px 10px #f8f8f8; width: 100%;     padding-top: 69px; margin-bottom: 113px;
-                    .text-content-box{   padding: 0 6.5% 38px 8.5%;
+                .shadow-box{ box-shadow: 0 0 28px 10px #f8f8f8; width: 100%;     padding-top: 69px; margin-bottom: 116px;
+                    .text-content-box{   padding: 0 6.5% 39px 8.5%;
                         .text-content{text-align: left;width:41%;
                             .title{    padding-bottom: 36px;
                                 span{    letter-spacing: -0.3rem;}
                             }
-                            .text-block{    padding-bottom: 34px;
+                            .text-block{    padding-bottom: 34px; margin-bottom: 0;
                                 span{font: 400 24px 'ProximaNova',sans-serif;    line-height: 34px;
-                                    i{color: #eb253c; letter-spacing: 0.3rem;}
+                                    i{color: #eb253c; letter-spacing: 0.3rem;    font-weight: lighter;}
                                 }
                             }
                         }
                     }
                     .left{float:left;}
                     .right{float:right;}
-                    .diag-block{ padding: 0 0 58px 8.5%; text-align: left;
-                        .item-diag{display: inline-block; margin-right: 49px; vertical-align: top;     padding-top: 29px;
+                    .diag-block{ padding: 0 0 58px 102px; text-align: left;
+                        .item-diag{display: inline-block; margin-right: 46px; vertical-align: top;     padding-top: 29px;
                             .diag-img{float:left;
                                 img{}
                             }
                             .diag-text-block{    margin-left: 125px;     margin-top: -8px;     width: 200px;
-                                .diag-title{
+                                .diag-title{    margin-bottom: -1px;
                                     span{font: 400 30.62rem 'ProximaNova',sans-serif;}
                                 }
                                 .diag-text{
                                     span{font: 400 20.42rem 'ProximaNova',sans-serif;color:#919191;line-height: 29rem;}
                                 }
                             }
-                            &:nth-child(2){    padding-top: 0;     margin-right: 28px;
+                            &:nth-child(2){    padding-top: 0;     margin-right: 24px;
                                 .diag-text-block{    width: 215px;    margin-left: 63px;}
                             }
                             &:nth-child(3){ margin-right:0px; padding-top: 39px;
@@ -117,13 +117,13 @@
 /*Nachrichten*/
      .title-wrap{
         &.nachrichten{
-            .title-wrap-main{padding: 40px 0 28px 0;}
+            .title-wrap-main{padding: 39px 0 32px 0;}
              &:before{background-image:url("../images/nachrichtent-title.jpg");}
         }
     }
     .nr-wrapp{
         .nr-align{
-            .text-block{ padding: 40px 14% 0 15%;
+            .text-block{ padding: 40px 200px 0 170px;
                 span{font: normal 18px 'ProximaNova-Semibold',sans-serif; color:#262626; display: inline-block;  line-height: 38rem;     letter-spacing: 0.3rem;
                     &.title-block{font-size: 24px;     padding-bottom: 41px; line-height: 34rem;}
                     &.botline{width:100%; padding: 31px 0 37px;i{width:30px; height:5px; background-color: #e2253b; display:block;}}
@@ -148,3 +148,27 @@
     }
 
 /*/Nachrichten*/
+/*intro*/
+    .title-wrap{
+        &.intro{
+            .title-wrap-main{padding: 39px 0 32px 0;}
+             &:before{background-image:url("../images/nachrichtent-title.jpg");}
+        }
+    }
+    .intro-wrapp{
+        span{font: 100 16px 'ProximaNova',sans-serif;color:#262626; }
+        .intro-align{
+
+            .top-text-block{text-align: center;
+                span{display: inline-block; width: 100%;
+                    i{width: 100%;display: inline-block;}
+                    p{width: 100%;display: inline-block;}
+                }
+
+            }
+            .circle-block{}
+            .map-block{}
+        }
+    }
+
+/*/intro*/
