@@ -24,4 +24,6 @@
         </div>
 
     </div>
+
+    <? partial('intro_bottom'); ?>
 </div>
