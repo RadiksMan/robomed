@@ -228,11 +228,13 @@ header.inside-page{position: relative;box-shadow:0 2px 6px 0 rgba(0,0,0,0.08);}
     &.white-bg{background-color: transparent;
         .breadcrumbs{font-size: 13.94rem;
             span{margin-left: 18px;
+                &:first-child{margin-left: 0;}
                 &:last-child{color:#cacbcc;
                     &:before{color:#cacbcc;margin-right: 7px;}
                 }
             }
         }
+        .title-main{letter-spacing: 0.8rem;}
     }
 }
 .breadcrumbs{font-size: 15rem;color:#4e4e4e;margin-bottom: 2px;letter-spacing: -0.5rem;
@@ -290,7 +292,7 @@ header.inside-page{position: relative;box-shadow:0 2px 6px 0 rgba(0,0,0,0.08);}
 /* product tabs */
 
 .tabs{border-width: 1px 0 1px 0;border-style:solid;border-color: #f3f3f3;
-    li{float: left;height: 100px;width: 33.33%;border-width: 0 0 0 1px;border-style:solid;border-color: #f3f3f3;box-sizing:border-box;display: table;text-align: center;
+    li{float: left;height: 94px;width: 33.33%;border-width: 0 0 0 1px;border-style:solid;border-color: #f3f3f3;box-sizing:border-box;display: table;text-align: center;
         &:last-child{border-width: 0 1px 0 1px;}
     }
     a{display: table-cell;vertical-align: middle;font-size: 28px;color:#2b2b2b;text-decoration: none;box-sizing:border-box;border-bottom: 3px solid transparent;
@@ -324,9 +326,11 @@ header.inside-page{position: relative;box-shadow:0 2px 6px 0 rgba(0,0,0,0.08);}
 
 .title-italic-numeric{text-align: center;font-family: 'Anglecia', sans-serif;font-weight: 700;color:#5d5d5d;margin-bottom: 30px;}
 .title-italic-num{color:#ed3a4f;font-size: 31px;margin-bottom: 2px;}
-.title-italic-text{font-size: 19px;font-style:italic;
+.title-italic-text{font-size: 19px;font-style:italic;line-height: 29px;
     span{color:#ed3a4f;}
+    &.big-text{text-transform: uppercase;line-height: 28px;margin-top: -1px;margin-bottom: 30px;}
 }
+
 
 .product-big-circle{padding: 143px 0 212px 0;}
 .product-big-circle.color-line{background-position: 21% 45.9%;}
@@ -398,6 +402,56 @@ header.inside-page{position: relative;box-shadow:0 2px 6px 0 rgba(0,0,0,0.08);}
     &:nth-child(2){margin:0 71px 0 62px;width: 235px;}
 }
 
+.controller-bottom{padding-top: 25px;
+    .fourtheading{margin-bottom: 71px;}
+}
+
+.controller-bisness-main{padding-top: 15px;margin-bottom: 65px;}
+.controller-bisness-wrap, .controller-bisness-img{display: inline-block;position: relative;}
+.controller-bisness-lists{position: absolute;top: 0;left: 0;right: 0;bottom: 0;}
+.controller-list{position: absolute;top: 50%;transform:translate(0, -50%);width: 300px;
+    li{position: relative;font-weight: 100;font-size: 18px;color:#262626;text-transform: uppercase;margin-bottom: 26px;min-height: 90px;display: table;line-height: 30px;
+        span{display: table-cell;vertical-align: middle;}
+        &:last-child{margin-bottom: 0;}
+        &:before{content: '';position: absolute;width: 55px;height: 55px;background-image:url(../images/controller-list-arrow.png);top:50%;}
+    }
+}
+.controller-list-left{right: calc(100% + 79px);text-align: right;
+    li{
+        &:before{left: calc(100% + 11px);transform:translate(0, -52%);}
+    }
+}
+.controller-list-right{left:calc(100% + 79px);text-align: left;
+    li{
+        &:before{right: calc(100% + 11px);transform:translate(0, -52%) rotate(-180deg);}
+    }
+}
+
+.cotroller-automatic{
+    .title-italic-numeric{margin-bottom: 44px;}
+}
+.controller-automatic-main{margin-bottom: 75px;}
+.automatic-text{position: relative;top: -11px;}
+.automatic-text-wrap{display: inline-block;background-color: #fff;font-size: 16px;text-transform: uppercase;
+    span{font-weight: 100;}
+}
+
+.controller-modules{
+    .title-italic-numeric{margin-bottom: 41px;}
+    .controller-bisness-main{margin-bottom: 86px;}
+}
+.controler-modules-descript{position: absolute;top: 30px;font-size: 18px;color:#262626;line-height: 30px;width: 275px;}
+.module-left{right: calc(100% + 23px);text-align: right;}
+.module-right{left: calc(100% + 23px);text-align: left;}
+.module-left-title{text-transform: uppercase;font-weight: 100;}
+
+.controller-price{
+    .title-italic-numeric{margin-bottom: 65px;}
+}
+.controller-price-main{background-image:url(../images/big-eye.png);background-position:center center;background-repeat:no-repeat;background-color: #fff;border-radius: 10px;padding: 64px 130px 57px 130px;font-size: 18px;color:#262626;box-shadow:0 0 28px 0 rgba(0,0,0,.10);line-height: 29px;width: 830px;margin:0 auto 62px auto;box-sizing:border-box;
+    b{font-size: 24px;font-weight: 100;}
+    span{color:#ed3a4f;}
+}
 
 /* /product inside */
 
