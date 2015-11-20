@@ -867,12 +867,17 @@ header.inside-page {
   font-size: 13.94rem;
 }
 
+.title-wrap-main.white-bg .breadcrumbs span {
+  margin-left: 18px;
+}
+
 .title-wrap-main.white-bg .breadcrumbs span:last-child {
   color: #cacbcc;
 }
 
 .title-wrap-main.white-bg .breadcrumbs span:last-child:before {
   color: #cacbcc;
+  margin-right: 7px;
 }
 
 .breadcrumbs {
@@ -924,8 +929,8 @@ header.inside-page {
   font-size: 60px;
   color: #eb253c;
   text-transform: uppercase;
-  font-weight: 600;
   letter-spacing: -2.1rem;
+  font-family: 'ProximaNova-Semibold',sans-serif;
 }
 
 /* /inside-titles */

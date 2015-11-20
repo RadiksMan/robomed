@@ -227,9 +227,9 @@ header.inside-page{position: relative;box-shadow:0 2px 6px 0 rgba(0,0,0,0.08);}
 .title-wrap-main{background-color: rgba(43,43,43,.9);padding: 39px 0 28px 0;position: relative;z-index: 1;
     &.white-bg{background-color: transparent;
         .breadcrumbs{font-size: 13.94rem;
-            span{
+            span{margin-left: 18px;
                 &:last-child{color:#cacbcc;
-                    &:before{color:#cacbcc;}
+                    &:before{color:#cacbcc;margin-right: 7px;}
                 }
             }
         }
@@ -245,7 +245,7 @@ header.inside-page{position: relative;box-shadow:0 2px 6px 0 rgba(0,0,0,0.08);}
     }
     a{color:#eb253c;text-decoration: none;}
 }
-.title-main{font-size: 60px;color:#eb253c;text-transform: uppercase;font-weight: 600;letter-spacing: -2.1rem;}
+.title-main{font-size: 60px;color:#eb253c;text-transform: uppercase;letter-spacing: -2.1rem;font-family: 'ProximaNova-Semibold',sans-serif;}
 
 /* /inside-titles */
 
