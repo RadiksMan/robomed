@@ -17,8 +17,12 @@
     <div class="mbox">
         <div class="manynews-wrap">
             <div class="manynews-super-wrap">
-                <div class="news-item big"></div>
-                <div class="news-item"></div>
+                <div class="news-item big">
+                    <div class="news-item-wrap"></div>
+                </div>
+                <div class="news-item">
+                    <div class="news-item-wrap"></div>
+                </div>
             </div>
         </div>
     </div>

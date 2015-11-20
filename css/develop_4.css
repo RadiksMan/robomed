@@ -893,9 +893,16 @@
 }
 
 .manynews .news-item {
-  width: 15%;
+  width: 32%;
+  padding-right: 2%;
+  display: inline-block;
 }
 
 .manynews .news-item.big {
   width: 66%;
+}
+
+.manynews .news-item .news-item-wrap {
+  background-color: pink;
+  height: 375px;
 }
