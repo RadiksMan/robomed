@@ -1,5 +1,4 @@
 <div class="title-wrap clients">
-
     <div class="title-wrap-main">
         <div class="mbox">
             <div class="breadcrumbs">
@@ -13,9 +12,7 @@
             </div>
         </div>
     </div>
-
 </div>
-
 <div class="client-wrapp">
     <div class="client-align mbox">
         <div class="slider-box-clients">
