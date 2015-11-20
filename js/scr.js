@@ -774,7 +774,7 @@ function calculatorScript(){
         var check = $('input[name=check]').val();
         var newCheck = parseInt($('.optimization-third-col .optimiztion-value').text());
 
-        var formuleValue = parseInt((patients + newFot)*10.989);
+        var formuleValue = parseInt(newFot + (patients * (newCheck - check)));
 
         formuleValue = gap(formuleValue.toString());
 
