@@ -848,6 +848,10 @@ header.inside-page {
   background-image: url(../images/inside-title-bg.jpg);
 }
 
+.title-wrap.product_first .title-wrap-main {
+  padding-top: 44px;
+}
+
 .title-wrap-main {
   background-color: rgba(43, 43, 43, 0.9);
   padding: 39px 0 28px 0;
@@ -857,6 +861,10 @@ header.inside-page {
 
 .title-wrap-main.white-bg {
   background-color: transparent;
+}
+
+.title-wrap-main.white-bg .breadcrumbs {
+  font-size: 13.94rem;
 }
 
 .title-wrap-main.white-bg .breadcrumbs span:last-child {
@@ -1448,11 +1456,11 @@ header.inside-page {
   -webkit-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.06);
   -moz-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.06);
   box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.06);
-  padding: 68px 170px 40px 170px;
+  padding: 68px 156px 40px 156px;
 }
 
 .doctor-white-block-img {
-  margin-bottom: 26px;
+  margin-bottom: 25px;
 }
 
 .doctor-white-block-title {
@@ -1460,12 +1468,14 @@ header.inside-page {
   font-size: 22px;
   text-transform: uppercase;
   line-height: 28px;
-  letter-spacing: -0.1rem;
+  letter-spacing: -0.6rem;
+  margin-bottom: 7px;
 }
 
 .doctor-white-block-text {
   font-size: 16px;
   color: #797f87;
+  line-height: 18px;
 }
 
 .doctor-white-block-col {
@@ -1479,7 +1489,7 @@ header.inside-page {
 }
 
 .doctor-white-block-col:nth-child(2) {
-  margin: 0 10px 0 10px;
+  margin: 0 71px 0 62px;
   width: 235px;
 }
 

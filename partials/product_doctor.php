@@ -190,6 +190,17 @@
             </div>
         </div>
 
+        <div class="button-calc">
+            <div class="aside-sub-button">
+                <div class="aside-sub-item">
+                    <div class="aside-sub-text"><span>Посчитать выгоду с Robomed:</span></div>
+                    <div class="aside-sub-button">
+                        <a href="#"><span class="icon icon-calc"></span><span>калькулятор</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <!-- /dmitry marking -->
