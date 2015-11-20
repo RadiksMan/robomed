@@ -17,6 +17,7 @@
     <div class="mbox">
         <div class="manynews-wrap">
             <div class="manynews-super-wrap cfix">
+                <!-- to Programist - ajax download  function newsAjax() in develop_4 .js -->
                 <div class="news-item big active">
                     <div class="news-item-wrap">
                         <div class="news-item-show white">
@@ -211,18 +212,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="download-more">
-                    <div class="news-item-wrap ">
-                        <div class="download-more-button">
-                            <div class="download-more-img">
-                                <img src="images/download-more-img.png" alt="">
-                            </div>
-                            <div class="download-more-text">
-                                <span>Загрузить еще</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="news-item active">
                     <div class="news-item-wrap">
                         <div class="news-item-show ">
@@ -243,6 +232,18 @@
                                 <a href="#">
                                     <span>Узнать больше</span>
                                 </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="download-more">
+                    <div class="news-item-wrap ">
+                        <div class="download-more-button">
+                            <div class="download-more-img">
+                                <img src="images/download-more-img.png" alt="">
+                            </div>
+                            <div class="download-more-text">
+                                <span>Загрузить еще</span>
                             </div>
                         </div>
                     </div>

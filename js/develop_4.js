@@ -15,21 +15,21 @@ function googleMap(mapWrap){
         var myOptions = {
             zoom: 16,
             center: myLatlng,
-            disableDefaultUI: false, //без управляющих елементов
-            mapTypeId: google.maps.MapTypeId.ROADMAP, // SATELLITE - снимки со спутника,
+            disableDefaultUI: false,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
             zoomControlOptions: {
-               position: google.maps.ControlPosition.LEFT_BOTTOM // позиция слева внизу для упр елементов
+               position: google.maps.ControlPosition.LEFT_BOTTOM
             }
         }
         var map = new google.maps.Map(document.getElementById(mapWrap), myOptions);
 
-        var image = 'images/marker.png';   // иконка картинкой
+        var image = 'images/marker.png';
 
         var marker = new google.maps.Marker({
             position: myLatlng,
             map: map,
-            animation: google.maps.Animation.DROP, // анимация при загрузке карты
-            icon: image //  иконка картинкой
+            animation: google.maps.Animation.DROP,
+            icon: image
         });
 
         map.set('styles', [
@@ -70,28 +70,25 @@ function supportAcordion(){
 
 function newsAjax(){
   var timer = null;
-  $('.download-more').click(function(){
+  $(document).on('click','.download-more',function(){
+    var download = $('.download-more').remove();
     if(!$('.download-more').is('.disabled')){
       $.ajax({
         url : 'news-ajax.php',
 
         success : function(data){
-
-          //$('.preload-block').remove();
           $('.manynews-super-wrap').append(data);
           var time = 500;
           var itemLength = $('.news-item').length;
-
           $('.news-item:not(.active .download-more)').each(function() {
               var item = $(this);
               setTimeout(function(){
                   item.addClass('active');
                   if(item.index() == (itemLength-1)){
-
+                      $('.manynews-super-wrap').append(download);
                       $('.download-more').removeClass('disabled');
-
                   }
-              },time);
+              },500);
               time=time+200;
           });
         }
