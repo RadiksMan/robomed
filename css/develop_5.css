@@ -1,14 +1,6 @@
+/*clients*/
 .title-wrap.clients .title-wrap-main {
   padding: 0px 0 28px 0;
-}
-
-.title-wrap.clients:before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 
 .title-wrap.clients:before {
@@ -359,3 +351,90 @@
   width: 215px;
   margin-left: 63px;
 }
+
+/*/clients*/
+/*Nachrichten*/
+.title-wrap.nachrichten .title-wrap-main {
+  padding: 40px 0 28px 0;
+}
+
+.title-wrap.nachrichten:before {
+  background-image: url("../images/nachrichtent-title.jpg");
+}
+
+.nr-wrapp .nr-align .text-block {
+  padding: 40px 14% 0 15%;
+}
+
+.nr-wrapp .nr-align .text-block span {
+  font: normal 18px 'ProximaNova-Semibold',sans-serif;
+  color: #262626;
+  display: inline-block;
+  line-height: 38rem;
+  letter-spacing: 0.3rem;
+}
+
+.nr-wrapp .nr-align .text-block span.title-block {
+  font-size: 24px;
+  padding-bottom: 41px;
+  line-height: 34rem;
+}
+
+.nr-wrapp .nr-align .text-block span.botline {
+  width: 100%;
+  padding: 31px 0 37px;
+}
+
+.nr-wrapp .nr-align .text-block span.botline i {
+  width: 30px;
+  height: 5px;
+  background-color: #e2253b;
+  display: block;
+}
+
+.nr-wrapp .nr-align .text-block span.li-title {
+  font: 100 24px 'ProximaNova',sans-serif;
+  color: #e2253b;
+}
+
+.nr-wrapp .nr-align .text-block ul {
+  padding: 16px 0 30px 12px;
+}
+
+.nr-wrapp .nr-align .text-block ul li {
+  position: relative;
+  padding-bottom: 17px;
+}
+
+.nr-wrapp .nr-align .text-block ul li:before {
+  content: '';
+  width: 2px;
+  height: 2px;
+  border: 1px solid #333;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: -10px;
+  background-color: #333;
+}
+
+.nr-wrapp .nr-align .text-block ul li p {
+  font: normal 18px 'ProximaNova-Semibold',sans-serif;
+  color: #262626;
+  font-weight: bolder;
+  letter-spacing: -0.6rem;
+}
+
+.nr-wrapp .nr-align .interest .interest-title {
+  padding: 89px 0 0 5px;
+}
+
+.nr-wrapp .nr-align .interest .interest-title span {
+  font: 100 24px 'ProximaNova',sans-serif;
+  color: #262626;
+}
+
+/*/Nachrichten*/
