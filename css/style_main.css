@@ -30,11 +30,9 @@ body::-webkit-scrollbar {
   transform: translate(50%, -50%);
   opacity: 0;
   -webkit-transition: opacity 500ms ease, -webkit-transform 300ms ease;
-  transition: opacity 500ms ease, -webkit-transform 300ms ease;
-  -moz-transition: opacity 500ms ease, transform 300ms ease, -moz-transform 300ms ease;
-  -o-transition: opacity 500ms ease, transform 300ms ease, -o-transform 300ms ease;
+  -moz-transition: opacity 500ms ease, -moz-transform 300ms ease;
+  -o-transition: opacity 500ms ease, -o-transform 300ms ease;
   transition: opacity 500ms ease, transform 300ms ease;
-  transition: opacity 500ms ease, transform 300ms ease, -webkit-transform 300ms ease, -moz-transform 300ms ease, -o-transform 300ms ease;
 }
 
 .dots-parts li {
@@ -154,11 +152,9 @@ body::-webkit-scrollbar {
   -moz-border-radius: 50%;
   border-radius: 50%;
   -webkit-transition: background-color 300ms ease 1300ms, -webkit-box-shadow 300ms ease 1300ms;
-  transition: background-color 300ms ease 1300ms, -webkit-box-shadow 300ms ease 1300ms;
-  -moz-transition: background-color 300ms ease 1300ms, box-shadow 300ms ease 1300ms, -moz-box-shadow 300ms ease 1300ms;
+  -moz-transition: background-color 300ms ease 1300ms, -moz-box-shadow 300ms ease 1300ms;
   -o-transition: background-color 300ms ease 1300ms, box-shadow 300ms ease 1300ms;
   transition: background-color 300ms ease 1300ms, box-shadow 300ms ease 1300ms;
-  transition: background-color 300ms ease 1300ms, box-shadow 300ms ease 1300ms, -webkit-box-shadow 300ms ease 1300ms, -moz-box-shadow 300ms ease 1300ms;
 }
 
 .big-sircle-list {
@@ -173,11 +169,9 @@ body::-webkit-scrollbar {
   position: relative;
   opacity: 0;
   -webkit-transition: opacity 300ms ease, -webkit-transform 300ms ease;
-  transition: opacity 300ms ease, -webkit-transform 300ms ease;
-  -moz-transition: opacity 300ms ease, transform 300ms ease, -moz-transform 300ms ease;
-  -o-transition: opacity 300ms ease, transform 300ms ease, -o-transform 300ms ease;
+  -moz-transition: opacity 300ms ease, -moz-transform 300ms ease;
+  -o-transition: opacity 300ms ease, -o-transform 300ms ease;
   transition: opacity 300ms ease, transform 300ms ease;
-  transition: opacity 300ms ease, transform 300ms ease, -webkit-transform 300ms ease, -moz-transform 300ms ease, -o-transform 300ms ease;
 }
 
 .big-sircle-list li:after {
@@ -247,11 +241,9 @@ body::-webkit-scrollbar {
   position: absolute;
   opacity: 0;
   -webkit-transition: opacity 500ms ease 500ms,-webkit-transform 500ms ease 500ms;
-  transition: opacity 500ms ease 500ms,-webkit-transform 500ms ease 500ms;
-  -moz-transition: opacity 500ms ease 500ms,transform 500ms ease 500ms,-moz-transform 500ms ease 500ms;
-  -o-transition: opacity 500ms ease 500ms,transform 500ms ease 500ms,-o-transform 500ms ease 500ms;
+  -moz-transition: opacity 500ms ease 500ms,-moz-transform 500ms ease 500ms;
+  -o-transition: opacity 500ms ease 500ms,-o-transform 500ms ease 500ms;
   transition: opacity 500ms ease 500ms,transform 500ms ease 500ms;
-  transition: opacity 500ms ease 500ms,transform 500ms ease 500ms,-webkit-transform 500ms ease 500ms,-moz-transform 500ms ease 500ms,-o-transform 500ms ease 500ms;
 }
 
 .big-sircle-part.part-left, .big-sircle-part.part-right {
@@ -856,7 +848,7 @@ header.inside-page {
   background-image: url(../images/inside-title-bg.jpg);
 }
 
-.title-wrap.product_first .title-wrap-main {
+.title-wrap.product_first .title-wrap-main, .title-wrap.product_second .title-wrap-main, .title-wrap.product_third .title-wrap-main {
   padding-top: 44px;
 }
 
@@ -1036,17 +1028,18 @@ header.inside-page {
 
 .calculator-optimization-col {
   text-align: center;
-  float: left;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .optimization-first-col {
   width: 206px;
-  margin-right: 65px;
+  margin-right: 63px;
 }
 
 .optimization-second-col {
   width: 269px;
-  margin-right: 68px;
+  margin-right: 60px;
 }
 
 .optimization-third-col {
@@ -1057,6 +1050,7 @@ header.inside-page {
   font-size: 50rem;
   color: #ee3446;
   margin-bottom: 3px;
+  word-wrap: break-word;
 }
 
 .optimization-text {
@@ -1072,14 +1066,27 @@ header.inside-page {
   color: #797f87;
   letter-spacing: 11.9rem;
   text-transform: uppercase;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .optimization-value-wrap {
   font-size: 50rem;
   font-weight: 800;
   color: #ee3446;
-  float: right;
   line-height: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 405px;
+  text-align: right;
+}
+
+.calculator-optimization-bottom .optimization-value {
+  max-width: 290px;
+  vertical-align: middle;
+  line-height: 40px;
+  word-wrap: break-word;
+  display: inline-block;
 }
 
 /* /calculator */
@@ -1142,14 +1149,16 @@ header.inside-page {
   background-image: url(../images/tabs-item-bottom-bg.jpg);
   background-repeat: no-repeat;
   background-position: center bottom;
+  padding-top: 97px;
+}
+
+.doctor-text-block {
+  margin-top: -11px;
+  margin-bottom: 81px;
 }
 
 .text-center {
   text-align: center;
-}
-
-.text-block {
-  margin-bottom: 50px;
 }
 
 .text-block h4, .fourtheading {
@@ -1157,8 +1166,11 @@ header.inside-page {
   font-weight: 700;
   color: #262626;
   max-width: 830px;
-  margin: 0 auto 25px auto;
+  margin: 0 auto 33px auto;
   text-transform: uppercase;
+  font-weight: 100;
+  line-height: 31px;
+  letter-spacing: -0.35rem;
 }
 
 .text-block h4 span, .fourtheading span {
@@ -1169,10 +1181,12 @@ header.inside-page {
   font-size: 18px;
   color: #262626;
   line-height: 24px;
+  line-height: 31px;
 }
 
 .text-block p b {
   font-weight: 700;
+  letter-spacing: -0.5rem;
 }
 
 .title-italic-numeric {
@@ -1186,10 +1200,11 @@ header.inside-page {
 .title-italic-num {
   color: #ed3a4f;
   font-size: 31px;
+  margin-bottom: 2px;
 }
 
 .title-italic-text {
-  font-size: 18px;
+  font-size: 19px;
   font-style: italic;
 }
 
@@ -1198,17 +1213,21 @@ header.inside-page {
 }
 
 .product-big-circle {
-  padding: 90px 0 170px 0;
+  padding: 143px 0 212px 0;
 }
 
 .product-big-circle.color-line {
-  background-position: center 35%;
+  background-position: 21% 45.9%;
 }
 
 .product-big-circle-main, .product-big-circle-img {
   display: inline-block;
   position: relative;
   z-index: 0;
+}
+
+.product-big-circle-img {
+  margin-left: -7px;
 }
 
 .product-big-circle-descript {
@@ -1245,18 +1264,19 @@ header.inside-page {
 .product-big-circle-descript p {
   font-size: 18px;
   color: #797f87;
+  letter-spacing: 0.2rem;
 }
 
 .product-big-circle-descript p span {
-  font-weight: 700;
+  font-weight: 100;
   color: #262626;
 }
 
 .product-big-circle-descript-left {
-  right: -webkit-calc(100% + 44px);
-  right: -moz-calc(100% + 44px);
-  right: calc(100% + 44px);
-  top: 50%;
+  right: -webkit-calc(100% + 84px);
+  right: -moz-calc(100% + 84px);
+  right: calc(100% + 84px);
+  top: 56.5%;
   max-width: 170px;
   width: 100%;
   -webkit-transform: translate(0, -50%);
@@ -1268,17 +1288,16 @@ header.inside-page {
 }
 
 .product-big-circle-descript-left li:before {
-  left: -webkit-calc(100% + 5px);
-  left: -moz-calc(100% + 5px);
-  left: calc(100% + 5px);
-  top: 5px;
+  left: -webkit-calc(100% + 30px);
+  left: -moz-calc(100% + 30px);
+  left: calc(100% + 30px);
 }
 
 .product-big-circle-descript-top {
-  bottom: -webkit-calc(100% + 44px);
-  bottom: -moz-calc(100% + 44px);
-  bottom: calc(100% + 44px);
-  left: 50%;
+  bottom: -webkit-calc(100% + 66px);
+  bottom: -moz-calc(100% + 66px);
+  bottom: calc(100% + 66px);
+  left: 48%;
   -webkit-transform: translate(-50%, 0);
   -moz-transform: translate(-50%, 0);
   -ms-transform: translate(-50%, 0);
@@ -1297,16 +1316,16 @@ header.inside-page {
   -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
   transform: rotate(90deg);
-  top: -webkit-calc(100% + 20px);
-  top: -moz-calc(100% + 20px);
-  top: calc(100% + 20px);
+  top: -webkit-calc(100% + 40px);
+  top: -moz-calc(100% + 40px);
+  top: calc(100% + 40px);
 }
 
 .product-big-circle-descript-right {
-  left: -webkit-calc(100% + 44px);
-  left: -moz-calc(100% + 44px);
-  left: calc(100% + 44px);
-  top: 50%;
+  left: -webkit-calc(100% + 68px);
+  left: -moz-calc(100% + 68px);
+  left: calc(100% + 68px);
+  top: 53.5%;
   -webkit-transform: translate(0, -50%);
   -moz-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
@@ -1318,9 +1337,9 @@ header.inside-page {
 }
 
 .product-big-circle-descript-right li:before {
-  right: -webkit-calc(100% + 5px);
-  right: -moz-calc(100% + 5px);
-  right: calc(100% + 5px);
+  right: -webkit-calc(100% + 30px);
+  right: -moz-calc(100% + 30px);
+  right: calc(100% + 30px);
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -1329,10 +1348,10 @@ header.inside-page {
 }
 
 .product-big-circle-descript-bottom {
-  top: -webkit-calc(100% + 44px);
-  top: -moz-calc(100% + 44px);
-  top: calc(100% + 44px);
-  left: 50%;
+  top: -webkit-calc(100% + 67px);
+  top: -moz-calc(100% + 67px);
+  top: calc(100% + 67px);
+  left: 48%;
   -webkit-transform: translate(-50%, 0);
   -moz-transform: translate(-50%, 0);
   -ms-transform: translate(-50%, 0);
@@ -1343,9 +1362,9 @@ header.inside-page {
 }
 
 .product-big-circle-descript-bottom li:before {
-  bottom: -webkit-calc(100% + 20px);
-  bottom: -moz-calc(100% + 20px);
-  bottom: calc(100% + 20px);
+  bottom: -webkit-calc(100% + 38px);
+  bottom: -moz-calc(100% + 38px);
+  bottom: calc(100% + 38px);
   left: -webkit-calc(50% - 21px);
   left: -moz-calc(50% - 21px);
   left: calc(50% - 21px);
@@ -1356,13 +1375,25 @@ header.inside-page {
   transform: rotate(-90deg);
 }
 
+.rectange-main-wrap {
+  padding-top: 39px;
+}
+
+.rectange-main-wrap .title-italic-numeric {
+  margin-bottom: 43px;
+}
+
 .rectangle-wrap {
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 
 .rectangle-main, .rectangle-img {
   display: inline-block;
   position: relative;
+}
+
+.rectangle-main {
+  margin-left: 15px;
 }
 
 .rectangle-descript {
@@ -1380,39 +1411,45 @@ header.inside-page {
 .rectangle-descript p {
   color: #262626;
   font-size: 18px;
+  line-height: 29px;
 }
 
 .rectangle-descript p span {
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 100;
 }
 
 .rectangle-descript-left {
   text-align: right;
-  right: -webkit-calc(100% + 10px);
-  right: -moz-calc(100% + 10px);
-  right: calc(100% + 10px);
+  right: -webkit-calc(100% + 18px);
+  right: -moz-calc(100% + 18px);
+  right: calc(100% + 18px);
   width: 370px;
 }
 
 .rectangle-descript-right {
   text-align: left;
-  left: -webkit-calc(100% + 10px);
-  left: -moz-calc(100% + 10px);
-  left: calc(100% + 10px);
+  left: -webkit-calc(100% + 17px);
+  left: -moz-calc(100% + 17px);
+  left: calc(100% + 17px);
   width: 340px;
 }
 
 .rectangle-descript-bottom {
-  top: -webkit-calc(100% + 10px);
-  top: -moz-calc(100% + 10px);
-  top: calc(100% + 10px);
+  top: -webkit-calc(100% + 12px);
+  top: -moz-calc(100% + 12px);
+  top: calc(100% + 12px);
   width: 470px;
+  margin-left: -25px;
+}
+
+.dicom-main-wrap .title-italic-numeric {
+  margin-bottom: 24px;
 }
 
 .dicom-wrap {
-  width: 951px;
-  margin: 0 auto 50px auto;
+  width: 970px;
+  margin: 0 auto 87px auto;
 }
 
 .dicom-left-wrap {
@@ -1430,8 +1467,9 @@ header.inside-page {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  padding: 40px 65px 25px 30px;
+  padding: 38px 35px 29px 30px;
   position: relative;
+  top: 18px;
 }
 
 .dicom-info-title {
@@ -1441,23 +1479,27 @@ header.inside-page {
   font-size: 32px;
   text-transform: uppercase;
   position: absolute;
-  left: 10px;
+  left: 25px;
   top: 0;
-  -webkit-transform: translate(0, -50%);
-  -moz-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  -o-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -44%);
+  -moz-transform: translate(0, -44%);
+  -ms-transform: translate(0, -44%);
+  -o-transform: translate(0, -44%);
+  transform: translate(0, -44%);
   padding: 0 5px;
 }
 
 .dicom-text {
   font-size: 18px;
-  line-height: 27px;
+  line-height: 29px;
+}
+
+.doctor-white-block-main-wrap .title-italic-numeric {
+  margin-bottom: 27px;
 }
 
 .doctor-white-block {
-  margin-bottom: 100px;
+  margin-bottom: 65px;
   padding-top: 18px;
 }
 
@@ -1469,7 +1511,7 @@ header.inside-page {
   -webkit-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.06);
   -moz-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.06);
   box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.06);
-  padding: 68px 156px 40px 156px;
+  padding: 68px 156px 49px 156px;
 }
 
 .doctor-white-block-img {

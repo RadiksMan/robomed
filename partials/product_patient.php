@@ -1,5 +1,4 @@
-<div class="tabs-item-top">
-     <!-- artem marking  background-patient.png-->
+<div class="tabs-item-bottom">
 
     <div class="patient-wrap style-wrap-box">
         <div class="patient-box mbox">
@@ -34,8 +33,5 @@
         </div>
 
     </div>
-
-
-    <!-- dmitry marking -->
 
 </div>

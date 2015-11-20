@@ -66,7 +66,44 @@ function supportAcordion(){
     $(this).find('.support-acordion-item-text').stop().slideDown(300);
   });
 }
+
+
+function newsAjax(){
+  var timer = null;
+  $('.download-more').click(function(){
+    if(!$('.download-more').is('.disabled')){
+      $.ajax({
+        url : 'news-ajax.php',
+
+        success : function(data){
+
+          //$('.preload-block').remove();
+          $('.manynews-super-wrap').append(data);
+          var time = 500;
+          var itemLength = $('.news-item').length;
+
+          $('.news-item:not(.active .download-more)').each(function() {
+              var item = $(this);
+              setTimeout(function(){
+                  item.addClass('active');
+                  if(item.index() == (itemLength-1)){
+
+                      $('.download-more').removeClass('disabled');
+
+                  }
+              },time);
+              time=time+200;
+          });
+        }
+
+      });
+    }
+    $(this).addClass('disabled');
+
+  });
+}
 $(document).ready(function() {
+  newsAjax();
   supportAcordion();
     mailSlider();
     if($('#google-map').length){

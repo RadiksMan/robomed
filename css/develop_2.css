@@ -1,7 +1,7 @@
 .style-wrap-box .patient-box .patient-container .image-conteiner {
   display: inline-block;
   width: 42%;
-  padding-top: 150px;
+  padding-top: 125px;
   padding-bottom: 79px;
 }
 
@@ -144,11 +144,11 @@
   color: white;
 }
 
-.controller-wrap {
-  background-color: #fafafa;
-}
-
 .patient-wrap {
   background-image: url(../images/background-patient.png);
   background-position: center center;
+}
+
+.tabs-item-bottom .patient-wrap {
+  margin-top: -97px;
 }
