@@ -27,7 +27,7 @@
 
     <div class="mbox">
 
-        <div class="text-block text-center">
+        <div class="text-block text-center doctor-text-block">
             <h4>
                 Внедрение системы <span>DSS</span> (Decision Support Systems) система поддержки клинических решений
             </h4>
@@ -101,101 +101,112 @@
             результаты
         </div>
 
-        <div class="title-italic-numeric">
-            <div class="title-italic-num">
-                01
-            </div>
-            <div class="title-italic-text">
-                <span>Меньше жалоб от пациентов</span> на «Впаривание» услуг врачами
-            </div>
-        </div>
-
-        <div class="rectangle-wrap text-center">
-            <div class="rectangle-main">
-                <div class="rectangle-img">
-                    <img src="images/doctor-rectangle.png" alt="" />
+        <div class="rectange-main-wrap">
+            <div class="title-italic-numeric">
+                <div class="title-italic-num">
+                    01
                 </div>
-                <div class="rectangle-descript">
-                    <div class="rectangle-descript-left">
-                        <p>Стоимость с самого начала</p>
-                        <p><span>озвучена полностью и прозрачна</span></p>
-                        <p>для пациента</p>
-                    </div>
-                    <div class="rectangle-descript-right">
-                        <p>Стандартизированный набор услуг - <span>нет эффекта «долечивания» и метания от одного специалиста к другому</span></p>
-                    </div>
-                    <div class="rectangle-descript-bottom">
-                        <p>У всех специалистов есть <span>стандартное мнение</span></p>
-                        <p>и они не опровергают друг друга</p>
-                    </div>
+                <div class="title-italic-text">
+                    <span>Меньше жалоб от пациентов</span> на «Впаривание» услуг врачами
                 </div>
             </div>
-        </div>
 
-        <div class="title-italic-numeric">
-            <div class="title-italic-num">
-                02
-            </div>
-            <div class="title-italic-text">
-                <span>Полная информатизация</span> всех медицинских процессов
-            </div>
-        </div>
-
-        <div class="dicom-wrap cfix">
-            <div class="dicom-left-wrap">
-                <img src="images/dicom-img.png" alt="" />
-            </div>
-            <div class="dicom-right-info">
-                <div class="dicom-info-title">
-                    EHR
-                </div>
-                <div class="dicom-text">
-                    Электронная медицинская карта, собирающая данные в формате DICOM и HL7 позволяет присоединять к системе Robomed любые модули сторонних производителей
+            <div class="rectangle-wrap text-center">
+                <div class="rectangle-main">
+                    <div class="rectangle-img">
+                        <img src="images/doctor-rectangle.png" alt="" />
+                    </div>
+                    <div class="rectangle-descript">
+                        <div class="rectangle-descript-left">
+                            <p>Стоимость с самого начала</p>
+                            <p><span>озвучена полностью и прозрачна</span></p>
+                            <p>для пациента</p>
+                        </div>
+                        <div class="rectangle-descript-right">
+                        <p>Стандартизированный набор</p>
+                        <p>услуг - <span>нет эффекта</span><p>
+                            <p><span>«долечивания» и метания от</span></p>
+                            <p><span>одного специалиста к другому</span></p>
+                        </div>
+                        <div class="rectangle-descript-bottom">
+                            <p>У всех специалистов есть <span>стандартное мнение</span></p>
+                            <p>и они не опровергают друг друга</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="title-italic-numeric">
-            <div class="title-italic-num">
-                03
-            </div>
-            <div class="title-italic-text">
-                <span>Автоматизация</span> всех взаимоотношений <span>по ДМС</span>
-            </div>
-        </div>
-
-        <div class="doctor-white-block">
-
-            <div class="doctor-white-block-wrap cfix">
-                <div class="doctor-white-block-col">
-                    <div class="doctor-white-block-img">
-                        <img src="images/doctor-white-block-img1.png" alt="" />
-                    </div>
-                    <div class="doctor-white-block-title">Формирование реестров, отчетов, счетов и контроль выплат</div>
+        <div class="dicom-main-wrap">
+            <div class="title-italic-numeric">
+                <div class="title-italic-num">
+                    02
                 </div>
-                <div class="doctor-white-block-col">
-                    <div class="doctor-white-block-img">
-                        <img src="images/doctor-white-block-img2.png" alt="" />
-                    </div>
-                    <div class="doctor-white-block-title">Возможен импорт и экспорт</div>
-                    <div class="doctor-white-block-text">прикреплений/откреплений из EXCEL и WORD</div>
+                <div class="title-italic-text">
+                    <span>Полная информатизация</span> всех медицинских процессов
                 </div>
-                <div class="doctor-white-block-col">
-                    <div class="doctor-white-block-img">
-                        <img src="images/doctor-white-block-img3.png" alt="" />
+            </div>
+
+            <div class="dicom-wrap cfix">
+                <div class="dicom-left-wrap">
+                    <img src="images/dicom-img.png" alt="" />
+                </div>
+                <div class="dicom-right-info">
+                    <div class="dicom-info-title">
+                        EHR
                     </div>
-                    <div class="doctor-white-block-title">Настройка индивидуальных условий</div>
-                    <div class="doctor-white-block-text">обслуживания для каждой страховой компании</div>
+                    <div class="dicom-text">
+                        Электронная медицинская карта, собирающая данные в формате DICOM и HL7 позволяет присоединять к системе Robomed любые модули сторонних производителей
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="button-calc">
-            <div class="aside-sub-button">
-                <div class="aside-sub-item">
-                    <div class="aside-sub-text"><span>Посчитать выгоду с Robomed:</span></div>
-                    <div class="aside-sub-button">
-                        <a href="#"><span class="icon icon-calc"></span><span>калькулятор</span></a>
+        <div class="doctor-white-block-main-wrap">
+            <div class="title-italic-numeric">
+                <div class="title-italic-num">
+                    03
+                </div>
+                <div class="title-italic-text">
+                    <span>Автоматизация</span> всех взаимоотношений <span>по ДМС</span>
+                </div>
+            </div>
+
+            <div class="doctor-white-block">
+
+                <div class="doctor-white-block-wrap cfix">
+                    <div class="doctor-white-block-col">
+                        <div class="doctor-white-block-img">
+                            <img src="images/doctor-white-block-img1.png" alt="" />
+                        </div>
+                        <div class="doctor-white-block-title">Формирование реестров, отчетов, счетов и контроль выплат</div>
+                    </div>
+                    <div class="doctor-white-block-col">
+                        <div class="doctor-white-block-img">
+                            <img src="images/doctor-white-block-img2.png" alt="" />
+                        </div>
+                        <div class="doctor-white-block-title">Возможен импорт и экспорт</div>
+                        <div class="doctor-white-block-text">прикреплений/откреплений из EXCEL и WORD</div>
+                    </div>
+                    <div class="doctor-white-block-col">
+                        <div class="doctor-white-block-img">
+                            <img src="images/doctor-white-block-img3.png" alt="" />
+                        </div>
+                        <div class="doctor-white-block-title">Настройка индивидуальных условий</div>
+                        <div class="doctor-white-block-text">обслуживания для каждой страховой компании</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="doctor-button-wrap">
+            <div class="button-calc">
+                <div class="aside-sub-button">
+                    <div class="aside-sub-item">
+                        <div class="aside-sub-text"><span>Посчитать выгоду с Robomed:</span></div>
+                        <div class="aside-sub-button">
+                            <a href="#"><span class="icon icon-calc"></span><span>калькулятор</span></a>
+                        </div>
                     </div>
                 </div>
             </div>
