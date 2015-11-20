@@ -1,4 +1,4 @@
-<div class="tabs-item-top gray-bottom">
+<div class="tabs-item-top">
     <div class="controller-wrap style-wrap-box">
         <div class="patient-box mbox">
         <figure class="patient-container">
@@ -26,9 +26,27 @@
 </div>
 <div class="tabs-item-bottom">
 
-    <div class="tabs-item-bottom-content">
+    <!-- dmitry marking -->
 
-        <!-- dmitry marking -->
+    <div class="mbox">
+
+        <div class="fourtheading text-center">
+            Преимущества для управляющего
+        </div>
+
+        <div class="title-italic-numeric">
+            <div class="title-italic-num">
+                01
+            </div>
+            <div class="title-italic-text big-text">
+                <p>ПРОЗРАЧНЫЕ И ДОСТОВЕРНЫЕ ОЦЕНКИ ЭФФЕКТИВНОСТИ</p>
+                <p>РАБОТЫ МЕДИЦИНСКОГО ПЕРСОНАЛА</p>
+            </div>
+            <div class="title-italic-text">
+                <p><span>Модуль Business intelligence</span> собирает и визуализирует информацию</p>
+                <p>из различных источников, например:</p>
+            </div>
+        </div>
 
     </div>
 
