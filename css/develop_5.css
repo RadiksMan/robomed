@@ -470,6 +470,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-image: url(../images/introduction-bg.jpg);
+  top: -434px;
 }
 
 .intro-wrapp .intro-align .top-text-block {
@@ -563,7 +564,7 @@
 
 .intro-wrapp .intro-align .map-block {
   position: relative;
-  padding-bottom: 113px;
+  padding-bottom: 140px;
 }
 
 .intro-wrapp .intro-align .map-block .back {
