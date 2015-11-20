@@ -148,12 +148,23 @@
 
 @font-face {
     font-family: 'ProximaNova-Semibold';
-    src: url('../fonts/ProximaNova-Semibold.eot');
+    src: url('../fonts/ProximaNovaSemibold.eot');
     src: local('O'),
-    url('../fonts/ProximaNova-Semibold.woff') format('woff'),
-    url('../fonts/ProximaNova-Semibold.woff2') format('woff2'),
-    url('../fonts/ProximaNova-Semibold.ttf') format('truetype'),
-    url('../fonts/ProximaNova-Semibold.svg') format('svg');
+    url('../fonts/ProximaNovaSemibold.woff') format('woff'),
+    url('../fonts/ProximaNovaSemibold.woff2') format('woff2'),
+    url('../fonts/ProximaNovaSemibold.ttf') format('truetype'),
+    url('../fonts/ProximaNovaSemibold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;}
+
+     @font-face {
+    font-family: 'ProximaNova-RegularItalic';
+    src: url('../fonts/ProximaNovaRegularItalic.eot');
+    src: local('O'),
+    url('../fonts/ProximaNovaRegularItalic.woff') format('woff'),
+    url('../fonts/ProximaNovaRegularItalic.woff2') format('woff2'),
+    url('../fonts/ProximaNovaRegularItalic.ttf') format('truetype'),
+    url('../fonts/ProximaNovaRegularItalic.svg') format('svg');
     font-weight: normal;
     font-style: normal;}
 /* /fonts*/
