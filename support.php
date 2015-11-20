@@ -134,8 +134,7 @@
                 <div class="mbox">
                     <div class="support-bottom-wrap reverse">
                         <div class="support-bottom-title">
-                            <p>Позвоните нам если у вас остались</p>
-                            <p>вопросы или отправьте заявку</p>
+                            <p>Позвоните нам если у вас остались вопросы или отправьте заявку</p>
                         </div>
                         <div class="support-aside-sub">
                             <div class="support-bottom-wrap-title">
