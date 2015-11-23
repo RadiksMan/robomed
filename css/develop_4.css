@@ -1200,9 +1200,8 @@
 #intro_pop .slick-prev, #intro_pop .slick-next {
   position: absolute;
   top: 50%;
-  height: 70px;
-  width: 41px;
-  background: url(../images/arrowfancy-right.png) center center no-repeat;
+  height: 31px;
+  width: 31px;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -1213,8 +1212,35 @@
   cursor: pointer;
 }
 
+#intro_pop .slick-prev:before, #intro_pop .slick-next:before {
+  content: "";
+  width: 31px;
+  height: 31px;
+  border: 2px solid #bbb;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  display: block;
+}
+
+#intro_pop .slick-prev:after, #intro_pop .slick-next:after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-left: 1px solid #bbb;
+  border-top: 1px solid #bbb;
+  display: block;
+  position: absolute;
+  top: 13px;
+  left: 17px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
 #intro_pop .slick-prev {
-  background: url(../images/arrowfancy-left.png) center center no-repeat;
   left: -9%;
   right: auto;
 }
