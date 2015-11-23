@@ -92,6 +92,7 @@
   counter-increment: subsection;
   content: counter(section) counter(step-counter) ". ";
   color: #eb253c;
+  display: none;
 }
 
 .style-wrap-box .patient-box .patient-container .subtext-conteiner .bg-number {
@@ -109,6 +110,7 @@
   z-index: -1;
   right: 93px;
   top: 283px;
+  display: none;
 }
 
 .product-body .button-calc {

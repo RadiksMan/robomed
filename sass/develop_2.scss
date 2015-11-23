@@ -14,11 +14,11 @@
                     ol{
                         li{list-style-type: none; font-size: 18px; font-family: "ProximaNova", sans-serif; font-weight: 500; color:#2b2b2b; line-height: 26px; position: relative; counter-increment: step-counter; padding-left: 51px; padding-bottom: 28px;
                             &:after{content: ''; background-color: red; width: 2px; height: 2px; border-radius: 10px; position: absolute; left: 20px; border-style: solid; border-width: 9px; border-color: rgb(255, 255, 255); background-color: rgb(207, 22, 40);box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.78); top: 3px; left: 7px;}
-                            &:before {counter-increment: subsection; content: counter(section) counter(step-counter)". "; color:#eb253c;  }
+                            &:before {counter-increment: subsection; content: counter(section) counter(step-counter)". "; color:#eb253c;display: none;  }
                         }
                     }
                 }
-                .bg-number {  color:#ececec;  font-size: 196px; font-family: "ProximaNova"; color: rgba(0, 0, 0, 0.071); line-height: 0.372; -moz-transform: matrix( 2.15596330275229,0,0,2.15295486780973,0,0); -webkit-transform: matrix( 2.15596330275229,0,0,2.15295486780973,0,0); -ms-transform: matrix( 2.15596330275229,0,0,2.15295486780973,0,0); font-family: "ProximaNova", sans-serif; font-weight: 900; position: absolute; z-index: -1; right: 93px; top: 283px;}
+                .bg-number {  color:#ececec;  font-size: 196px; font-family: "ProximaNova"; color: rgba(0, 0, 0, 0.071); line-height: 0.372; -moz-transform: matrix( 2.15596330275229,0,0,2.15295486780973,0,0); -webkit-transform: matrix( 2.15596330275229,0,0,2.15295486780973,0,0); -ms-transform: matrix( 2.15596330275229,0,0,2.15295486780973,0,0); font-family: "ProximaNova", sans-serif; font-weight: 900; position: absolute; z-index: -1; right: 93px; top: 283px;display: none;}
             }
         }
 

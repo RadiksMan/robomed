@@ -9,23 +9,31 @@
          a{outline: 0;}
         .client-align{
             .slider-box-clients{    padding-top: 70px;
-                .slider-client{box-shadow: 0 0 28px 10px #f8f8f8;    padding: 85px 118px 68px; text-align: justify;
+                .slider-client{box-shadow: 0 0 28px 10px #f8f8f8;    padding: 85px 118px 68px 118px; text-align: justify;
                     .slider-client-item{ display: inline-block;     padding: 0 11px 0; &:focus{outline:0;}
                         a{
                             img{}
                         }
                     }
-                    .slick-next{right:24px;}
+                    .slick-next{right:34px;}
                     .slick-prev{left:34px;transform:rotate(-180deg);}
-                    .slick-arrow{background-color: transparent; border: 0;position:absolute; top:43%; &:focus{outline: 0;}
-
+                    .slick-arrow{background-color: transparent; border: 0;position:absolute; top:43%;cursor:pointer;
+                        &:focus{outline: 0;}
                         &:before{content: ""; width:31px; height:31px; border: 2px solid #bbb; border-radius: 50%; display:block; }
                         &:after{content: ""; width: 9px; height:9px; border-left: 1px solid #bbb; border-top: 1px solid #bbb; display: block;position:absolute; top:13px; left:17px;transform:rotate(135deg);}
                     }
                 }
             }
             span{font: 100 28px 'ProximaNova',sans-serif;color:#262626;}
-            .slider-box-comment{text-align:center;     padding: 91px 200px 0 203px;
+            .slider-box-comment{text-align:center;padding: 91px 200px 0 203px;
+                .slick-next{right:-67px;}
+                .slick-prev{left:-67px;transform:rotate(-180deg);}
+                .slick-arrow{background-color: transparent; border: 0;position:absolute; top:90px;cursor: pointer;
+                    &:focus{outline: 0;}
+
+                    &:before{content: ""; width:31px; height:31px; border: 2px solid #bbb; border-radius: 50%; display:block; }
+                    &:after{content: ""; width: 9px; height:9px; border-left: 1px solid #bbb; border-top: 1px solid #bbb; display: block;position:absolute; top:13px; left:17px;transform:rotate(135deg);}
+                }
                 .comment-align{
                     .comment-title{     padding-bottom: 64px;     padding-left: 58px;
                         span{text-transform: uppercase;}
@@ -48,7 +56,7 @@
                             }
                         }
                     }
-                    .slick-arrow{display:none!important;}
+
                     .slick-dots{padding-top: 27px;
                         li{display: inline-block;
                             button{background-color: transparent; border:none; font-size: 0;position: relative;width: 15px; height: 15px;

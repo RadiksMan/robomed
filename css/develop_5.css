@@ -19,7 +19,7 @@
   -webkit-box-shadow: 0 0 28px 10px #f8f8f8;
   -moz-box-shadow: 0 0 28px 10px #f8f8f8;
   box-shadow: 0 0 28px 10px #f8f8f8;
-  padding: 85px 118px 68px;
+  padding: 85px 118px 68px 118px;
   text-align: justify;
 }
 
@@ -33,7 +33,7 @@
 }
 
 .client-wrapp .client-align .slider-box-clients .slider-client .slick-next {
-  right: 24px;
+  right: 34px;
 }
 
 .client-wrapp .client-align .slider-box-clients .slider-client .slick-prev {
@@ -50,6 +50,7 @@
   border: 0;
   position: absolute;
   top: 43%;
+  cursor: pointer;
 }
 
 .client-wrapp .client-align .slider-box-clients .slider-client .slick-arrow:focus {
@@ -92,6 +93,59 @@
 .client-wrapp .client-align .slider-box-comment {
   text-align: center;
   padding: 91px 200px 0 203px;
+}
+
+.client-wrapp .client-align .slider-box-comment .slick-next {
+  right: -67px;
+}
+
+.client-wrapp .client-align .slider-box-comment .slick-prev {
+  left: -67px;
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+.client-wrapp .client-align .slider-box-comment .slick-arrow {
+  background-color: transparent;
+  border: 0;
+  position: absolute;
+  top: 90px;
+  cursor: pointer;
+}
+
+.client-wrapp .client-align .slider-box-comment .slick-arrow:focus {
+  outline: 0;
+}
+
+.client-wrapp .client-align .slider-box-comment .slick-arrow:before {
+  content: "";
+  width: 31px;
+  height: 31px;
+  border: 2px solid #bbb;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  display: block;
+}
+
+.client-wrapp .client-align .slider-box-comment .slick-arrow:after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-left: 1px solid #bbb;
+  border-top: 1px solid #bbb;
+  display: block;
+  position: absolute;
+  top: 13px;
+  left: 17px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
 }
 
 .client-wrapp .client-align .slider-box-comment .comment-align .comment-title {
@@ -163,10 +217,6 @@
   font: 400 18px 'ProximaNova',sans-serif;
   color: #919191;
   line-height: 31rem;
-}
-
-.client-wrapp .client-align .slider-box-comment .comment-align .slick-arrow {
-  display: none !important;
 }
 
 .client-wrapp .client-align .slider-box-comment .comment-align .slick-dots {
