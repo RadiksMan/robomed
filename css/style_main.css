@@ -111,7 +111,7 @@ body::-webkit-scrollbar {
   font-size: 14rem;
   font-weight: bold;
   float: right;
-  padding-top: 41px;
+  padding-top: 48px;
 }
 
 .header-navigation ul {
@@ -120,7 +120,9 @@ body::-webkit-scrollbar {
 
 .header-navigation li {
   float: left;
-  margin-left: 27px;
+  margin-left: 27.3rem;
+  font-weight: 100;
+  letter-spacing: -0.1rem;
 }
 
 .header-navigation li:hover a {
@@ -140,12 +142,12 @@ body::-webkit-scrollbar {
   background: -moz-linear-gradient(left, #ffffff 0%, #fcfcfc 25%, #f6f6f6 50%, #f0f0f0 75%, #f0f0f0 100%);
   background: -o-linear-gradient(left, #ffffff 0%, #fcfcfc 25%, #f6f6f6 50%, #f0f0f0 75%, #f0f0f0 100%);
   background: linear-gradient(to right, #ffffff 0%, #fcfcfc 25%, #f6f6f6 50%, #f0f0f0 75%, #f0f0f0 100%);
-  padding-bottom: 23px;
+  padding-bottom: 15px;
 }
 
 .header-wrap .header-logo {
   float: left;
-  padding-top: 7px;
+  padding-top: 16px;
 }
 
 /* /header */
@@ -903,7 +905,7 @@ header.inside-page {
 
 .title-wrap-main {
   background-color: rgba(43, 43, 43, 0.9);
-  padding: 39px 0 28px 0;
+  padding: 44px 0 29px 0;
   position: relative;
   z-index: 1;
 }
@@ -914,6 +916,7 @@ header.inside-page {
 
 .title-wrap-main.white-bg .breadcrumbs {
   font-size: 13.94rem;
+  margin-bottom: 1px;
 }
 
 .title-wrap-main.white-bg .breadcrumbs span {
@@ -1004,7 +1007,7 @@ header.inside-page {
 }
 
 .calculator-wrap-bottom.color-line {
-  background-position: 40% 130px;
+  background-position: 40% 139px;
 }
 
 .calculator-title {
