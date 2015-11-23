@@ -32,6 +32,13 @@ function inputNumber(block) {
         }
     });
 
+    $('input', block).focus(function(){
+        $inputNum = $(this);
+        if ($inputNum.val == '' || $inputNum.val() == 0) {
+            $inputNum.val('');
+        }
+    });
+
 }
 
 
@@ -756,27 +763,63 @@ function calculatorScript(){
         var inputValue = $(this).val();
 
         if($(this).is('[name=patients]')){
-            $('.optimization-first-col .optimiztion-value').text(parseInt(inputValue*1.10));
+            inputValue = parseInt(inputValue*1.10);
+            $('.optimization-first-col .optimiztion-value').attr('data-value', inputValue);
+            inputValue = gap(inputValue.toString());
+            $('.optimization-first-col .optimiztion-value').text(inputValue);
         }
         else if($(this).is('[name=fot]')){
-            $('.optimization-second-col .optimiztion-value').text(parseInt(inputValue*0.92));
+            inputValue = parseInt(inputValue*0.08);
+            $('.optimization-second-col .optimiztion-value').attr('data-value', inputValue);
+            inputValue = gap(inputValue.toString());
+            $('.optimization-second-col .optimiztion-value').text(inputValue);
         }
         else if($(this).is('[name=check]')){
-            $('.optimization-third-col .optimiztion-value').text(parseInt(inputValue*1.20));
+            inputValue = parseInt(inputValue*1.20);
+            $('.optimization-third-col .optimiztion-value').attr('data-value', inputValue);
+            inputValue = gap(inputValue.toString());
+            $('.optimization-third-col .optimiztion-value').text(inputValue);
+        }
+
+        console.log(inputValue.length);
+
+        if(inputValue.length < 6){
+            $('.calculator-optimization-col .optimiztion-value').css({'font-size':'50px'});
+        }
+        else if(inputValue.length >= 6 && inputValue.length < 11){
+            $('.calculator-optimization-col .optimiztion-value').css({'font-size':'30px'});
+        }
+        else if(inputValue.length >= 11 && inputValue.length < 17){
+            $('.calculator-optimization-col .optimiztion-value').css({'font-size':'20px'});
+        }
+        else if(inputValue.length >= 17){
+            $('.calculator-optimization-col .optimiztion-value').css({'font-size':'10px'});
         }
 
         var patients = $('input[name=patients]').val();
-        var newPatients = parseInt($('.optimization-first-col .optimiztion-value').text());
+        var newPatients = parseInt($('.optimization-first-col .optimiztion-value').attr('data-value'));
 
         var fot = $('input[name=fot]').val();
-        var newFot = parseInt($('.optimization-second-col .optimiztion-value').text());
+        var newFot = parseInt($('.optimization-second-col .optimiztion-value').attr('data-value'));
 
         var check = $('input[name=check]').val();
-        var newCheck = parseInt($('.optimization-third-col .optimiztion-value').text());
+        var newCheck = parseInt($('.optimization-third-col .optimiztion-value').attr('data-value'));
 
         var formuleValue = parseInt(newFot + (patients * (newCheck - check)));
 
         formuleValue = gap(formuleValue.toString());
+
+        console.log(formuleValue.length);
+
+        if (formuleValue.length <= 10){
+            $('.calculator-optimization-bottom .optimization-value-wrap').css({'font-size':'50px'});
+        }
+        else if(formuleValue.length >10 && formuleValue.length <= 17){
+            $('.calculator-optimization-bottom .optimization-value-wrap').css({'font-size':'30px'});
+        }
+        else if(formuleValue.length >17){
+            $('.calculator-optimization-bottom .optimization-value-wrap').css({'font-size':'20px'});
+        }
 
         $('.calculator-optimization-bottom .optimization-value').text(formuleValue);
 

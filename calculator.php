@@ -59,15 +59,15 @@
             <div class="calculator-optimization">
                 <div class="calculator-optimization-top cfix">
                     <div class="calculator-optimization-col optimization-first-col">
-                        <div class="optimiztion-value">0</div>
+                        <div class="optimiztion-value" data-value=0>0</div>
                         <div class="optimization-text">Оптимизация рекламы по аналитике</div>
                     </div>
                     <div class="calculator-optimization-col optimization-second-col">
-                        <div class="optimiztion-value">0</div>
+                        <div class="optimiztion-value" data-value=0>0</div>
                         <div class="optimization-text">За счет сокращения неэффективных сотрудников</div>
                     </div>
                     <div class="calculator-optimization-col optimization-third-col">
-                        <div class="optimiztion-value">0</div>
+                        <div class="optimiztion-value" data-value=0>0</div>
                         <div class="optimization-text">За счет продаж комплексов услуг</div>
                     </div>
                 </div>
