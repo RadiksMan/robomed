@@ -100,6 +100,55 @@ body::-webkit-scrollbar {
   cursor: pointer;
 }
 
+/*header */
+.header {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+.header-navigation {
+  font-size: 14rem;
+  font-weight: bold;
+  float: right;
+  padding-top: 41px;
+}
+
+.header-navigation ul {
+  list-style-type: none;
+}
+
+.header-navigation li {
+  float: left;
+  margin-left: 27px;
+}
+
+.header-navigation li:hover a {
+  opacity: .7;
+}
+
+.header-navigation a {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.header-wrap {
+  background: #fff;
+  background: -webkit-gradient(linear, left top, right top, from(#ffffff), color-stop(25%, #fcfcfc), color-stop(50%, #f6f6f6), color-stop(75%, #f0f0f0), to(#f0f0f0));
+  background: -webkit-linear-gradient(left, #ffffff 0%, #fcfcfc 25%, #f6f6f6 50%, #f0f0f0 75%, #f0f0f0 100%);
+  background: -moz-linear-gradient(left, #ffffff 0%, #fcfcfc 25%, #f6f6f6 50%, #f0f0f0 75%, #f0f0f0 100%);
+  background: -o-linear-gradient(left, #ffffff 0%, #fcfcfc 25%, #f6f6f6 50%, #f0f0f0 75%, #f0f0f0 100%);
+  background: linear-gradient(to right, #ffffff 0%, #fcfcfc 25%, #f6f6f6 50%, #f0f0f0 75%, #f0f0f0 100%);
+  padding-bottom: 23px;
+}
+
+.header-wrap .header-logo {
+  float: left;
+  padding-top: 7px;
+}
+
+/* /header */
 /* /basic for scroll sections */
 /* big circle */
 .big-sircle {
