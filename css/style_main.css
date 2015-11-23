@@ -142,7 +142,7 @@ body::-webkit-scrollbar {
   background: -moz-linear-gradient(left, #ffffff 0%, #fcfcfc 25%, #f6f6f6 50%, #f0f0f0 75%, #f0f0f0 100%);
   background: -o-linear-gradient(left, #ffffff 0%, #fcfcfc 25%, #f6f6f6 50%, #f0f0f0 75%, #f0f0f0 100%);
   background: linear-gradient(to right, #ffffff 0%, #fcfcfc 25%, #f6f6f6 50%, #f0f0f0 75%, #f0f0f0 100%);
-  padding-bottom: 15px;
+  padding-bottom: 20px;
 }
 
 .header-wrap .header-logo {

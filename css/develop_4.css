@@ -238,7 +238,7 @@
 
 .footer .footer_addres {
   font-size: 15rem;
-  padding-top: 32px;
+  padding-top: 24px;
 }
 
 .footer .footer_addres .footer_tel .icon_tel {
@@ -349,20 +349,20 @@
 /* /footer */
 /*contact*/
 .contact-wrap {
-  height: 924px;
+  height: 934px;
   overflow: hidden;
   position: relative;
 }
 
 .contact-wrap #google-map {
   height: 1250px;
-  margin-top: -326px;
+  margin-top: -316px;
   margin-left: -192px;
 }
 
 .contact-wrap .contact-top {
   position: absolute;
-  bottom: 511px;
+  bottom: 501px;
   right: 165px;
   background-color: #fff;
   padding: 49px 43px 49px 46px;
@@ -390,8 +390,8 @@
 
 .contact-wrap .contact-title {
   position: absolute;
-  top: -888px;
-  margin-left: -7px;
+  top: -881px;
+  margin-left: -4px;
 }
 
 .contact-top-text-desc {
@@ -444,7 +444,7 @@
 
 .contact-bottom-form {
   position: absolute;
-  bottom: 0;
+  bottom: -8px;
   width: 100%;
   max-width: 841px;
   right: 0;
@@ -480,7 +480,7 @@
   color: #262626;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 1.6rem;
+  letter-spacing: 2.22rem;
   font-size: 15px;
 }
 
