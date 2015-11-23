@@ -917,6 +917,7 @@ header.inside-page {
 .title-wrap-main.white-bg .breadcrumbs {
   font-size: 13.94rem;
   margin-bottom: 1px;
+  letter-spacing: -0.16rem;
 }
 
 .title-wrap-main.white-bg .breadcrumbs span {
