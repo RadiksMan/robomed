@@ -23,7 +23,7 @@
                 <div class="aside-sub-item">
                     <div class="aside-sub-text"><span>Для более полного ознакомления загрузите нашу презентацию:</span></div>
                     <div class="aside-sub-button">
-                        <a href="#"><span>Загрузить  нашу презентацию</span></a>
+                        <a href="https://docs.google.com/uc?authuser=0&id=0B4rh68sc5AlPT3YtRmdJNnUtNm8&export=download"><span>Загрузить  нашу презентацию</span></a>
                     </div>
                 </div>
             </div>
