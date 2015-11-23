@@ -63,7 +63,17 @@
 
                     </div>
                     <div class="bttn-box">
-                        <a href="#" class="bttn-text"><span>этапы внедрения МИС Robomed</span></a>
+                        <a href="#intro_pop"class="open-album fancybox-intro bttn-text" data-open-id="album-1"><span>этапы внедрения МИС Robomed</span></a>
+
+                        <div id="intro_pop" style="display:none">
+                            <div class="intro_pop-wrap">
+                                <img src="images/001.jpg">
+                                <img src="images/002.jpg">
+                                <img src="images/003.jpg">
+                                <img src="images/004.jpg">
+                                <img src="images/005.jpg">
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="right-box">
