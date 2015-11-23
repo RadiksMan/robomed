@@ -225,7 +225,7 @@
 
 .footer .footer-logo .logo-text {
   padding-top: 17px;
-  padding-left: 24px;
+  padding-left: 26px;
 }
 
 .footer .footer_navigation .header-navigation {
@@ -275,7 +275,9 @@
 }
 
 .footer .footer_addres .copyr {
-  padding-top: 31px;
+  padding-top: 37px;
+  font-size: 12px;
+  font-family: 'Helvetica',sans-serif;
 }
 
 .footer .footer_social {

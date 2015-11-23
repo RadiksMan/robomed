@@ -1452,7 +1452,11 @@ header.inside-page {
 }
 
 .rectange-main-wrap .title-italic-numeric {
-  margin-bottom: 43px;
+  margin-bottom: 39px;
+}
+
+.rectange-main-wrap .title-italic-numeric .title-italic-num {
+  margin-bottom: 1px;
 }
 
 .rectangle-wrap {
@@ -1519,9 +1523,13 @@ header.inside-page {
   margin-bottom: 24px;
 }
 
+.dicom-main-wrap .title-italic-numeric .title-italic-num {
+  margin-bottom: 0;
+}
+
 .dicom-wrap {
   width: 970px;
-  margin: 0 auto 87px auto;
+  margin: 0 auto 85px auto;
 }
 
 .dicom-left-wrap {
@@ -1567,7 +1575,11 @@ header.inside-page {
 }
 
 .doctor-white-block-main-wrap .title-italic-numeric {
-  margin-bottom: 27px;
+  margin-bottom: 24px;
+}
+
+.doctor-white-block-main-wrap .title-italic-numeric .title-italic-num {
+  margin-bottom: 0;
 }
 
 .doctor-white-block {
