@@ -309,23 +309,13 @@
 #intro_pop{
     // .slick-prev,.slick-next{position: absolute;top: 50%;height: 70px;width: 41px;background:url(../images/arrowfancy-right.png) center center no-repeat;box-shadow: none;border:none;outline: none;right:-9%;left: auto;cursor: pointer;}
     // .slick-prev{background:url(../images/arrowfancy-left.png) center center no-repeat;left: -9%;right: auto;}
-    .slick-prev,.slick-next{position: absolute;top: 50%;height: 31px;width: 31px;box-shadow: none;border:none;outline: none;right:-9%;left: auto;cursor: pointer;
-        &:before{content: ""; width:31px; height:31px; border: 2px solid #bbb; border-radius: 50%; display:block; }
-        &:after{content: ""; width: 9px; height:9px; border-left: 1px solid #bbb; border-top: 1px solid #bbb; display: block;position:absolute; top:13px; left:17px;transform:rotate(135deg);}
+    .slick-prev,.slick-next{position: absolute;top: 50%;height: 35px;width: 35px;box-shadow: none;border:none;outline: none;right:-9%;left: auto;cursor: pointer;background:transparent;padding: 0;
+        &:before{content: ""; width:31px; height:31px; border: 2px solid #fff; border-radius: 50%; display:block; }
+        &:after{content: ""; width: 9px; height:9px; border-left: 1px solid #fff; border-top: 1px solid #fff; display: block;position:absolute; top:13px; left:11px;transform:rotate(135deg);}
     }
-    .slick-prev{left: -9%;right: auto;}
-
-
-
-
-
-
-
-
-
-
-
-
+    .slick-prev{left: -9%;right: auto;
+        &:after{transform: rotate(-45deg);left: 14px;}
+    }
 
     .slick-dots{padding: 10px;background-color: #474747;border-left: 2px solid #cf1628;border-bottom: 2px solid #cf1628;border-right: 2px solid #cf1628;
         button{font-size: 0px;height: 8px;width: 8px;border-radius: 50%;border:1px solid white;padding: 0;background-color: transparent;display: inline-block;vertical-align: middle;}
