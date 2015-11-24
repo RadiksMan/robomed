@@ -716,7 +716,6 @@
   background-color: white;
   padding: 37px 42px;
   position: relative;
-  cursor: pointer;
   -webkit-border-radius: 28px;
   -moz-border-radius: 28px;
   border-radius: 28px;
@@ -726,7 +725,7 @@
   margin-bottom: 30px;
 }
 
-.support-wrap .support-acordion-item:after {
+.support-wrap .support-acordion-item-button {
   position: absolute;
   height: 33px;
   width: 33px;
@@ -747,9 +746,10 @@
   -moz-transition: all ease-out .3s;
   -o-transition: all ease-out .3s;
   transition: all ease-out .3s;
+  cursor: pointer;
 }
 
-.support-wrap .support-acordion-item.active:after {
+.support-wrap .support-acordion-item-button.active {
   -webkit-transform: rotate(-180deg);
   -moz-transform: rotate(-180deg);
   -ms-transform: rotate(-180deg);
