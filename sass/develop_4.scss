@@ -119,7 +119,9 @@
             content: '';position: absolute;top:0;left: 10px;border-style: solid;border-width: 0 30px 20px 0;border-color: transparent #fff transparent transparent;width: 0;height: 0;top: 45px;left: -25px;
         }
     }
-    .contact-title{position: absolute;top: -881px;margin-left: -4px;}
+    .contact-title{position: absolute;top: -891px;margin-left: 0px;
+        .breadcrumbs{letter-spacing: -1rem;}
+    }
 }
 .contact-top-text-desc{font-size: 18px;color: #262626;line-height: 27px;padding-bottom: 30px;padding-left: 6px;}
 .contact-top-text-tel{padding: 0px 6px;

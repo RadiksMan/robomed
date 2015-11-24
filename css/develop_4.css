@@ -392,8 +392,12 @@
 
 .contact-wrap .contact-title {
   position: absolute;
-  top: -881px;
-  margin-left: -4px;
+  top: -891px;
+  margin-left: 0px;
+}
+
+.contact-wrap .contact-title .breadcrumbs {
+  letter-spacing: -1rem;
 }
 
 .contact-top-text-desc {
