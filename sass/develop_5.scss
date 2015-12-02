@@ -20,7 +20,7 @@
                     .slick-arrow{background-color: transparent; border: 0;position:absolute; top:43%;cursor:pointer;
                         &:focus{outline: 0;}
                         &:before{content: ""; width:31px; height:31px; border: 2px solid #bbb; border-radius: 50%; display:block; }
-                        &:after{content: ""; width: 9px; height:9px; border-left: 1px solid #bbb; border-top: 1px solid #bbb; display: block;position:absolute; top:13px; left:17px;transform:rotate(135deg);}
+                        &:after{content: ""; width: 9px; height:9px; border-left: 1px solid #bbb; border-top: 1px solid #bbb; display: block;position:absolute; top:13px; left:10px;transform:rotate(135deg);}
                     }
                 }
             }
@@ -32,7 +32,7 @@
                     &:focus{outline: 0;}
 
                     &:before{content: ""; width:31px; height:31px; border: 2px solid #bbb; border-radius: 50%; display:block; }
-                    &:after{content: ""; width: 9px; height:9px; border-left: 1px solid #bbb; border-top: 1px solid #bbb; display: block;position:absolute; top:13px; left:17px;transform:rotate(135deg);}
+                    &:after{content: ""; width: 9px; height:9px; border-left: 1px solid #bbb; border-top: 1px solid #bbb; display: block;position:absolute; top:13px; left:10px;transform:rotate(135deg);}
                 }
                 .comment-align{
                     .comment-title{     padding-bottom: 64px;     padding-left: 58px;

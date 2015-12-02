@@ -366,7 +366,7 @@ header.inside-page{position: relative;box-shadow:0 2px 6px 0 rgba(0,0,0,0.08);}
 }
 .product-big-circle-descript-left{right: calc(100% + 84px);top: 56.5%;max-width: 170px;width:100%;transform:translate(0, -50%);text-align: right;
     li{
-        &:before{left: calc(100% + 30px);}
+        &:before{left: calc(100% + 36px);}
     }
 }
 .product-big-circle-descript-top{bottom:calc(100% + 66px);left: 48%;transform:translate(-50%,0);max-width: 395px;width:100%;
@@ -381,7 +381,7 @@ header.inside-page{position: relative;box-shadow:0 2px 6px 0 rgba(0,0,0,0.08);}
 }
 .product-big-circle-descript-bottom{top: calc(100% + 67px);left: 48%;transform:translate(-50%,0);max-width: 395px;width:100%;
     li{
-        &:before{bottom: calc(100% + 38px);left: calc(50% - 21px);transform:rotate(-90deg);}
+        &:before{bottom: calc(100% + 42px);left: calc(50% - 21px);transform:rotate(-90deg);}
     }
 }
 
@@ -502,3 +502,19 @@ header.inside-page{position: relative;box-shadow:0 2px 6px 0 rgba(0,0,0,0.08);}
 /* /product inside */
 
 /* /inside pages */
+.contact-form-item-input{
+    textarea::-webkit-input-placeholder {    font: 13.3333px Arial;font-size: 22px;    color: #797f87;}
+    textarea:-moz-placeholder {    font: 13.3333px Arial;font-size: 22px;    color: #797f87;}
+    textarea::-moz-placeholder {   font: 13.3333px Arial;font-size: 22px;    color: #797f87;}
+    textarea:-ms-input-placeholder {    font: 13.3333px Arial;font-size: 22px;    color: #797f87;}
+    textarea{overflow-y: hidden;}
+}
+
+input[type=text]::-ms-clear{
+  display: none;
+  }
+
+input[type=password]::-ms-reveal{
+  display: none;
+  }
+
