@@ -59,11 +59,16 @@ function googleMap(mapWrap){
 }
 
 function supportAcordion(){
-  $('.support-acordion-item:not(.active)').click(function() {
-    $('.support-acordion-item').removeClass('active');
-    $('.support-acordion-item .support-acordion-item-text').stop().slideUp(300);
-    $(this).addClass('active');
-    $(this).find('.support-acordion-item-text').stop().slideDown(300);
+  $('.support-acordion-item-button').click(function() {
+    //$('.support-acordion-item').removeClass('active');
+    //$('.support-acordion-item-button').removeClass('active');
+
+    //$('.support-acordion-item .support-acordion-item-text').stop().slideUp(300);
+    $(this).toggleClass('active');
+    $(this).parent().toggleClass('active');
+    $(this).parent().find('.support-acordion-item-text').stop().slideToggle(300);
+
+
   });
 }
 

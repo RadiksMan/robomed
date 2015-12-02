@@ -52,7 +52,8 @@
                 </div>
                 <div class="created_by">
                     <a href="#">
-                        Cоздание сайта: <span>LOGO</span>
+                        <img src="images/develop-logo.png" alt=""/>
+                        <p>Разработка сайта</p>
                     </a>
                 </div>
             </div>

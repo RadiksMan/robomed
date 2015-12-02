@@ -24,6 +24,25 @@ body::-webkit-scrollbar {display: none;}
     }
 }
 
+/*header */
+
+.header{position: absolute;z-index: 1;width: 100%;}
+.header-navigation{font-size: 14rem;font-weight: bold;float: right;padding-top: 48px;
+    ul{list-style-type: none;}
+    li{float: left;margin-left: 27.3rem;font-weight: 100;letter-spacing: -0.1rem;
+        &:hover{
+            a{opacity: .7}
+        }
+    }
+    a{text-decoration: none;color: #000;text-transform: uppercase;}
+}
+
+.header-wrap{background:#fff;background: linear-gradient(to right, #ffffff 0%,#fcfcfc 25%,#f6f6f6 50%,#f0f0f0 75%,#f0f0f0 100%);padding-bottom: 20px;
+    .header-logo{float: left;padding-top: 16px;}
+}
+
+/* /header */
+
 /* /basic for scroll sections */
 
 /* big circle */
@@ -224,9 +243,9 @@ header.inside-page{position: relative;box-shadow:0 2px 6px 0 rgba(0,0,0,0.08);}
         .title-wrap-main{padding-top: 44px;}
     }
 }
-.title-wrap-main{background-color: rgba(43,43,43,.9);padding: 39px 0 28px 0;position: relative;z-index: 1;
+.title-wrap-main{background-color: rgba(43,43,43,.9);padding: 44px 0 29px 0;position: relative;z-index: 1;
     &.white-bg{background-color: transparent;
-        .breadcrumbs{font-size: 13.94rem;
+        .breadcrumbs{font-size: 13.94rem;margin-bottom: 1px;letter-spacing: -0.16rem;
             span{margin-left: 18px;
                 &:first-child{margin-left: 0;}
                 &:last-child{color:#cacbcc;
@@ -256,7 +275,7 @@ header.inside-page{position: relative;box-shadow:0 2px 6px 0 rgba(0,0,0,0.08);}
 .calculator-main{padding-top: 8px;margin-bottom: 97px;}
 .calculator-wrap{max-width: 970px;width:100%;margin: 0 auto 48px auto;}
 
-.calculator-wrap-bottom.color-line{background-position: 40% 130px;}
+.calculator-wrap-bottom.color-line{background-position: 40% 139px;}
 
 .calculator-title{font-size: 20rem;color:#262626;font-weight: 700;margin-bottom: 37px;}
 .calculator-col{float: left;text-align: left;width:247px;
@@ -285,7 +304,7 @@ header.inside-page{position: relative;box-shadow:0 2px 6px 0 rgba(0,0,0,0.08);}
 
 .optimization-bottom-text{font-size: 20rem;color:#797f87;letter-spacing: 11.9rem;text-transform: uppercase;display: inline-block;vertical-align: middle;}
 .optimization-value-wrap{font-size: 50rem;font-weight: 800;color:#ee3446;line-height: 14px;display: inline-block;vertical-align: middle;width:405px;text-align: right;}
-.calculator-optimization-bottom .optimization-value{max-width: 290px;vertical-align: middle;line-height: 40px;word-wrap:break-word;display: inline-block;}
+.calculator-optimization-bottom .optimization-value{max-width: 315px;vertical-align: middle;line-height: 40px;word-wrap:break-word;display: inline-block;}
 
 /* /calculator */
 
@@ -367,7 +386,9 @@ header.inside-page{position: relative;box-shadow:0 2px 6px 0 rgba(0,0,0,0.08);}
 }
 
 .rectange-main-wrap{padding-top: 39px;
-    .title-italic-numeric{margin-bottom: 43px;}
+    .title-italic-numeric{margin-bottom: 39px;
+        .title-italic-num{margin-bottom: 1px;}
+    }
 }
 .rectangle-wrap{margin-bottom: 150px;}
 .rectangle-main, .rectangle-img{display: inline-block;position: relative;}
@@ -383,15 +404,19 @@ header.inside-page{position: relative;box-shadow:0 2px 6px 0 rgba(0,0,0,0.08);}
 .rectangle-descript-bottom{top: calc(100% + 12px);width: 470px;margin-left: -25px;}
 
 .dicom-main-wrap{
-    .title-italic-numeric{margin-bottom: 24px;}
+    .title-italic-numeric{margin-bottom: 24px;
+        .title-italic-num{margin-bottom: 0;}
+    }
 }
-.dicom-wrap{width: 970px;margin:0 auto 87px auto;}
+.dicom-wrap{width: 970px;margin:0 auto 85px auto;}
 .dicom-left-wrap{float: left;width: 535px;}
 .dicom-right-info{float: right;width: 400px;box-sizing:border-box;border:3px solid #ed3a4f;border-radius: 5px;padding: 38px 35px 29px 30px;position: relative;top:18px;}
 .dicom-info-title{background-color: #fff;color:#ed3a4f;font-weight: 700;font-size: 32px;text-transform: uppercase;position: absolute;left: 25px;top: 0;transform:translate(0,-44%);padding: 0 5px;}
 .dicom-text{font-size: 18px;line-height: 29px;}
 
-.doctor-white-block-main-wrap .title-italic-numeric{margin-bottom: 27px;}
+.doctor-white-block-main-wrap .title-italic-numeric{margin-bottom: 24px;
+    .title-italic-num{margin-bottom: 0;}
+}
 .doctor-white-block{margin-bottom: 65px;padding-top: 18px;}
 .doctor-white-block-wrap{background-color: #fff;border-radius: 10px;box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.06);padding: 68px 156px 49px 156px;}
 .doctor-white-block-img{margin-bottom: 25px;}

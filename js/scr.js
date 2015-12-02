@@ -32,6 +32,13 @@ function inputNumber(block) {
         }
     });
 
+    $('input', block).focus(function(){
+        $inputNum = $(this);
+        if ($inputNum.val == '' || $inputNum.val() == 0) {
+            $inputNum.val('');
+        }
+    });
+
 }
 
 
@@ -756,27 +763,67 @@ function calculatorScript(){
         var inputValue = $(this).val();
 
         if($(this).is('[name=patients]')){
-            $('.optimization-first-col .optimiztion-value').text(parseInt(inputValue*1.10));
+            inputValue = parseInt(inputValue*1.10);
+            $('.optimization-first-col .optimiztion-value').attr('data-value', inputValue);
+            inputValue = gap(inputValue.toString());
+            $('.optimization-first-col .optimiztion-value').text(inputValue);
         }
         else if($(this).is('[name=fot]')){
-            $('.optimization-second-col .optimiztion-value').text(parseInt(inputValue*0.92));
+            inputValue = parseInt(inputValue*0.08);
+            $('.optimization-second-col .optimiztion-value').attr('data-value', inputValue);
+            inputValue = gap(inputValue.toString());
+            $('.optimization-second-col .optimiztion-value').text(inputValue);
         }
         else if($(this).is('[name=check]')){
-            $('.optimization-third-col .optimiztion-value').text(parseInt(inputValue*1.20));
+            inputValue = parseInt(inputValue*1.20);
+            $('.optimization-third-col .optimiztion-value').attr('data-value', inputValue);
+            inputValue = gap(inputValue.toString());
+            $('.optimization-third-col .optimiztion-value').text(inputValue);
         }
 
+        var pointValue = 0;
+
+        $('.calculator-optimization-col').each(function() {
+            var value = $(this).find('.optimiztion-value').attr('data-value').toString().length;
+            if(value < 6 && pointValue == 0){
+                $('.calculator-optimization-col .optimiztion-value').css({'font-size':'50px'});
+            }
+            if(value>= 6 && value < 10 && pointValue <= 1){
+                $('.calculator-optimization-col .optimiztion-value').css({'font-size':'40px'});
+                pointValue = 1;
+            }
+            if(value >= 10 && value < 14 && pointValue <= 2){
+                $('.calculator-optimization-col .optimiztion-value').css({'font-size':'30px'});
+                pointValue = 2;
+            }
+            if(value >= 14 && pointValue <= 3){
+                $('.calculator-optimization-col .optimiztion-value').css({'font-size':'20px'});
+                pointValue = 3;
+            }
+        });
+
         var patients = $('input[name=patients]').val();
-        var newPatients = parseInt($('.optimization-first-col .optimiztion-value').text());
+        var newPatients = parseInt($('.optimization-first-col .optimiztion-value').attr('data-value'));
 
         var fot = $('input[name=fot]').val();
-        var newFot = parseInt($('.optimization-second-col .optimiztion-value').text());
+        var newFot = parseInt($('.optimization-second-col .optimiztion-value').attr('data-value'));
 
         var check = $('input[name=check]').val();
-        var newCheck = parseInt($('.optimization-third-col .optimiztion-value').text());
+        var newCheck = parseInt($('.optimization-third-col .optimiztion-value').attr('data-value'));
 
-        var formuleValue = parseInt(newFot + (patients * (newCheck - check)));
+        var formuleValue = parseInt(newFot + (newPatients * (newCheck - check)));
 
         formuleValue = gap(formuleValue.toString());
+
+        if (formuleValue.length <= 10){
+            $('.calculator-optimization-bottom .optimization-value-wrap').css({'font-size':'50px'});
+        }
+        else if(formuleValue.length >10 && formuleValue.length <= 17){
+            $('.calculator-optimization-bottom .optimization-value-wrap').css({'font-size':'30px'});
+        }
+        else if(formuleValue.length >17){
+            $('.calculator-optimization-bottom .optimization-value-wrap').css({'font-size':'20px'});
+        }
 
         $('.calculator-optimization-bottom .optimization-value').text(formuleValue);
 

@@ -18,6 +18,8 @@ function gopa2(){
 
         $('.slider-viktor-pots').slick({
           dots: true,
+          nextArrow:'<button type="button" class="slick-next"></button>',
+          prevArrow:'<button type="button" class="slick-prev"></button>'
          /* infinite: true,
           speed: 300,
           slidesToShow: 4,

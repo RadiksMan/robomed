@@ -32,6 +32,7 @@
                     <div class="support-aside-acordion-wrap">
                         <div class="support-aside-acordion">
                             <div class="support-acordion-item">
+                                <div class="support-acordion-item-button"></div>
                                 <div class="support-acordion-item-title">
                                     <span>Как выявляется неэффективный персонал?</span>
                                 </div>
@@ -41,6 +42,7 @@
                                 </div>
                             </div>
                             <div class="support-acordion-item">
+                                <div class="support-acordion-item-button"></div>
                                 <div class="support-acordion-item-title">
                                     <span>В чем ценность для главного врача?</span>
                                 </div>
@@ -50,6 +52,7 @@
                                 </div>
                             </div>
                             <div class="support-acordion-item">
+                                <div class="support-acordion-item-button"></div>
                                 <div class="support-acordion-item-title">
                                     <span>Как выявляется неэффективный персонал?</span>
                                 </div>
@@ -59,6 +62,7 @@
                                 </div>
                             </div>
                             <div class="support-acordion-item">
+                                <div class="support-acordion-item-button"></div>
                                 <div class="support-acordion-item-title">
                                     <span>В чем ценность для главного врача?</span>
                                 </div>
@@ -68,6 +72,7 @@
                                 </div>
                             </div>
                             <div class="support-acordion-item">
+                                <div class="support-acordion-item-button"></div>
                                 <div class="support-acordion-item-title">
                                     <span>Как выявляется неэффективный персонал?</span>
                                 </div>
@@ -77,6 +82,7 @@
                                 </div>
                             </div>
                             <div class="support-acordion-item">
+                                <div class="support-acordion-item-button"></div>
                                 <div class="support-acordion-item-title">
                                     <span>В чем ценность для главного врача?</span>
                                 </div>
@@ -86,6 +92,7 @@
                                 </div>
                             </div>
                             <div class="support-acordion-item">
+                                <div class="support-acordion-item-button"></div>
                                 <div class="support-acordion-item-title">
                                     <span>Как выявляется неэффективный персонал?</span>
                                 </div>
@@ -95,6 +102,7 @@
                                 </div>
                             </div>
                             <div class="support-acordion-item">
+                                <div class="support-acordion-item-button"></div>
                                 <div class="support-acordion-item-title">
                                     <span>В чем ценность для главного врача?</span>
                                 </div>
@@ -104,6 +112,7 @@
                                 </div>
                             </div>
                             <div class="support-acordion-item">
+                                <div class="support-acordion-item-button"></div>
                                 <div class="support-acordion-item-title">
                                     <span>Как выявляется неэффективный персонал?</span>
                                 </div>

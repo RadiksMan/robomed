@@ -30,11 +30,9 @@ body::-webkit-scrollbar {
   transform: translate(50%, -50%);
   opacity: 0;
   -webkit-transition: opacity 500ms ease, -webkit-transform 300ms ease;
-  transition: opacity 500ms ease, -webkit-transform 300ms ease;
-  -moz-transition: opacity 500ms ease, transform 300ms ease, -moz-transform 300ms ease;
-  -o-transition: opacity 500ms ease, transform 300ms ease, -o-transform 300ms ease;
+  -moz-transition: opacity 500ms ease, -moz-transform 300ms ease;
+  -o-transition: opacity 500ms ease, -o-transform 300ms ease;
   transition: opacity 500ms ease, transform 300ms ease;
-  transition: opacity 500ms ease, transform 300ms ease, -webkit-transform 300ms ease, -moz-transform 300ms ease, -o-transform 300ms ease;
 }
 
 .dots-parts li {
@@ -102,6 +100,57 @@ body::-webkit-scrollbar {
   cursor: pointer;
 }
 
+/*header */
+.header {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+.header-navigation {
+  font-size: 14rem;
+  font-weight: bold;
+  float: right;
+  padding-top: 48px;
+}
+
+.header-navigation ul {
+  list-style-type: none;
+}
+
+.header-navigation li {
+  float: left;
+  margin-left: 27.3rem;
+  font-weight: 100;
+  letter-spacing: -0.1rem;
+}
+
+.header-navigation li:hover a {
+  opacity: .7;
+}
+
+.header-navigation a {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.header-wrap {
+  background: #fff;
+  background: -webkit-gradient(linear, left top, right top, from(#ffffff), color-stop(25%, #fcfcfc), color-stop(50%, #f6f6f6), color-stop(75%, #f0f0f0), to(#f0f0f0));
+  background: -webkit-linear-gradient(left, #ffffff 0%, #fcfcfc 25%, #f6f6f6 50%, #f0f0f0 75%, #f0f0f0 100%);
+  background: -moz-linear-gradient(left, #ffffff 0%, #fcfcfc 25%, #f6f6f6 50%, #f0f0f0 75%, #f0f0f0 100%);
+  background: -o-linear-gradient(left, #ffffff 0%, #fcfcfc 25%, #f6f6f6 50%, #f0f0f0 75%, #f0f0f0 100%);
+  background: linear-gradient(to right, #ffffff 0%, #fcfcfc 25%, #f6f6f6 50%, #f0f0f0 75%, #f0f0f0 100%);
+  padding-bottom: 20px;
+}
+
+.header-wrap .header-logo {
+  float: left;
+  padding-top: 16px;
+}
+
+/* /header */
 /* /basic for scroll sections */
 /* big circle */
 .big-sircle {
@@ -154,11 +203,9 @@ body::-webkit-scrollbar {
   -moz-border-radius: 50%;
   border-radius: 50%;
   -webkit-transition: background-color 300ms ease 1300ms, -webkit-box-shadow 300ms ease 1300ms;
-  transition: background-color 300ms ease 1300ms, -webkit-box-shadow 300ms ease 1300ms;
-  -moz-transition: background-color 300ms ease 1300ms, box-shadow 300ms ease 1300ms, -moz-box-shadow 300ms ease 1300ms;
+  -moz-transition: background-color 300ms ease 1300ms, -moz-box-shadow 300ms ease 1300ms;
   -o-transition: background-color 300ms ease 1300ms, box-shadow 300ms ease 1300ms;
   transition: background-color 300ms ease 1300ms, box-shadow 300ms ease 1300ms;
-  transition: background-color 300ms ease 1300ms, box-shadow 300ms ease 1300ms, -webkit-box-shadow 300ms ease 1300ms, -moz-box-shadow 300ms ease 1300ms;
 }
 
 .big-sircle-list {
@@ -173,11 +220,9 @@ body::-webkit-scrollbar {
   position: relative;
   opacity: 0;
   -webkit-transition: opacity 300ms ease, -webkit-transform 300ms ease;
-  transition: opacity 300ms ease, -webkit-transform 300ms ease;
-  -moz-transition: opacity 300ms ease, transform 300ms ease, -moz-transform 300ms ease;
-  -o-transition: opacity 300ms ease, transform 300ms ease, -o-transform 300ms ease;
+  -moz-transition: opacity 300ms ease, -moz-transform 300ms ease;
+  -o-transition: opacity 300ms ease, -o-transform 300ms ease;
   transition: opacity 300ms ease, transform 300ms ease;
-  transition: opacity 300ms ease, transform 300ms ease, -webkit-transform 300ms ease, -moz-transform 300ms ease, -o-transform 300ms ease;
 }
 
 .big-sircle-list li:after {
@@ -247,11 +292,9 @@ body::-webkit-scrollbar {
   position: absolute;
   opacity: 0;
   -webkit-transition: opacity 500ms ease 500ms,-webkit-transform 500ms ease 500ms;
-  transition: opacity 500ms ease 500ms,-webkit-transform 500ms ease 500ms;
-  -moz-transition: opacity 500ms ease 500ms,transform 500ms ease 500ms,-moz-transform 500ms ease 500ms;
-  -o-transition: opacity 500ms ease 500ms,transform 500ms ease 500ms,-o-transform 500ms ease 500ms;
+  -moz-transition: opacity 500ms ease 500ms,-moz-transform 500ms ease 500ms;
+  -o-transition: opacity 500ms ease 500ms,-o-transform 500ms ease 500ms;
   transition: opacity 500ms ease 500ms,transform 500ms ease 500ms;
-  transition: opacity 500ms ease 500ms,transform 500ms ease 500ms,-webkit-transform 500ms ease 500ms,-moz-transform 500ms ease 500ms,-o-transform 500ms ease 500ms;
 }
 
 .big-sircle-part.part-left, .big-sircle-part.part-right {
@@ -862,7 +905,7 @@ header.inside-page {
 
 .title-wrap-main {
   background-color: rgba(43, 43, 43, 0.9);
-  padding: 39px 0 28px 0;
+  padding: 44px 0 29px 0;
   position: relative;
   z-index: 1;
 }
@@ -873,6 +916,8 @@ header.inside-page {
 
 .title-wrap-main.white-bg .breadcrumbs {
   font-size: 13.94rem;
+  margin-bottom: 1px;
+  letter-spacing: -0.16rem;
 }
 
 .title-wrap-main.white-bg .breadcrumbs span {
@@ -963,7 +1008,7 @@ header.inside-page {
 }
 
 .calculator-wrap-bottom.color-line {
-  background-position: 40% 130px;
+  background-position: 40% 139px;
 }
 
 .calculator-title {
@@ -1102,7 +1147,7 @@ header.inside-page {
 }
 
 .calculator-optimization-bottom .optimization-value {
-  max-width: 290px;
+  max-width: 315px;
   vertical-align: middle;
   line-height: 40px;
   word-wrap: break-word;
@@ -1408,7 +1453,11 @@ header.inside-page {
 }
 
 .rectange-main-wrap .title-italic-numeric {
-  margin-bottom: 43px;
+  margin-bottom: 39px;
+}
+
+.rectange-main-wrap .title-italic-numeric .title-italic-num {
+  margin-bottom: 1px;
 }
 
 .rectangle-wrap {
@@ -1475,9 +1524,13 @@ header.inside-page {
   margin-bottom: 24px;
 }
 
+.dicom-main-wrap .title-italic-numeric .title-italic-num {
+  margin-bottom: 0;
+}
+
 .dicom-wrap {
   width: 970px;
-  margin: 0 auto 87px auto;
+  margin: 0 auto 85px auto;
 }
 
 .dicom-left-wrap {
@@ -1523,7 +1576,11 @@ header.inside-page {
 }
 
 .doctor-white-block-main-wrap .title-italic-numeric {
-  margin-bottom: 27px;
+  margin-bottom: 24px;
+}
+
+.doctor-white-block-main-wrap .title-italic-numeric .title-italic-num {
+  margin-bottom: 0;
 }
 
 .doctor-white-block {

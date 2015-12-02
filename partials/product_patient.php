@@ -2,6 +2,7 @@
 
     <div class="patient-wrap style-wrap-box">
         <div class="patient-box mbox">
+
             <figure class="patient-container">
                 <div class="image-conteiner ">
                     <img src="images/happypatient.png" alt="">
@@ -20,16 +21,7 @@
                     </div>
                 </figurecaption>
             </figure>
-            <div class="button-calc">
-                <div class="aside-sub-button">
-                    <div class="aside-sub-item">
-                        <div class="aside-sub-text"><span>Посчитать выгоду с Robomed:</span></div>
-                        <div class="aside-sub-button">
-                            <a href="#"><span class="icon icon-calc"></span><span>калькулятор</span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
         </div>
 
     </div>
