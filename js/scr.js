@@ -262,6 +262,8 @@ function scrollCircle(){
 
     if(!$('.header').is('.inside-page')){
 
+        $('body').css('overflow','hidden');
+
         $('.big-sircle-part').each(function(){
             var point = 0;
             var x = 0, y = 0;
@@ -597,6 +599,7 @@ function scrollCircle(){
 
                     if(maxScrollIndex == scrollIndex){
                         blockScrolling = false;
+                        $('body').css({'overflow':'visible','overflow-x':'hidden','overflow-y':'visible','margin-right':'-17px'});
                     }
                 }else{
                     //if(blockScrolling == true){
