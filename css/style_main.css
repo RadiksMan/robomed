@@ -1,8 +1,5 @@
 /* basic for scroll sections */
-body::-webkit-scrollbar {
-  display: none;
-}
-
+/*body::-webkit-scrollbar {display: none;}*/
 .main {
   position: relative;
   z-index: 0;
