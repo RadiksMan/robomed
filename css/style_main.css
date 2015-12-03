@@ -27,11 +27,9 @@
   transform: translate(50%, -50%);
   opacity: 0;
   -webkit-transition: opacity 500ms ease, -webkit-transform 300ms ease;
-  transition: opacity 500ms ease, -webkit-transform 300ms ease;
-  -moz-transition: opacity 500ms ease, transform 300ms ease, -moz-transform 300ms ease;
-  -o-transition: opacity 500ms ease, transform 300ms ease, -o-transform 300ms ease;
+  -moz-transition: opacity 500ms ease, -moz-transform 300ms ease;
+  -o-transition: opacity 500ms ease, -o-transform 300ms ease;
   transition: opacity 500ms ease, transform 300ms ease;
-  transition: opacity 500ms ease, transform 300ms ease, -webkit-transform 300ms ease, -moz-transform 300ms ease, -o-transform 300ms ease;
 }
 
 .dots-parts li {
@@ -202,11 +200,9 @@
   -moz-border-radius: 50%;
   border-radius: 50%;
   -webkit-transition: background-color 300ms ease 1300ms, -webkit-box-shadow 300ms ease 1300ms;
-  transition: background-color 300ms ease 1300ms, -webkit-box-shadow 300ms ease 1300ms;
-  -moz-transition: background-color 300ms ease 1300ms, box-shadow 300ms ease 1300ms, -moz-box-shadow 300ms ease 1300ms;
+  -moz-transition: background-color 300ms ease 1300ms, -moz-box-shadow 300ms ease 1300ms;
   -o-transition: background-color 300ms ease 1300ms, box-shadow 300ms ease 1300ms;
   transition: background-color 300ms ease 1300ms, box-shadow 300ms ease 1300ms;
-  transition: background-color 300ms ease 1300ms, box-shadow 300ms ease 1300ms, -webkit-box-shadow 300ms ease 1300ms, -moz-box-shadow 300ms ease 1300ms;
 }
 
 .big-sircle-list {
@@ -221,11 +217,9 @@
   position: relative;
   opacity: 0;
   -webkit-transition: opacity 300ms ease, -webkit-transform 300ms ease;
-  transition: opacity 300ms ease, -webkit-transform 300ms ease;
-  -moz-transition: opacity 300ms ease, transform 300ms ease, -moz-transform 300ms ease;
-  -o-transition: opacity 300ms ease, transform 300ms ease, -o-transform 300ms ease;
+  -moz-transition: opacity 300ms ease, -moz-transform 300ms ease;
+  -o-transition: opacity 300ms ease, -o-transform 300ms ease;
   transition: opacity 300ms ease, transform 300ms ease;
-  transition: opacity 300ms ease, transform 300ms ease, -webkit-transform 300ms ease, -moz-transform 300ms ease, -o-transform 300ms ease;
 }
 
 .big-sircle-list li:after {
@@ -295,11 +289,9 @@
   position: absolute;
   opacity: 0;
   -webkit-transition: opacity 500ms ease 500ms,-webkit-transform 500ms ease 500ms;
-  transition: opacity 500ms ease 500ms,-webkit-transform 500ms ease 500ms;
-  -moz-transition: opacity 500ms ease 500ms,transform 500ms ease 500ms,-moz-transform 500ms ease 500ms;
-  -o-transition: opacity 500ms ease 500ms,transform 500ms ease 500ms,-o-transform 500ms ease 500ms;
+  -moz-transition: opacity 500ms ease 500ms,-moz-transform 500ms ease 500ms;
+  -o-transition: opacity 500ms ease 500ms,-o-transform 500ms ease 500ms;
   transition: opacity 500ms ease 500ms,transform 500ms ease 500ms;
-  transition: opacity 500ms ease 500ms,transform 500ms ease 500ms,-webkit-transform 500ms ease 500ms,-moz-transform 500ms ease 500ms,-o-transform 500ms ease 500ms;
 }
 
 .big-sircle-part.part-left, .big-sircle-part.part-right {
