@@ -187,7 +187,7 @@ function validationCall(form){
         data: formSur,
         method:'POST',
         success : function(data){
-            if ( data.trim()!='true') {
+            if ( data.trim()=='true') {
                 thisForm.trigger("reset");
                 popNext();
             }
