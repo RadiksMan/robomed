@@ -7,6 +7,7 @@
   transition: height 300ms ease;
   -ms-transition: height 300ms ease;
   overflow: hidden;
+  padding-top: 110px;
 }
 
 .main_slider_wrap {
@@ -60,7 +61,7 @@
 }
 
 .main_slider_wrap .slick-slide img {
-  /*min-height: 100vh;*/
+  min-width: 100%;
 }
 
 .slider-text {
@@ -148,7 +149,7 @@
 
 .top_text .top_text_wrap {
   text-align: center;
-  padding: 75px 0px;
+  padding: 65px 0px;
 }
 
 .top_text .top_text_wrap h5 {

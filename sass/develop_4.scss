@@ -1,6 +1,6 @@
 /* slider */
 
-.main_slider{/*height: calc(100vh - 89rem);*/transition:height 300ms ease;-ms-transition:height 300ms ease;overflow: hidden;}
+.main_slider{/*height: calc(100vh - 89rem);*/transition:height 300ms ease;-ms-transition:height 300ms ease;overflow: hidden;padding-top: 110px;}
 .main_slider_wrap{position: relative;
     .slick-slider{z-index:0;}
     .mouse-scroll{position: absolute;left: 50%;bottom: 102px;transform: translateX(-50%);height: 48px;width: 48px;background: url('../images/scroll_mause.png') center center no-repeat;cursor: pointer;border-radius: 50%;overflow: hidden;z-index:1;
@@ -8,7 +8,7 @@
         &:hover:before{opacity: 1;}
     }
     .slick-slide{outline: none;max-height: 100vh;}
-    .slick-slide img{/*min-height: 100vh;*/}
+    .slick-slide img{min-width: 100%;}
 }
 .slider-text{position: absolute;width: 100%;top: 200px;padding:10px 0 10px 0;color:#fff;text-transform: uppercase;transition:top 300ms ease;
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2JhMTgzYSIgc3RvcC1vcGFjaXR5PSIwLjc1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzljNjk5MSIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3ZGI5ZTgiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -48,7 +48,7 @@
 /* top text */
 .text-top{position: relative;z-index: 1;transition:margin 300ms ease;background-color: #fff;}
 .top_text{
-    .top_text_wrap{text-align: center;padding: 75px 0px;
+    .top_text_wrap{text-align: center;padding: 65px 0px;
         h5{color: #262626;font-size: 38rem;max-width: 600px;margin:  0 auto;line-height: 43rem;}
         .title-bottom{font-family: 'Anglecia';font-weight: 500;font-style: italic;font-size: 19rem;padding-top: 27px;
             span{font-size: 28rem;color: #eb253c;}
