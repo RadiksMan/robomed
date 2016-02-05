@@ -14,6 +14,7 @@ function googleMap(mapWrap){
         var myLatlng = new google.maps.LatLng(cordX,cordY);
         var myOptions = {
             zoom: 16,
+            streetViewControl: false,
             center: myLatlng,
             disableDefaultUI: false,
             mapTypeId: google.maps.MapTypeId.ROADMAP,
@@ -67,7 +68,6 @@ function supportAcordion(){
     $(this).toggleClass('active');
     $(this).parent().toggleClass('active');
     $(this).parent().find('.support-acordion-item-text').stop().slideToggle(300);
-
 
   });
 }
