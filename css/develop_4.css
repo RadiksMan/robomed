@@ -94,7 +94,7 @@
 }
 
 .show .slider-text {
-  top: 50px;
+  top: 150px;
 }
 
 /* /slider */
@@ -102,6 +102,7 @@
 .top_line {
   background-color: #2e2e2e;
   padding: 21px 0px 21px;
+  display: none;
 }
 
 .top_line .top_line_wrap ul {

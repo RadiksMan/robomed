@@ -23,14 +23,14 @@
     p{font-size: 23px;}
 }
 .show{
-    .slider-text{top: 50px;}
+    .slider-text{top: 150px;}
 }
 
 /* /slider */
 
 /* top-line */
 
-.top_line{background-color: #2e2e2e;padding: 21px 0px 21px;
+.top_line{background-color: #2e2e2e;padding: 21px 0px 21px;display: none;
     .top_line_wrap{
         ul{display: table;width: 100%;}
         li{display: table-cell;vertical-align: middle;
