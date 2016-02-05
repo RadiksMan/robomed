@@ -1,8 +1,5 @@
 /* basic for scroll sections */
-body::-webkit-scrollbar {
-  display: none;
-}
-
+/*body::-webkit-scrollbar {display: none;}*/
 .main {
   position: relative;
   z-index: 0;
@@ -328,12 +325,15 @@ body::-webkit-scrollbar {
 
 .big-sircle-part.part-top .big-sircle-list li, .big-sircle-part.part-bottom .big-sircle-list li {
   display: inline-block;
-  max-width: -webkit-calc(33.33% - 24rem);
-  max-width: -moz-calc(33.33% - 24rem);
-  max-width: calc(33.33% - 24rem);
+  width: -webkit-calc(33.33% - 24rem);
+  width: -moz-calc(33.33% - 24rem);
+  width: calc(33.33% - 24rem);
   position: relative;
   padding-right: 20rem;
-  margin-left: 20rem;
+  margin-left: 15rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .big-sircle-part.part-top .big-sircle-list li .list-num, .big-sircle-part.part-bottom .big-sircle-list li .list-num {
@@ -346,6 +346,10 @@ body::-webkit-scrollbar {
   left: -webkit-calc(50% - 45.5rem);
   left: -moz-calc(50% - 45.5rem);
   left: calc(50% - 45.5rem);
+}
+
+.big-sircle-part.part-top .big-sircle-list li:first-child, .big-sircle-part.part-bottom .big-sircle-list li:first-child {
+  margin-left: 0;
 }
 
 .big-sircle-part.part-top .big-sircle-list li:last-child, .big-sircle-part.part-bottom .big-sircle-list li:last-child {
@@ -414,9 +418,9 @@ body::-webkit-scrollbar {
 }
 
 .big-sircle-part.part-left .big-sircle-list li:nth-child(5):after {
-  left: -webkit-calc(100% + 18rem);
-  left: -moz-calc(100% + 18rem);
-  left: calc(100% + 18rem);
+  left: -webkit-calc(100% + 23rem);
+  left: -moz-calc(100% + 23rem);
+  left: calc(100% + 23rem);
 }
 
 .big-sircle-part.part-left .big-sircle-text {
@@ -465,15 +469,15 @@ body::-webkit-scrollbar {
 }
 
 .big-sircle-part.part-right .big-sircle-list li:nth-child(1):after {
-  right: -webkit-calc(100% + 39rem);
-  right: -moz-calc(100% + 39rem);
-  right: calc(100% + 39rem);
+  right: -webkit-calc(100% + 46rem);
+  right: -moz-calc(100% + 46rem);
+  right: calc(100% + 46rem);
 }
 
 .big-sircle-part.part-right .big-sircle-list li:nth-child(2):after {
-  right: -webkit-calc(100% + 22rem);
-  right: -moz-calc(100% + 22rem);
-  right: calc(100% + 22rem);
+  right: -webkit-calc(100% + 29rem);
+  right: -moz-calc(100% + 29rem);
+  right: calc(100% + 29rem);
 }
 
 .big-sircle-part.part-right .big-sircle-list li:nth-child(3):after {
@@ -545,9 +549,12 @@ body::-webkit-scrollbar {
 }
 
 .big-sircle-part.part-top .big-sircle-list li:nth-child(1):after {
-  top: -webkit-calc(100% + 70rem);
-  top: -moz-calc(100% + 70rem);
-  top: calc(100% + 70rem);
+  top: -webkit-calc(100% + 92rem);
+  top: -moz-calc(100% + 92rem);
+  top: calc(100% + 92rem);
+  left: -webkit-calc(50% - 15px);
+  left: -moz-calc(50% - 15px);
+  left: calc(50% - 15px);
 }
 
 .big-sircle-part.part-top .big-sircle-list li:nth-child(2):after {
@@ -557,9 +564,9 @@ body::-webkit-scrollbar {
 }
 
 .big-sircle-part.part-top .big-sircle-list li:nth-child(3):after {
-  top: -webkit-calc(100% + 80rem);
-  top: -moz-calc(100% + 80rem);
-  top: calc(100% + 80rem);
+  top: -webkit-calc(100% + 89rem);
+  top: -moz-calc(100% + 89rem);
+  top: calc(100% + 89rem);
 }
 
 .big-sircle-part.part-bottom {
@@ -604,9 +611,12 @@ body::-webkit-scrollbar {
 }
 
 .big-sircle-part.part-bottom .big-sircle-list li:nth-child(1):after {
-  bottom: -webkit-calc(100% + 47px);
-  bottom: -moz-calc(100% + 47px);
-  bottom: calc(100% + 47px);
+  bottom: -webkit-calc(100% + 68px);
+  bottom: -moz-calc(100% + 68px);
+  bottom: calc(100% + 68px);
+  left: -webkit-calc(50% - 0px);
+  left: -moz-calc(50% - 0px);
+  left: calc(50% - 0px);
 }
 
 .big-sircle-part.part-bottom .big-sircle-list li:nth-child(2):after {
@@ -616,9 +626,9 @@ body::-webkit-scrollbar {
 }
 
 .big-sircle-part.part-bottom .big-sircle-list li:nth-child(3):after {
-  bottom: -webkit-calc(100% + 69px);
-  bottom: -moz-calc(100% + 69px);
-  bottom: calc(100% + 69px);
+  bottom: -webkit-calc(100% + 73px);
+  bottom: -moz-calc(100% + 73px);
+  bottom: calc(100% + 73px);
 }
 
 .big-sircle-part .big-sircle-part-item, .big-sircle-part .big-sircle-part-item-active {
@@ -1361,9 +1371,9 @@ header.inside-page {
 }
 
 .product-big-circle-descript-left li:before {
-  left: -webkit-calc(100% + 30px);
-  left: -moz-calc(100% + 30px);
-  left: calc(100% + 30px);
+  left: -webkit-calc(100% + 36px);
+  left: -moz-calc(100% + 36px);
+  left: calc(100% + 36px);
 }
 
 .product-big-circle-descript-top {
@@ -1435,9 +1445,9 @@ header.inside-page {
 }
 
 .product-big-circle-descript-bottom li:before {
-  bottom: -webkit-calc(100% + 38px);
-  bottom: -moz-calc(100% + 38px);
-  bottom: calc(100% + 38px);
+  bottom: -webkit-calc(100% + 42px);
+  bottom: -moz-calc(100% + 42px);
+  bottom: calc(100% + 42px);
   left: -webkit-calc(50% - 21px);
   left: -moz-calc(50% - 21px);
   left: calc(50% - 21px);
@@ -1934,3 +1944,38 @@ header.inside-page {
 
 /* /product inside */
 /* /inside pages */
+.contact-form-item-input textarea::-webkit-input-placeholder {
+  font: 13.3333px Arial;
+  font-size: 22px;
+  color: #797f87;
+}
+
+.contact-form-item-input textarea:-moz-placeholder {
+  font: 13.3333px Arial;
+  font-size: 22px;
+  color: #797f87;
+}
+
+.contact-form-item-input textarea::-moz-placeholder {
+  font: 13.3333px Arial;
+  font-size: 22px;
+  color: #797f87;
+}
+
+.contact-form-item-input textarea:-ms-input-placeholder {
+  font: 13.3333px Arial;
+  font-size: 22px;
+  color: #797f87;
+}
+
+.contact-form-item-input textarea {
+  overflow-y: hidden;
+}
+
+input[type=text]::-ms-clear {
+  display: none;
+}
+
+input[type=password]::-ms-reveal {
+  display: none;
+}

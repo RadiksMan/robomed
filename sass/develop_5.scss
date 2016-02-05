@@ -20,7 +20,7 @@
                     .slick-arrow{background-color: transparent; border: 0;position:absolute; top:43%;cursor:pointer;
                         &:focus{outline: 0;}
                         &:before{content: ""; width:31px; height:31px; border: 2px solid #bbb; border-radius: 50%; display:block; }
-                        &:after{content: ""; width: 9px; height:9px; border-left: 1px solid #bbb; border-top: 1px solid #bbb; display: block;position:absolute; top:13px; left:17px;transform:rotate(135deg);}
+                        &:after{content: ""; width: 9px; height:9px; border-left: 1px solid #bbb; border-top: 1px solid #bbb; display: block;position:absolute; top:13px; left:10px;transform:rotate(135deg);}
                     }
                 }
             }
@@ -32,7 +32,7 @@
                     &:focus{outline: 0;}
 
                     &:before{content: ""; width:31px; height:31px; border: 2px solid #bbb; border-radius: 50%; display:block; }
-                    &:after{content: ""; width: 9px; height:9px; border-left: 1px solid #bbb; border-top: 1px solid #bbb; display: block;position:absolute; top:13px; left:17px;transform:rotate(135deg);}
+                    &:after{content: ""; width: 9px; height:9px; border-left: 1px solid #bbb; border-top: 1px solid #bbb; display: block;position:absolute; top:13px; left:10px;transform:rotate(135deg);}
                 }
                 .comment-align{
                     .comment-title{     padding-bottom: 64px;     padding-left: 58px;
@@ -143,8 +143,6 @@
                         p{font: normal 18px 'ProximaNova-Semibold',sans-serif; color:#262626; font-weight: bolder;  letter-spacing: -0.6rem;}
                     }
                 }
-
-
             }
             .interest{
                 .interest-title{padding: 89px 0 0 5px;
@@ -165,7 +163,7 @@
     }
     .intro-wrapp{ position: relative;
         span{font: 100 16px 'ProximaNova',sans-serif;color:#262626; }
-        &:before{content: ''; position: absolute;width: 100%; height: 100%; background-repeat: no-repeat; background-position: center center; background-image: url(../images/introduction-bg.jpg); top:-434px;}
+        &:before{content: ''; position: absolute;width: 100%; height: 100%; background-repeat: no-repeat; background-position: center center; background-image: url(../images/introduction-bg.jpg); top:-464px;}
         .intro-align{
 
             .top-text-block{text-align: center;     padding: 119px 0 67px;
@@ -192,7 +190,7 @@
 
             }
             .map-block{position: relative; padding-bottom: 140px;
-                .back{z-index: 1;position: absolute; top: 50px;    left: 78px; }
+                .back{z-index: 1; position: absolute; top: 50px;    left: 78px; }
                 .map-align{z-index: 10; position: relative;     padding: 99px 67px 0 100px;
                     .left-box{float:left; text-align: left;     padding-top: 250px;
                         .text-blocker{

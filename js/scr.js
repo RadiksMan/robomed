@@ -187,7 +187,7 @@ function validationCall(form){
         data: formSur,
         method:'POST',
         success : function(data){
-            if ( data.trim()!='true') {
+            if ( data.trim()=='true') {
                 thisForm.trigger("reset");
                 popNext();
             }
@@ -261,6 +261,22 @@ function animationBlock(item){
 function scrollCircle(){
 
     if(!$('.header').is('.inside-page')){
+
+        $('.big-sircle-part').each(function(){
+            if($(this).is('.part-top') || $(this).is('.part-bottom')){
+                var oneHeight = 0;
+                $(this).find('.big-sircle-list li').each(function(){
+                    if($(this).height()>oneHeight){
+                        oneHeight = $(this).height();
+                    }
+                });
+                $(this).find('.big-sircle-list li').css({'height':oneHeight+'px'});
+            }
+        });
+
+        if(device.desktop){
+            $('body').css('overflow','hidden');
+        }
 
         $('.big-sircle-part').each(function(){
             var point = 0;
@@ -597,6 +613,9 @@ function scrollCircle(){
 
                     if(maxScrollIndex == scrollIndex){
                         blockScrolling = false;
+                        if(device.desktop){
+                            $('body').css({'overflow':'visible','overflow-x':'hidden','overflow-y':'visible','margin-right':'-17px'});
+                        }
                     }
                 }else{
                     //if(blockScrolling == true){
@@ -679,7 +698,7 @@ function scrollCircle(){
         });
 
 
-        if(!device.ios() && !device.android() && !device.blackberry()){
+        if(device.desktop()){ //!device.ios() && !device.android() && !device.blackberry()
 
             $(window).on('mousewheel DOMMouseScroll', function(event){
 
@@ -745,6 +764,85 @@ function scrollCircle(){
             });
 
         }
+
+        // added for thinkpad
+
+        $(window).resize(function(){
+
+            if(device.desktop()){ //!device.ios() && !device.android() && !device.blackberry()
+
+                $('body').css('overflow','hidden');
+
+                $(window).on('mousewheel DOMMouseScroll', function(event){
+
+                    if(pause == true){
+                        event.preventDefault();
+                    }
+
+                    if(event.originalEvent.wheelDelta<0 || event.originalEvent.deltaY > 0){
+
+                        way = 1;
+
+                    }
+                    else if(event.originalEvent.wheelDelta>0 || event.originalEvent.deltaY < 0 || touchStart < touchEnd){
+
+                        way = 0;
+
+                    }
+
+                    if(pause == false){
+                        eventName = $('.scrolled').data('event');
+                        if(blockScrolling == true){
+                            pause = true;
+                            event.preventDefault();
+                        }
+                        $(window).trigger(eventName);
+                    }
+
+                });
+
+            }
+            else{
+
+                $('body').removeAttr('style');
+
+                var touchStart = 0;
+                var touchEnd = 0;
+
+                $(window).on('touchstart', function(event){
+
+                    touchStart = event.originalEvent.changedTouches[0].pageY;
+                    if(blockScrolling == true){
+                        event.preventDefault();
+                    }
+
+                    if($(event.target).is('.mouse-scroll')){
+                        $('.mouse-scroll').trigger('click');
+                    }
+
+                });
+
+                $(window).on('touchend', function(event){
+
+                    touchEnd = event.originalEvent.changedTouches[0].pageY;
+
+                    if(touchStart > touchEnd){
+                        way = 1;
+                    }
+                    else if(touchStart < touchEnd){
+                        way = 0;
+                    }
+
+                    eventName = $('.scrolled').data('event');
+                    $(window).trigger(eventName);
+
+                });
+
+            }
+
+        });
+
+        // /added for thinkpad
 
         $(window).trigger('first');
 

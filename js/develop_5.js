@@ -9,8 +9,8 @@ function gopa(){
           slidesToShow: 4,
           centerMode: false,
           variableWidth: true,
-          nextArrow:'<button type="button" class="slick-next"></button>',
-          prevArrow:'<button type="button" class="slick-prev"></button>'
+          nextArrow:'<div type="button" class="slick-next"></div>',
+          prevArrow:'<div type="button" class="slick-prev"></div>'
         });
 
 }
@@ -18,8 +18,8 @@ function gopa2(){
 
         $('.slider-viktor-pots').slick({
           dots: true,
-          nextArrow:'<button type="button" class="slick-next"></button>',
-          prevArrow:'<button type="button" class="slick-prev"></button>'
+          nextArrow:'<div type="button" class="slick-next"></div>',
+          prevArrow:'<div type="button" class="slick-prev"></div>'
          /* infinite: true,
           speed: 300,
           slidesToShow: 4,
