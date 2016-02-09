@@ -11,10 +11,28 @@
                 </div>
             </div>
             <div class="slider_item">
-                <img src="images/slider_img_1.jpg" alt="" />
+                <img src="images/slider_img_2.jpg" alt="" />
                 <div class="slider-text">
                     <div class="mbox">
                         <h6>Robomed 1</h6>
+                        <p>Первая в России облачная система управления медицинскими решениями 1</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider_item">
+                <img src="images/slider_img_3.jpg" alt="" />
+                <div class="slider-text">
+                    <div class="mbox">
+                        <h6>Robomed 2</h6>
+                        <p>Первая в России облачная система управления медицинскими решениями 1</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider_item">
+                <img src="images/slider_img_4.jpg" alt="" />
+                <div class="slider-text">
+                    <div class="mbox">
+                        <h6>Robomed 3</h6>
                         <p>Первая в России облачная система управления медицинскими решениями 1</p>
                     </div>
                 </div>

@@ -328,7 +328,7 @@ function scrollCircle(){
 
         $('[data-event="first"]').attr('data-height', (kostilHeight)); //-89
         $('.main-slider').css('height',$('[data-event="first"]').data('height'));
-        $('.main_slider_wrap img').css('height',$("[data-event='first']").data('height')-110);
+        $('.main_slider_wrap .slider_item').css('height',$("[data-event='first']").data('height')-$('.top_text').height() - 110);
 
         var sectionCircle = $('.circle-section').offset().top; //kostil( - 89)
 
@@ -345,7 +345,7 @@ function scrollCircle(){
             if(way == 0){
                 if(blockScrolling == true){
                     $('.header').slideDown(300);
-                    $('.main_slider').removeClass('show').animate({height:$('[data-event="first"]').data('height')},300)/*.css('height', $('[data-event="first"]').data('height')).removeAttr('style')*/;//
+                    //$('.main_slider').removeClass('show').animate({height:$('[data-event="first"]').data('height')},300)/*.css('height', $('[data-event="first"]').data('height')).removeAttr('style')*/;//
                     $(scroller).stop().animate({scrollTop:0},500, function(){
                         pause = false;
                     });
@@ -355,10 +355,11 @@ function scrollCircle(){
 
             }
             else if(way == 1){
-                if(blockScrolling == true){
-                    /*$('.header').slideUp(300,function(){
+                $(window).trigger('second');
+                /*if(blockScrolling == true){
+                    $('.header').slideUp(300,function(){
                         pause = false;
-                    });*/
+                    });
 
                     var variable = $(window).height() - $('.top_text').height()-110;//-89
                     if(variable < 0){
@@ -366,14 +367,14 @@ function scrollCircle(){
                     }
                     $('.main_slider').addClass('show').animate({height:variable},300, function(){
                         pause = false;
-                    })/*.css({'height':variable+'rem'})*/;
+                    });
                     var index = $('.scrolled').data('id')+1;
                     $('.scroll-section').removeClass('scrolled').eq(index).addClass('scrolled');
                 }else{
                     pause = false;
-                    var index = $('.scrolled').data('id')+1;
+                    var index = $('.scrolled').data('id')+2;
                     $('.scroll-section').removeClass('scrolled').eq(index).addClass('scrolled');
-                }
+                }*/
             }
 
         });
@@ -393,21 +394,19 @@ function scrollCircle(){
                             pause = false;
                         });
                         $('.header').slideDown(0);
-                        $('.main_slider').removeClass('show').animate({height:$('[data-event="first"]').data('height') - 110},0)/*.css('height', $('[data-event="first"]').data('height')).removeAttr('style')*/;
+                        //$('.main_slider').removeClass('show').animate({height:$('[data-event="first"]').data('height') - 110},0)/*.css('height', $('[data-event="first"]').data('height')).removeAttr('style')*/;
                     }
                     else if(blockScrolling == false){
                         //$(scroller).stop().animate({scrollTop:top},200);
                         pause = false;
                     }
-                    var index = $('.scrolled').data('id')+1;
+                    var index = $('.scrolled').data('id')+2;
                     $('.scroll-section').removeClass('scrolled');
                     $('.scroll-section[data-id='+index+']').addClass('scrolled');
                     if($('.scrolled').is('[data-event=circle]') && !$('.scrolled').find('.big-sircle').is('.done')){
                         $('.scrolled .big-circle-wrap').addClass('began-animate');
                         $(window).trigger('circle');
                         $('.dots-parts li').eq(0).click();
-
-
 
                         pause = true;
                     }
@@ -469,7 +468,6 @@ function scrollCircle(){
                             var part = $(this).find('li');
                             var partLength = part.length;
                             var partPoint = 0;
-                            console.log(partLength);
 
                             if($(this).is('.active')){
                                 ieTimer = setInterval(function(){
@@ -541,7 +539,6 @@ function scrollCircle(){
                             var part = $(this).find('li');
                             var partLength = part.length;
                             var partPoint = 0;
-                            console.log(partLength);
 
                             if($(this).is('.active')){
                                 ieTimer = setInterval(function(){

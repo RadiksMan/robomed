@@ -4,9 +4,11 @@ function mailSlider(){
         dots: false,
         adaptiveHeight: false,
         autoplay: true,
+        autoplaySpeed:4000,
         fade: true,
         cssEase: 'linear',
-        arrows:false
+        arrows:false,
+        pauseOnHover:false
     });
 }
 function googleMap(mapWrap){

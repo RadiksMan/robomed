@@ -21,7 +21,7 @@
 .main_slider_wrap .mouse-scroll {
   position: absolute;
   left: 50%;
-  bottom: 102px;
+  bottom: 10px;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -62,12 +62,25 @@
 
 .main_slider_wrap .slick-slide img {
   min-width: 100%;
+  max-width: 100%;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
 }
 
 .slider-text {
   position: absolute;
   width: 100%;
-  top: 200px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
   padding: 10px 0 10px 0;
   color: #fff;
   text-transform: uppercase;
@@ -1297,4 +1310,13 @@
 
 #intro_pop .slick-track {
   overflow: hidden;
+}
+
+@media screen and (max-width: 1280px) {
+  /* slider */
+  .main_slider_wrap .slick-slide img {
+    max-width: none;
+    height: 100%;
+  }
+  /* /slider */
 }
